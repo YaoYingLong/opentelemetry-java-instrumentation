@@ -1,0 +1,68 @@
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/AbstractRpcClientInstrumentation.java
+  aa06ae3c5227b5af 1-133
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/HbaseSingletons.java
+  aa06ae3c5227b5af 1-22
+instrumentation/hbase/hbase-client-2.0.0/javaagent/build.gradle.kts
+  aa06ae3c5227b5af 1-53
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/RegionServerCallableInstrumentation.java
+  aa06ae3c5227b5af 1-47
+instrumentation/hbase/hbase-client-2.0.0/metadata.yaml
+  aa06ae3c5227b5af 1-7
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/HbaseInstrumentationModule.java
+  aa06ae3c5227b5af 1-39
+instrumentation/hbase/hbase-common/javaagent/build.gradle.kts
+  aa06ae3c5227b5af 1-8
+instrumentation/hbase/hbase-shaded-client-2.0.0-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/HbaseShadedClient200Test.java
+  aa06ae3c5227b5af 1-164,166-183,185-206,208-228,230-251,253-270,272-292,294-315,317-356,358-375,377-389,391-404,406-419,421-438,440-457,459-489,491-557
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/HbaseAttributesGetter.java
+  aa06ae3c5227b5af 1-68
+instrumentation/hbase/hbase-shaded-client-2.0.0-testing/build.gradle.kts
+  aa06ae3c5227b5af 1-24
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/IpcCallInstrumentation.java
+  aa06ae3c5227b5af 1-53
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/RpcConnectionInstrumentation.java
+  aa06ae3c5227b5af 1-44
+instrumentation/hbase/hbase-client-2.0.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0_0/HbaseClient200Test.java
+  aa06ae3c5227b5af 1-164,166-183,185-206,208-228,230-251,253-270,272-292,294-315,317-356,358-375,377-389,391-404,406-419,421-438,440-457,459-489,491-557
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/HbaseRequest.java
+  aa06ae3c5227b5af 1-37
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/RequestAndContext.java
+  aa06ae3c5227b5af 1-21
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/CallMethodHelper.java
+  aa06ae3c5227b5af 1-53
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/HbaseInstrumenterFactory.java
+  aa06ae3c5227b5af 1-31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.2",
+  "base_commit_sha": "750e307f2783d859bb56cd265908312b4f4f663c",
+  "prompts": {
+    "784af66ab1401630": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d8bb1-b704-72b3-a489-ff386c0362a7",
+        "model": "unknown"
+      },
+      "human_author": "yaoyinglong",
+      "messages": [],
+      "total_additions": 1499,
+      "total_deletions": 0,
+      "accepted_lines": 1499,
+      "overriden_lines": 0
+    },
+    "aa06ae3c5227b5af": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019dba31-7b3e-7163-bf9a-948a7a1a3e36",
+        "model": "gpt-5.4"
+      },
+      "human_author": "yaoyinglong",
+      "messages": [],
+      "total_additions": 7386,
+      "total_deletions": 50,
+      "accepted_lines": 3181,
+      "overriden_lines": 133
+    }
+  }
+}
