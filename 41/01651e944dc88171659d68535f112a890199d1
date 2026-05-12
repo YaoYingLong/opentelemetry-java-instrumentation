@@ -1,0 +1,32 @@
+.github/config/latest-dep-versions.json
+  s_160fe36f111605::t_a9075a02f3ef43 286-289
+instrumentation/hbase/hbase-shaded-client-2.0.0-testing/build.gradle.kts
+  s_160fe36f111605::t_8b132efe3a4e7a 21-25
+  s_160fe36f111605::t_a9075a02f3ef43 5-9,15
+instrumentation/hbase/hbase-common/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_160fe36f111605::t_a9075a02f3ef43 142-149,224,248
+  s_160fe36f111605::t_48b6d2e6b3f5c7 469-472,483-484
+instrumentation/hbase/hbase-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/common/CallMethodHelper.java
+  s_160fe36f111605::t_a9075a02f3ef43 51-52
+instrumentation/hbase/hbase-client-2.0.0/javaagent/build.gradle.kts
+  s_160fe36f111605::t_a9075a02f3ef43 5-9,24
+  s_160fe36f111605::t_8b132efe3a4e7a 39-41
+instrumentation/hbase/hbase-client-2.0.0/metadata.yaml
+  s_160fe36f111605::t_a9075a02f3ef43 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "4101651e944dc88171659d68535f112a890199d1",
+  "prompts": {},
+  "sessions": {
+    "s_160fe36f111605": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e1b1a-b3c7-78a1-a12d-a5d4b5872fc9",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
