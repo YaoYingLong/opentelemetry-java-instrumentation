@@ -1,0 +1,44 @@
+instrumentation/redisson/redisson-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/v3_0/ConnectionManagerConnectionFutureInstrumentation.java
+  s_cdefdb859425bc::t_45bf34d9e70e0a 1-59
+instrumentation/redisson/redisson-3.17/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/v3_17/RedisExecutorConnectionFutureInstrumentation.java
+  s_cdefdb859425bc::t_45bf34d9e70e0a 1-46
+instrumentation/redisson/redisson-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/v3_0/RedissonInstrumentationModule.java
+  s_cdefdb859425bc::t_45bf34d9e70e0a 33-36
+instrumentation/redisson/redisson-3.17/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/v3_17/RedissonInstrumentationModule.java
+  s_cdefdb859425bc::t_45bf34d9e70e0a 32-35
+instrumentation/redisson/redisson-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/v3_0/ContextPropagatingRFuture.java
+  s_cdefdb859425bc::t_45549f5e29d466 62,78,96
+  s_cdefdb859425bc::t_414fd8fdd7fa5a 139-142
+  s_cdefdb859425bc::t_3f1fa8d0a0e92b 1-61,63-77,79-95,97-138,143-178
+instrumentation/redisson/redisson-common-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/common/v3_0/ContextPropagatingCompletableFuture.java
+  s_cdefdb859425bc::t_3f1fa8d0a0e92b 1-66
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "0239196c9eebb0dbe5373e70db0f784982dadb35",
+  "prompts": {
+    "7861a551b35c9c6f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019dd6e8-b45b-7691-8c23-e5ada08dc914",
+        "model": "unknown"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>",
+      "total_additions": 0,
+      "total_deletions": 0,
+      "accepted_lines": 0,
+      "overriden_lines": 0
+    }
+  },
+  "sessions": {
+    "s_cdefdb859425bc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e1a58-5a25-7a61-aeb2-50ab2385a5f1",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
