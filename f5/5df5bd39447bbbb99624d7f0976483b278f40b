@@ -1,0 +1,23 @@
+instrumentation/redisson/redisson-common-3.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/AbstractRedissonClientTest.java
+  s_6db998bb5fbe7c::t_10b4b4a92f7d77 50,102,120,122-124
+  s_6db998bb5fbe7c::t_80c4d2168c4ba4 119
+instrumentation/redisson/redisson-common-3.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/AbstractRedissonAsyncClientTest.java
+  s_6db998bb5fbe7c::t_6217c281b0062d 105
+  s_6db998bb5fbe7c::t_859a87072367d8 46,95,106-109
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.4",
+  "base_commit_sha": "f55df5bd39447bbbb99624d7f0976483b278f40b",
+  "prompts": {},
+  "sessions": {
+    "s_6db998bb5fbe7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e1f34-57a0-7040-b8cd-2cc362cfe687",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
