@@ -1,0 +1,37 @@
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseInstrumentationModule.java
+  s_6c10d47e57249d::t_ae5fc867b1021e 27
+instrumentation/hbase/hbase-common/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_6c10d47e57249d::t_ae5fc867b1021e 91
+  s_c73a4bce9b1c81::t_a5ce746f9aed81 16-18,39,50,70,82,127-129,131,172,175,216,297-298,306,311-313,326,332,334,336,338-343,347-349
+  s_c73a4bce9b1c81::t_994ded156ccba2 15,344-346
+  s_c73a4bce9b1c81::t_7ce25760cb73b1 130
+  s_6c10d47e57249d::t_c342bcd7da307a 304,328,333
+  s_6c10d47e57249d::t_af854a872e4fd3 29,105-106,299-303,305,307-310,314-325,327,329,331,335,337,350-364
+  s_c73a4bce9b1c81::t_81b9f050189476 330
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseSingletons.java
+  s_6c10d47e57249d::t_ae5fc867b1021e 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "2e9cd22ec4932b689c426a0d274cac5bafeff16f",
+  "prompts": {},
+  "sessions": {
+    "s_6c10d47e57249d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e4a4e-02d8-7f00-86cf-9b549d0b5acb",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_c73a4bce9b1c81": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e49fa-4cc9-7c73-86ee-42cae04a4a7f",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
