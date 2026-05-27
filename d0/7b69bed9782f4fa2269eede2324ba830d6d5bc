@@ -1,0 +1,19 @@
+instrumentation/hbase/hbase-client-2.0/javaagent/build.gradle.kts
+  s_d4a79761a59421::t_ed8017399a0a01 21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "d07b69bed9782f4fa2269eede2324ba830d6d5bc",
+  "prompts": {},
+  "sessions": {
+    "s_d4a79761a59421": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "025d67f1-a663-42d9-98cc-035e95e45687",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
