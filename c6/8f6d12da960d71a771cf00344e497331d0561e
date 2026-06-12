@@ -1,0 +1,19 @@
+instrumentation/thrift-0.13/testing/src/main/java/io/opentelemetry/instrumentation/thrift/v0_13/CustomAsyncHandler.java
+  s_a1e19370856593::t_29f2f5dc0af5c0 55,74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "c68f6d12da960d71a771cf00344e497331d0561e",
+  "prompts": {},
+  "sessions": {
+    "s_a1e19370856593": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebb11-a0e3-7960-9e76-ee448d31ada4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
