@@ -1,0 +1,31 @@
+instrumentation/thrift-0.13/testing/src/main/java/io/opentelemetry/instrumentation/thrift/v0_13/AbstractThriftTest.java
+  s_1099ae75af9dda::t_d55d3481f2e3c4 301-303,306-307,316-317,321-328,331
+instrumentation/thrift-0.13/testing/src/main/java/io/opentelemetry/instrumentation/thrift/v0_13/CustomAsyncHandler.java
+  s_a1e19370856593::t_29f2f5dc0af5c0 55-74
+instrumentation/thrift-0.13/library/src/main/java/io/opentelemetry/instrumentation/thrift/v0_13/internal/ServerInProtocolDecorator.java
+  s_1099ae75af9dda::t_6d6c15fa7cc575 138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.6",
+  "base_commit_sha": "633eaec13a5ca886a05361bd79654b46709c42ab",
+  "prompts": {},
+  "sessions": {
+    "s_1099ae75af9dda": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebb18-e8b3-7210-8792-0a97713c2d18",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_a1e19370856593": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebb11-a0e3-7960-9e76-ee448d31ada4",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
