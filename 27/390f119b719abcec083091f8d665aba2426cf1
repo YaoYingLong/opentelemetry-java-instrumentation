@@ -1,0 +1,27 @@
+instrumentation/lettuce/lettuce-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceReactiveClientTest.java
+  s_881d3d80c19e19::t_b9ec1efef69c41 280-284,312-317,346-352
+instrumentation/lettuce/lettuce-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceReactiveCommandsInstrumentation.java
+  s_881d3d80c19e19::t_73b9ba3fb0562d 10,12,50,85
+instrumentation/lettuce/lettuce-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceSingletons.java
+  s_881d3d80c19e19::t_d523479ac6d180 10,26,37-42,84-106
+instrumentation/lettuce/lettuce-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceAsyncCommandInstrumentation.java
+  s_881d3d80c19e19::t_203e22131d48a4 9-10,49,59
+instrumentation/lettuce/lettuce-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceReactiveCommandInstrumentation.java
+  s_881d3d80c19e19::t_61ded9666ab682 9-11,62,76,81
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.10",
+  "base_commit_sha": "27390f119b719abcec083091f8d665aba2426cf1",
+  "prompts": {},
+  "sessions": {
+    "s_881d3d80c19e19": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ef8bd-1725-7011-a30d-50cb438d5bd3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
