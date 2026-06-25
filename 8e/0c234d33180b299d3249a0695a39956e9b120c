@@ -1,0 +1,59 @@
+instrumentation/commons-pool2-2.0/library/build.gradle.kts
+  s_cf3351d543797c::t_0c4f5571b885ed 1-23
+instrumentation/commons-pool2-2.0/testing/src/main/java/io/opentelemetry/instrumentation/commonspool2/AbstractCommonsPool2InstrumentationTest.java
+  s_cf3351d543797c::t_0c4f5571b885ed 1-140,142-153
+  s_cf3351d543797c::t_843076d38e11bd 141
+.github/config/latest-dep-versions.json
+  s_cf3351d543797c::t_9beebfd83f8269 283
+instrumentation/commons-pool2-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/CommonsPool2InstrumentationTest.java
+  s_cf3351d543797c::t_0c4f5571b885ed 1-36
+instrumentation/commons-pool2-2.0/library/src/main/java/io/opentelemetry/instrumentation/commonspool2/v2_0/CommonsPool2Telemetry.java
+  s_cf3351d543797c::t_d8e794beb9f6fe 16-18
+  s_cf3351d543797c::t_2902b0e310e92f 1-15,19-46
+docs/supported-libraries.md
+  s_cf3351d543797c::t_b0398488e461e6 31
+instrumentation/commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/GenericObjectPoolInstrumentation.java
+  s_cf3351d543797c::t_2902b0e310e92f 1-50
+instrumentation/commons-pool2-2.0/javaagent/README.md
+  s_cf3351d543797c::t_2902b0e310e92f 1-9
+instrumentation/commons-pool2-2.0/javaagent/build.gradle.kts
+  s_cf3351d543797c::t_0c4f5571b885ed 1-38
+instrumentation/commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/CommonsPool2Singletons.java
+  s_cf3351d543797c::t_2902b0e310e92f 1-21
+instrumentation/commons-pool2-2.0/metadata.yaml
+  s_cf3351d543797c::t_2902b0e310e92f 1-18
+instrumentation/commons-pool2-2.0/library/README.md
+  s_cf3351d543797c::t_2902b0e310e92f 1-47
+instrumentation/commons-pool2-2.0/testing/build.gradle.kts
+  s_cf3351d543797c::t_0c4f5571b885ed 1-9
+instrumentation/commons-pool2-2.0/library/src/main/java/io/opentelemetry/instrumentation/commonspool2/v2_0/ConnectionPoolMetrics.java
+  s_cf3351d543797c::t_8f638b3f82d07f 20-21
+  s_cf3351d543797c::t_2902b0e310e92f 1-19,22-183
+instrumentation/commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/PoolNameExtractor.java
+  s_cf3351d543797c::t_2902b0e310e92f 1-24
+instrumentation/commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/GenericKeyedObjectPoolInstrumentation.java
+  s_cf3351d543797c::t_2902b0e310e92f 1-50
+settings.gradle.kts
+  s_cf3351d543797c::t_0c4f5571b885ed 253-255
+instrumentation/commons-pool2-2.0/library/src/test/java/io/opentelemetry/instrumentation/commonspool2/v2_0/CommonsPool2InstrumentationTest.java
+  s_cf3351d543797c::t_0c4f5571b885ed 1-52
+instrumentation/commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/v2_0/CommonsPool2InstrumentationModule.java
+  s_cf3351d543797c::t_2902b0e310e92f 1-22,25-26
+  s_cf3351d543797c::t_8aef89af530f57 23-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "8e0c234d33180b299d3249a0695a39956e9b120c",
+  "prompts": {},
+  "sessions": {
+    "s_cf3351d543797c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efe1d-1272-73b0-8774-313917338f27",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
