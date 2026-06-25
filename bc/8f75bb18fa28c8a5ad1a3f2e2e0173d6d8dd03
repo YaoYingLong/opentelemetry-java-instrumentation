@@ -1,0 +1,19 @@
+instrumentation/lettuce/lettuce-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceReactiveClientTest.java
+  s_c126998e6c9464::t_049e3f89854272 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "bc8f75bb18fa28c8a5ad1a3f2e2e0173d6d8dd03",
+  "prompts": {},
+  "sessions": {
+    "s_c126998e6c9464": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efcf1-8e53-7230-a187-f0154c6d43ff",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
