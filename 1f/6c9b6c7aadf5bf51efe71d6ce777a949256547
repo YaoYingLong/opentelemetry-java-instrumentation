@@ -1,0 +1,22 @@
+instrumentation/lettuce/lettuce-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceReactiveCommandDispatcherInstrumentation.java
+  s_1609ab303b757b::t_16720ec77cba57 64,70
+  s_1609ab303b757b::t_eb29c04dcdcfee 1-63,65-69,71-82,85-91,94-97,100-109
+  s_1609ab303b757b::t_feeef39cb2d1f4 83-84
+  s_1609ab303b757b::t_c04ad8477fb40e 92-93,98-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "1f6c9b6c7aadf5bf51efe71d6ce777a949256547",
+  "prompts": {},
+  "sessions": {
+    "s_1609ab303b757b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ef484-9c2c-76f2-b732-df2c327d3fd7",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
