@@ -1,0 +1,21 @@
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceAsyncClientTest.java
+  s_23d53dcb4f605d::t_f6b17b9278c534 10,15,221-226
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceSyncClientTest.java
+  s_23d53dcb4f605d::t_f6b17b9278c534 321-326
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "70ce08c6002c53e8f13cac34da9f10a22457db02",
+  "prompts": {},
+  "sessions": {
+    "s_23d53dcb4f605d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efecb-c98d-7962-b378-69ac2a0c06ee",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
