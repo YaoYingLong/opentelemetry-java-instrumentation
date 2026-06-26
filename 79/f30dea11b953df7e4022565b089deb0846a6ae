@@ -1,0 +1,88 @@
+docs/instrumentation-list.yaml
+  s_7778b7669a263b::t_aca03077bd449d 5763-5776,5785
+instrumentation/hbase/hbase-client-common/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_a009474ca60ecd::t_b08d3119cb5125 104,123-126,191,321,478-479,483,485-486,495,499,502
+  s_a009474ca60ecd::t_d0cf58f212cf01 64,115-122,183,243,489-494,496-497,534
+.fossa.yml
+  s_7778b7669a263b::t_aca03077bd449d 514-519
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_9f9ac4e408fe53::t_7a7098075dac89 9-23,31-52
+  s_91d1ac7c125f02::t_dda325388210c2 30
+.github/config/latest-dep-versions.json
+  s_7778b7669a263b::t_aca03077bd449d 301,304
+instrumentation/hbase/hbase-client-1.4/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseShadedClient14Test.java
+  s_a009474ca60ecd::t_c3286c0f281df1 41-43,46
+  s_a009474ca60ecd::t_a7d1bd1d163b38 11-40,44,49
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseInstrumentationModule.java
+  s_91d1ac7c125f02::t_dda325388210c2 53
+  s_7e32f1fe19d113::t_74d6aa364bcca8 54
+instrumentation/hbase/hbase-client-1.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseClient14Test.java
+  s_a009474ca60ecd::t_a7d1bd1d163b38 11-14,19,28-40,44,49
+  s_a009474ca60ecd::t_c3286c0f281df1 41-43,46
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/AbstractRpcClientInstrumentation.java
+  s_a009474ca60ecd::t_480cacb2619359 8-10,20-21
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/RpcConnectionInstrumentation.java
+  s_a009474ca60ecd::t_480cacb2619359 10,16
+instrumentation/hbase/hbase-client-2.0/javaagent/build.gradle.kts
+  s_9f9ac4e408fe53::t_7a7098075dac89 27,38
+  s_a009474ca60ecd::t_480cacb2619359 20-21,28
+settings.gradle.kts
+  s_9f9ac4e408fe53::t_7a7098075dac89 309-312
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/IpcCallInstrumentation.java
+  s_a009474ca60ecd::t_480cacb2619359 14
+instrumentation/hbase/hbase-client-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/RegionServerCallableInstrumentation.java
+  s_a009474ca60ecd::t_480cacb2619359 8-9
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_7e32f1fe19d113::t_74d6aa364bcca8 39-40,51-53
+  s_91d1ac7c125f02::t_552a144f27c237 63
+  s_91d1ac7c125f02::t_bda6bcf2205065 68-95
+  s_91d1ac7c125f02::t_dda325388210c2 8-38,41-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "79f30dea11b953df7e4022565b089deb0846a6ae",
+  "prompts": {},
+  "sessions": {
+    "s_7778b7669a263b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f03d4-ce00-79e2-8ed0-e913d45caa77",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_7e32f1fe19d113": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0364-575c-74c3-9a73-dc8c58bf9cc0",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_91d1ac7c125f02": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f034d-2aee-79f3-a400-1d77fcdbcaa4",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_9f9ac4e408fe53": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0318-1e3c-7fe3-8d0f-fa99f8915492",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_a009474ca60ecd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f02c2-1f16-77d3-bb39-0250f12d3b28",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
