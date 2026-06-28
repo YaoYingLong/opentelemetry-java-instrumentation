@@ -1,0 +1,63 @@
+.github/config/latest-dep-versions.json
+  s_cf3351d543797c::t_9beebfd83f8269 283
+instrumentation/apache-commons-pool2/javaagent/build.gradle.kts
+  s_3d5ee73e1a04c7::t_b54fc3104d2243 1-38
+docs/supported-libraries.md
+  s_3d5ee73e1a04c7::t_b54fc3104d2243 31
+settings.gradle.kts
+  s_3d5ee73e1a04c7::t_b54fc3104d2243 191-193
+instrumentation/apache-commons-pool2/library/build.gradle.kts
+  s_3d5ee73e1a04c7::t_b54fc3104d2243 1-23
+instrumentation/apache-commons-pool2/library/src/test/java/io/opentelemetry/instrumentation/commonspool2/CommonsPool2InstrumentationTest.java
+  s_cbaa5021b50fbc::t_3aec562a5f63ae 1-51
+instrumentation/apache-commons-pool2/metadata.yaml
+  s_3d5ee73e1a04c7::t_495d893b078148 1-18
+instrumentation/apache-commons-pool2/testing/build.gradle.kts
+  s_3d5ee73e1a04c7::t_681a1cc5604900 1-9
+instrumentation/apache-commons-pool2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/BaseGenericObjectPoolInstrumentation.java
+  s_3a6be25a2b6d57::t_f7128096433e43 1-76
+instrumentation/apache-commons-pool2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/commonspool2/CommonsPool2Singletons.java
+  s_cbaa5021b50fbc::t_37674c6e3ebdfc 1-21
+instrumentation/apache-commons-pool2/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/commonspool2/CommonsPool2InstrumentationTest.java
+  s_3a6be25a2b6d57::t_1d9a1d2435e7cb 1-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "969a4531fdcf0b794f1bb3edf570a97ffa7e47ae",
+  "prompts": {},
+  "sessions": {
+    "s_3a6be25a2b6d57": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0dc2-dac6-76c0-b9d8-47ba92b7f497",
+        "model": "unknown"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_3d5ee73e1a04c7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0e4f-7ee9-78f3-a5cc-82b135ad8dc1",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_cbaa5021b50fbc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0d77-fafc-7333-b8c9-ab3260b0a54c",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_cf3351d543797c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efe1d-1272-73b0-8774-313917338f27",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
