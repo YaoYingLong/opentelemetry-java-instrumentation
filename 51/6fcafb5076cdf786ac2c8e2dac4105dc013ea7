@@ -1,0 +1,19 @@
+docs/supported-libraries.md
+  s_1a1ced4b7bb880::t_54d4c18a43f3a1 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "516fcafb5076cdf786ac2c8e2dac4105dc013ea7",
+  "prompts": {},
+  "sessions": {
+    "s_1a1ced4b7bb880": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f116a-1a8a-7c32-8200-c157cbb6a707",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
