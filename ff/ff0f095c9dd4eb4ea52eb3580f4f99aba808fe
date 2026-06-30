@@ -1,0 +1,27 @@
+instrumentation/alibaba-druid-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/alibabadruid/v1_0/DruidDataSourceInstrumentation.java
+  s_cb20462278f6ce::t_8841d298dc12ce 12,17,32-36,49-51,54
+instrumentation/alibaba-druid-1.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/alibabadruid/v1_0/DruidInstrumentationTest.java
+  s_cb20462278f6ce::t_d5f31f138d2752 13,35-50
+instrumentation/alibaba-druid-1.0/library/src/main/java/io/opentelemetry/instrumentation/alibabadruid/v1_0/ConnectionPoolMetrics.java
+  s_cb20462278f6ce::t_6f98bd637b57db 15,22,24,30-34,38-80,82-98
+instrumentation/alibaba-druid-1.0/library/src/test/java/io/opentelemetry/instrumentation/alibabadruid/v1_0/DruidInstrumentationTest.java
+  s_cb20462278f6ce::t_d091c5581eb6bd 35-37
+instrumentation/alibaba-druid-1.0/testing/src/main/java/io/opentelemetry/instrumentation/alibabadruid/AbstractDruidInstrumentationTest.java
+  s_cb20462278f6ce::t_1b65ba1714aa36 8,13,18,25-29,46,48-49,51-103,105-109,111-141,156-178
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.4",
+  "base_commit_sha": "ffff0f095c9dd4eb4ea52eb3580f4f99aba808fe",
+  "prompts": {},
+  "sessions": {
+    "s_cb20462278f6ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f185c-bd69-76c1-b50b-9177e4e15a7c",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
