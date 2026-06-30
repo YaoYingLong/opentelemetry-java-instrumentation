@@ -1,0 +1,27 @@
+instrumentation/apache-commons-pool2-2.0/library/src/main/java/io/opentelemetry/instrumentation/apachecommonspool2/v2_0/CommonsPool2Metrics.java
+  s_cadce65884f91b::t_0a8b7c1e06c442 13,25-27,69-82,85-92,134-150
+instrumentation/apache-commons-pool2-2.0/testing/src/main/java/io/opentelemetry/instrumentation/apachecommonspool2/AbstractCommonsPool2InstrumentationTest.java
+  s_cadce65884f91b::t_cc11b57b0ff5e7 17,19-21,228-239,249
+  s_cadce65884f91b::t_c39288a0e6a3b8 60-61,64-66,68-92,95-111,113-130,188,227,240-248,250
+  s_cadce65884f91b::t_2df5641969b842 62-63,67,93-94,112
+  s_cadce65884f91b::t_f20aa91c3198a3 251
+instrumentation/apache-commons-pool2-2.0/library/src/test/java/io/opentelemetry/instrumentation/apachecommonspool2/v2_0/CommonsPool2InstrumentationTest.java
+  s_cadce65884f91b::t_f48582ee8ccc2d 14,53-91
+  s_cadce65884f91b::t_64ff5b29bed95e 92
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.4",
+  "base_commit_sha": "fa7c17a7fd0ac3d76297d284b6330fe7ad4d2d59",
+  "prompts": {},
+  "sessions": {
+    "s_cadce65884f91b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f1687-512b-79c0-8c57-c1552f62efde",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
