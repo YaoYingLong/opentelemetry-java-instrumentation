@@ -1,0 +1,22 @@
+instrumentation/apache-commons-pool2-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachecommonspool2/v2_0/CommonsPool2InstrumentationTest.java
+  s_d66b2f15f89fef::t_16f622e276c60c 13,37-44,46-62,64-72
+  s_d66b2f15f89fef::t_29af94939e619a 45,63
+instrumentation/apache-commons-pool2-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachecommonspool2/v2_0/BaseGenericObjectPoolInstrumentation.java
+  s_d66b2f15f89fef::t_14890c0dc08a8d 35-37,48-49,65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.4",
+  "base_commit_sha": "c56578c5562982d07cd2f61430ad51fae43a621b",
+  "prompts": {},
+  "sessions": {
+    "s_d66b2f15f89fef": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f17ed-d298-7fa0-9647-d1a98593141c",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
