@@ -1,0 +1,19 @@
+instrumentation/apache-commons-pool-2.0/library/README.md
+  s_a377fb3c8f0c3c::t_0fea1813e958f7 45-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "1825232b76302d077134e9f1b33ab81c73e7272b",
+  "prompts": {},
+  "sessions": {
+    "s_a377fb3c8f0c3c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f27e4-91f4-7b61-a304-c52be4a6e9f6",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
