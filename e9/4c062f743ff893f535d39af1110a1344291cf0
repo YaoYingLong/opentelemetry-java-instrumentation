@@ -1,0 +1,42 @@
+.fossa.yml
+  s_6de916275a6d6f::t_8d99503edd8b62 522
+.github/scripts/instrumentations.sh
+  s_6de916275a6d6f::t_8d99503edd8b62 115-122
+instrumentation/hbase/hbase-client-2.0/javaagent/build.gradle.kts
+  s_6de916275a6d6f::t_8d99503edd8b62 20,27-28,38
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseSingletons.java
+  s_6a66429818215d::t_f834977c749010 11-12,19-30,36-46
+  s_6a66429818215d::t_706497b90edf2d 47-48
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_6a66429818215d::t_f834977c749010 13,69-73
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_6de916275a6d6f::t_8d99503edd8b62 5-9,20,26-27,32-37,40,43
+settings.gradle.kts
+  s_6de916275a6d6f::t_8d99503edd8b62 311-312
+instrumentation/hbase/hbase-client-common-1.4/testing/build.gradle.kts
+  s_6de916275a6d6f::t_8d99503edd8b62 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "e94c062f743ff893f535d39af1110a1344291cf0",
+  "prompts": {},
+  "sessions": {
+    "s_6a66429818215d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f27cd-5118-75d1-b195-122c6b9c7a67",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6de916275a6d6f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f274c-d464-77c0-9a3c-1391167c50b0",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
