@@ -1,0 +1,27 @@
+instrumentation/hbase/hbase-client-common-1.4/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_363904faededfa::t_b93575e2f02ae3 100,102,137-144
+  s_363904faededfa::t_72007d002d072c 211,498-499
+  s_363904faededfa::t_bf72d6760c2cdc 128-136,145-146,500,504,506-507,510-512,515
+instrumentation/hbase/hbase-client-2.0/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseShadedClient20Test.java
+  s_363904faededfa::t_bf72d6760c2cdc 12,16-17,20,50-58
+  s_363904faededfa::t_89eb78689b846c 59-69
+instrumentation/hbase/hbase-client-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseClient20Test.java
+  s_363904faededfa::t_da7a7d86f25748 59-69
+  s_363904faededfa::t_bf72d6760c2cdc 12,16-17,20,50-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.8",
+  "base_commit_sha": "2b0e6c8b5243e20440f90ea948608f9fbfcf4629",
+  "prompts": {},
+  "sessions": {
+    "s_363904faededfa": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f27f0-bd07-7a03-bb57-3f63850ac264",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
