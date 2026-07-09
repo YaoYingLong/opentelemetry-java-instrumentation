@@ -1,0 +1,63 @@
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonMetricsInstrumentationModule.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-34
+settings.gradle.kts
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 594
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedisClientInstrumentation.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-47
+instrumentation/redisson/redisson-metrics-2.3/metadata.yaml
+  s_6a5993ac7961e9::t_a199e9bca09cfa 1-16
+.github/config/latest-dep-versions.json
+  s_7a2010ef35b565::t_5305206957df02 457
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/AsyncSemaphoreAccessor.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-84
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetrics.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-13,15-27,29-42,50-52,56-97,102-124
+  s_6d143378d498b1::t_fccbe1feec88a6 14,28,43-49,53-55,98-101
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/ClientConnectionsEntryInstrumentation.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-73
+instrumentation/redisson/redisson-metrics-2.3/javaagent/build.gradle.kts
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-41
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetricsTest.java
+  s_c60e5ca2de2955::t_3a8cc9953cc51b 1-142,144,146-155,160-168
+  s_6d143378d498b1::t_e7e25bda90398d 143,145,156-159
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "650a7d5fb5e191e93e3d329ed60ae1f071035309",
+  "prompts": {},
+  "sessions": {
+    "s_6a5993ac7961e9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4152-7a9b-7e61-8f3b-03907a2af2dc",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6d143378d498b1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4521-403e-7c62-9d92-92529a7228f0",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_7a2010ef35b565": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f41dc-7e38-7791-b488-d604c3f7d43f",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_c60e5ca2de2955": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4504-f2a4-7a93-85b5-95b58089839b",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    }
+  }
+}
