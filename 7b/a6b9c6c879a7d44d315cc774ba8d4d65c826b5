@@ -1,0 +1,36 @@
+instrumentation/apache-dbcp-2.0/testing/src/main/java/io/opentelemetry/instrumentation/apachedbcp/AbstractApacheDbcpInstrumentationTest.java
+  s_845bc16cb52037::t_8cf4352d2f427f 9,98
+  s_845bc16cb52037::t_d168fb2a074d2e 8,16,21-22,32-34,48-64,72-73,75,83,85-97,99,101
+instrumentation/apache-dbcp-2.0/library/src/main/java/io/opentelemetry/instrumentation/apachedbcp/v2_0/DataSourceMetrics.java
+  s_845bc16cb52037::t_910e1cb9e20ba3 15,18-19,21,29-32
+  s_845bc16cb52037::t_1d51b550f91edb 33
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/BasicDataSourceInstrumentation.java
+  s_845bc16cb52037::t_091d9f85e9248c 11,14,17,19,24,35-36,39-40,44-45,47-61,63-65,72-73
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/org/apache/commons/dbcp2/OpenTelemetryBasicDataSourceUtil.java
+  s_845bc16cb52037::t_63d704434775a0 1-20
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationModule.java
+  s_845bc16cb52037::t_e15be331697a0f 22-25
+  s_845bc16cb52037::t_17bd2603458bca 21
+instrumentation/apache-dbcp-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationTest.java
+  s_845bc16cb52037::t_f22b3ed738a10f 8-9,14,17,31-32,39-131
+instrumentation/apache-dbcp-2.0/javaagent/README.md
+  s_845bc16cb52037::t_4473d57154370b 6-8
+instrumentation/apache-dbcp-2.0/metadata.yaml
+  s_845bc16cb52037::t_4473d57154370b 5-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7ba6b9c6c879a7d44d315cc774ba8d4d65c826b5",
+  "prompts": {},
+  "sessions": {
+    "s_845bc16cb52037": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f46a7-b2b8-7f32-a8ef-944a3318b373",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
