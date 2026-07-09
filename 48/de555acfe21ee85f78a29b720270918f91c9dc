@@ -1,0 +1,64 @@
+instrumentation/redisson/redisson-metrics-3.0/javaagent/build.gradle.kts
+  s_c3c2018e06ff81::t_44eff5a41f9e79 9,17
+  s_6a5993ac7961e9::t_a9b8fb00064525 1-8,14-16,18-41
+  s_c3c2018e06ff81::t_f6e264479e54df 10
+  s_c3c2018e06ff81::t_bae9581de8cd79 11
+  s_6a5993ac7961e9::t_495ee325e56cab 13
+  s_7a2010ef35b565::t_c9fcbcaf41c6f8 12
+instrumentation/redisson/redisson-metrics-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_0/RedissonMetricsInstrumentationModule.java
+  s_c3c2018e06ff81::t_be028a4a6191e5 26-27
+  s_6a5993ac7961e9::t_44cd1ac920faed 1-7,9-14,16-21,28-34
+  s_7a2010ef35b565::t_5b749022f64c73 8,15,22-25
+instrumentation/redisson/redisson-metrics-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_0/RedisClientInstrumentation.java
+  s_6a5993ac7961e9::t_44cd1ac920faed 1-47
+.github/config/latest-dep-versions.json
+  s_7a2010ef35b565::t_5305206957df02 457
+instrumentation/redisson/redisson-metrics-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_0/RedissonConnectionPoolMetrics.java
+  s_c3c2018e06ff81::t_d2f4e447906ca9 9,25-27,71
+  s_6a5993ac7961e9::t_44cd1ac920faed 1-8,10-24,28-70,72-156
+instrumentation/redisson/redisson-metrics-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_0/RedissonConnectionPoolMetricsTest.java
+  s_c3c2018e06ff81::t_69035a12a446af 93,101,141-155
+  s_c3c2018e06ff81::t_7391ecb4e34919 10
+  s_6a5993ac7961e9::t_a9b8fb00064525 1-9,12-39,41-92,94-100,102-140,156-164
+  s_6a5993ac7961e9::t_83d9973b784337 11,40
+settings.gradle.kts
+  s_6a5993ac7961e9::t_a9b8fb00064525 594
+instrumentation/redisson/redisson-metrics-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_0/ClientConnectionsEntryInstrumentation.java
+  s_6a5993ac7961e9::t_44cd1ac920faed 1-57,60-69,71-73
+  s_c3c2018e06ff81::t_f38c5a7b898323 58
+  s_c3c2018e06ff81::t_bb03613d8cc29e 59,70
+instrumentation/redisson/redisson-metrics-3.0/metadata.yaml
+  s_6a5993ac7961e9::t_a9b8fb00064525 1-16
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "48de555acfe21ee85f78a29b720270918f91c9dc",
+  "prompts": {},
+  "sessions": {
+    "s_6a5993ac7961e9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4152-7a9b-7e61-8f3b-03907a2af2dc",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_7a2010ef35b565": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f41dc-7e38-7791-b488-d604c3f7d43f",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_c3c2018e06ff81": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f44b1-ccb2-7be0-bd02-998f2879f71f",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    }
+  }
+}
