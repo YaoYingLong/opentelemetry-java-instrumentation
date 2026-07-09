@@ -1,0 +1,37 @@
+instrumentation/c3p0-0.9/library/src/main/java/io/opentelemetry/instrumentation/c3p0/v0_9/ConnectionPoolMetrics.java
+  s_452dfaf61982b9::t_8192ab1ca8a0f9 36-37,82-83,86-87,93-95
+  s_c90c9bd7ee127b::t_346a61e9c8b6b8 19,29,56,84-85,88-89
+  s_c90c9bd7ee127b::t_bdd0ac0f14d73c 28
+  s_c90c9bd7ee127b::t_65380eee3b2c3e 90-91
+instrumentation/c3p0-0.9/testing/src/main/java/io/opentelemetry/instrumentation/c3p0/AbstractC3p0InstrumentationTest.java
+  s_452dfaf61982b9::t_dc20b593a2f0c6 88
+  s_c90c9bd7ee127b::t_f7d5b95c84d578 43,51-54,79-84,86-87,89-94,96-118,120-121
+  s_c90c9bd7ee127b::t_4c4e88e5179319 95
+  s_452dfaf61982b9::t_501f5182bc825c 24
+instrumentation/c3p0-0.9/library/src/test/java/io/opentelemetry/instrumentation/c3p0/v0_9/C3p0InstrumentationTest.java
+  s_452dfaf61982b9::t_d55a453b603d4c 8-10,12,16-17,19,48-71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "ffbafc540d403722adda0308357d35b0703aa0ce",
+  "prompts": {},
+  "sessions": {
+    "s_452dfaf61982b9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f462d-d04d-79e2-ba4e-b29425c3fa0f",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_c90c9bd7ee127b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f45d2-7875-74f0-bea6-2675aaca8a38",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
