@@ -1,0 +1,19 @@
+docs/supported-libraries.md
+  s_6b202effaf7900::t_521058f119fa8c 20-135,137-176
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "6bd3c16f03c3f11e6808ba8157f6d6d689a2b5e5",
+  "prompts": {},
+  "sessions": {
+    "s_6b202effaf7900": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4584-4b9d-7f12-8f39-10fb2708f550",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
