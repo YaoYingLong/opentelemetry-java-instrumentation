@@ -1,0 +1,19 @@
+instrumentation/apache-dbcp-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationTest.java
+  s_d71051ed79b53c::t_619c11190029f9 91-92,100-101,115-116,124-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b56b691cc3e7804e0612f8abee5cfe9eed64206a",
+  "prompts": {},
+  "sessions": {
+    "s_d71051ed79b53c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f49d0-5703-7502-bbe7-778401a363ff",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
