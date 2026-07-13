@@ -1,0 +1,68 @@
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_1c393bd0d33972::t_0a07204f64daa2 8,31,67,70-78,81,86
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_1c393bd0d33972::t_0a07204f64daa2 24-26
+instrumentation/hbase/hbase-client-1.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseClient14Test.java
+  s_a009474ca60ecd::t_a7d1bd1d163b38 52,57,62
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 8-9,17,48-51,54,59
+  s_da94890058bbb5::t_bc32496f0de879 53,55-56,58,60-61
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseBatchMetadata.java
+  s_1c393bd0d33972::t_0a07204f64daa2 1-63
+instrumentation/hbase/hbase-client-common-1.4/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_363904faededfa::t_bf72d6760c2cdc 129,146
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 126-128,262
+  s_6639f9fe8b1ee0::t_7c11a023e8e316 263
+instrumentation/hbase/hbase-client-1.4/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseShadedClient14Test.java
+  s_da94890058bbb5::t_c38f6ea67baa88 54-59
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 8-9,17,48-51
+  s_a009474ca60ecd::t_a7d1bd1d163b38 52,62
+  s_da94890058bbb5::t_187794c7e2cd21 53,60-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "afe8731e114b3d17e2be8cc72ccc35ba461b27d8",
+  "prompts": {},
+  "sessions": {
+    "s_1c393bd0d33972": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f595d-af62-77c1-92b9-20e584e7a243",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_363904faededfa": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f27f0-bd07-7a03-bb57-3f63850ac264",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6639f9fe8b1ee0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f5995-aae7-7e20-9d23-b73973f539fe",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a009474ca60ecd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f02c2-1f16-77d3-bb39-0250f12d3b28",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_da94890058bbb5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f59c1-a69c-7cc0-93f7-850944d6bad0",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
