@@ -1,0 +1,47 @@
+instrumentation/hbase/hbase-client-1.4/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseShadedClient14Test.java
+  s_a009474ca60ecd::t_a7d1bd1d163b38 51
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 8-9,47-50
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_1c393bd0d33972::t_0a07204f64daa2 24-26
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseBatchMetadata.java
+  s_1c393bd0d33972::t_0a07204f64daa2 1-63
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_1c393bd0d33972::t_0a07204f64daa2 8,31,67,70-78,81,86
+instrumentation/hbase/hbase-client-common-1.4/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 126-129,262-263
+instrumentation/hbase/hbase-client-1.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseClient14Test.java
+  s_6639f9fe8b1ee0::t_cd829f81b13cc3 8-9,47-50
+  s_a009474ca60ecd::t_a7d1bd1d163b38 51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "d232834bca7e69829b61fd21cd9987041e842a7f",
+  "prompts": {},
+  "sessions": {
+    "s_1c393bd0d33972": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f595d-af62-77c1-92b9-20e584e7a243",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6639f9fe8b1ee0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f5995-aae7-7e20-9d23-b73973f539fe",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a009474ca60ecd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f02c2-1f16-77d3-bb39-0250f12d3b28",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
