@@ -1,0 +1,23 @@
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_1c393bd0d33972::t_0a07204f64daa2 8,31,67,70-78,81,86
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_1c393bd0d33972::t_0a07204f64daa2 24-26
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseBatchMetadata.java
+  s_1c393bd0d33972::t_0a07204f64daa2 1-63
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "1ed3849899dee29f5e67cee5d6ddbf14981bfe98",
+  "prompts": {},
+  "sessions": {
+    "s_1c393bd0d33972": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f595d-af62-77c1-92b9-20e584e7a243",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
