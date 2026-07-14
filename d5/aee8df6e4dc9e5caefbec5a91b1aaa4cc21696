@@ -1,0 +1,25 @@
+instrumentation/apache-dbcp-2.0/metadata.yaml
+  s_fa2f2fa58f8847::t_22ce3b15a0ebd2 6
+  s_fa2f2fa58f8847::t_ca704646715bae 7
+  s_fa2f2fa58f8847::t_dfdb1b88d67b96 8
+instrumentation/apache-dbcp-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationTest.java
+  s_fa2f2fa58f8847::t_b1758a4c568c19 32
+  s_fa2f2fa58f8847::t_852a5e4ee61bd3 60-63
+  s_fa2f2fa58f8847::t_4c09a65c3b8165 64-80,108
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "d5aee8df6e4dc9e5caefbec5a91b1aaa4cc21696",
+  "prompts": {},
+  "sessions": {
+    "s_fa2f2fa58f8847": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f5a76-98be-7a90-a02a-81f5220e0a67",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
