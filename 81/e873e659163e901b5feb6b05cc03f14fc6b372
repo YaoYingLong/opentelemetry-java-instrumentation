@@ -1,0 +1,29 @@
+instrumentation/hbase/hbase-client-1.4/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseShadedClient14Test.java
+  s_788e8a20b21f7e::t_6a299e424bdc06 41
+instrumentation/hbase/hbase-client-1.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseClient14Test.java
+  s_788e8a20b21f7e::t_6a299e424bdc06 41
+instrumentation/hbase/hbase-client-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseClient20Test.java
+  s_788e8a20b21f7e::t_6a299e424bdc06 48
+  s_788e8a20b21f7e::t_1f124764eedc9a 52-53
+  s_788e8a20b21f7e::t_a44f12867607e1 49-51
+instrumentation/hbase/hbase-client-2.0/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v2_0/HbaseShadedClient20Test.java
+  s_788e8a20b21f7e::t_1f124764eedc9a 52-53
+  s_788e8a20b21f7e::t_6a299e424bdc06 48
+  s_788e8a20b21f7e::t_5ff7916be3c034 49-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "81e873e659163e901b5feb6b05cc03f14fc6b372",
+  "prompts": {},
+  "sessions": {
+    "s_788e8a20b21f7e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f5fa8-7fa5-7933-a5ce-6382ebcd658d",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
