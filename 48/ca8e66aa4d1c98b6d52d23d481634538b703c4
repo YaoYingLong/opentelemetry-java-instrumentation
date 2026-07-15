@@ -1,0 +1,24 @@
+instrumentation/hbase/hbase-client-2.0/javaagent/build.gradle.kts
+  s_6eaffe2e6f125c::t_a1c896dd232b2b 22
+  s_6eaffe2e6f125c::t_54dcf9eef87367 23
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_6eaffe2e6f125c::t_a1c896dd232b2b 32,45
+.github/config/latest-dep-versions.json
+  s_6eaffe2e6f125c::t_00b261bdd1d24b 301,304
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "48ca8e66aa4d1c98b6d52d23d481634538b703c4",
+  "prompts": {},
+  "sessions": {
+    "s_6eaffe2e6f125c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6445-f6c0-7ea0-8a1c-193e24e3bf14",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
