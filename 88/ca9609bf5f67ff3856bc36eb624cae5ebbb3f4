@@ -1,0 +1,71 @@
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/RetryingCallableInstrumentation.java
+  s_2f79323dd48bb4::t_ebeb391a4df686 1-47
+instrumentation/hbase/hbase-client-common-1.0/javaagent/build.gradle.kts
+  s_8725fabf56d8f2::t_77feb8bfe725fc 6
+instrumentation/hbase/hbase-client-1.4/javaagent/build.gradle.kts
+  s_8725fabf56d8f2::t_77feb8bfe725fc 29,47
+  s_2f79323dd48bb4::t_975f7ac72da509 30
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/AbstractRpcClientInstrumentation.java
+  s_2f79323dd48bb4::t_ebeb391a4df686 1-163
+.fossa.yml
+  s_2f79323dd48bb4::t_975f7ac72da509 516
+  s_2f79323dd48bb4::t_843fa30b2e937b 514-515
+  s_8725fabf56d8f2::t_2662e38212e758 525
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseBatchMetadata.java
+  s_2f79323dd48bb4::t_ebeb391a4df686 1-63
+instrumentation/hbase/hbase-client-1.0/metadata.yaml
+  s_2f79323dd48bb4::t_bf2958c564eb76 1-8
+instrumentation/hbase/hbase-client-2.0/javaagent/build.gradle.kts
+  s_8725fabf56d8f2::t_77feb8bfe725fc 22,27,39
+  s_2f79323dd48bb4::t_975f7ac72da509 28
+instrumentation/hbase/hbase-client-1.0/javaagent/src/shadedClientTest/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseShadedClient10Test.java
+  s_2f79323dd48bb4::t_975f7ac72da509 1-25,27-46,57-73
+  s_2f79323dd48bb4::t_79c645ece7cb96 26
+  s_2f79323dd48bb4::t_306ff8fc0a77db 47-56
+instrumentation/hbase/hbase-client-common-1.0/testing/build.gradle.kts
+  s_8725fabf56d8f2::t_77feb8bfe725fc 8
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseSingletons.java
+  s_2f79323dd48bb4::t_ebeb391a4df686 1-50
+instrumentation/hbase/hbase-client-1.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseClient10Test.java
+  s_2f79323dd48bb4::t_0760293e3dcd3e 50-59
+  s_2f79323dd48bb4::t_bf2958c564eb76 1-49,60-73
+instrumentation/hbase/hbase-client-common-1.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/testing/AbstractHbaseTest.java
+  s_8725fabf56d8f2::t_77feb8bfe725fc 126-133,298,326,337,351-352,385-390
+instrumentation/hbase/hbase-client-1.0/javaagent/build.gradle.kts
+  s_2f79323dd48bb4::t_94ce10dd6dc2fd 39
+  s_2f79323dd48bb4::t_c3f823cfe5c210 46
+  s_8725fabf56d8f2::t_77feb8bfe725fc 20,29,47
+  s_2f79323dd48bb4::t_09dd404d999846 6-7
+  s_2f79323dd48bb4::t_bf2958c564eb76 1-5,8-19,21-28,30-38,40-45,48-87
+settings.gradle.kts
+  s_8725fabf56d8f2::t_77feb8bfe725fc 312-313
+  s_2f79323dd48bb4::t_bf2958c564eb76 309
+.github/scripts/instrumentations.sh
+  s_2f79323dd48bb4::t_975f7ac72da509 117-118
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseInstrumentationModule.java
+  s_2f79323dd48bb4::t_ebeb391a4df686 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "88ca9609bf5f67ff3856bc36eb624cae5ebbb3f4",
+  "prompts": {},
+  "sessions": {
+    "s_2f79323dd48bb4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6998-69db-7e42-9bb1-dac809270f1f",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_8725fabf56d8f2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6a79-ceda-7a11-b216-1ca4e3d500dc",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    }
+  }
+}
