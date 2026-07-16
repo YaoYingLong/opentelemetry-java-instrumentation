@@ -1,0 +1,28 @@
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetrics.java
+  s_74d44fc6fd601d::t_68995622d2816d 51,85,87-89
+  s_74d44fc6fd601d::t_82b0696429efc8 15,37,67,86
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetricsTest.java
+  s_74d44fc6fd601d::t_77c2c5658be9a8 71
+  s_74d44fc6fd601d::t_e443d18d31b03c 8-9,12,120-147
+  s_74d44fc6fd601d::t_4359cc9e9794fb 13
+  s_74d44fc6fd601d::t_bd921bfe565ed0 148
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/ClientConnectionsEntryInstrumentation.java
+  s_74d44fc6fd601d::t_68995622d2816d 16,58-59
+  s_74d44fc6fd601d::t_82b0696429efc8 72
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d4b6bad1ecc6580443f551e04d871533eee24907",
+  "prompts": {},
+  "sessions": {
+    "s_74d44fc6fd601d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f65e3-d375-7ac0-9d93-885a20afca19",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
