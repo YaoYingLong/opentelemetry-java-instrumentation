@@ -1,0 +1,35 @@
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsInstrumentation.java
+  s_080c7176e13903::t_60d0f16dc0a4b4 1-108
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/JvmExecutorMetrics.java
+  s_080c7176e13903::t_7321f9aa88945b 1-146
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/ExecutorsInstrumentationModule.java
+  s_080c7176e13903::t_7321f9aa88945b 33-34
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/ThreadPoolExecutorMetrics.java
+  s_080c7176e13903::t_7321f9aa88945b 1-31,33-42,44-49,51-144,147-249
+  s_080c7176e13903::t_26e248b2abb504 32,43,50,145-146
+instrumentation/executors/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_080c7176e13903::t_26e248b2abb504 237,263-264,309,319-320
+  s_080c7176e13903::t_cdfc294244a664 1-9,13-16,19,23-31,33-37,39-43,53,219-224,239,244,330-342,347-349
+  s_080c7176e13903::t_c8be18ef780e88 45-52
+  s_080c7176e13903::t_e51823fa8454e1 10,12,17-18,20-22,32,38,44,54-176,178-181,183-186,188-191,193-218,225-236,238,240-243,245-262,265-305,322-329,343-346
+  s_080c7176e13903::t_89603f7b596e94 11
+  s_080c7176e13903::t_c68852aec64ff9 177,182,187,192,306-308,310-318,321
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_080c7176e13903::t_60d0f16dc0a4b4 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "8b59d7bde493841c778dbbd499b1aa412d89b156",
+  "prompts": {},
+  "sessions": {
+    "s_080c7176e13903": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ef0-e83c-71f0-bfb8-37091b1311de",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
