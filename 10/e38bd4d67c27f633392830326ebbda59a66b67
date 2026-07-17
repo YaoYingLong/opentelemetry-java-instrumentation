@@ -1,0 +1,19 @@
+instrumentation/hbase/hbase-client-1.0/javaagent/build.gradle.kts
+  s_af281e9b00cd44::t_d26804b487fc01 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "10e38bd4d67c27f633392830326ebbda59a66b67",
+  "prompts": {},
+  "sessions": {
+    "s_af281e9b00cd44": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6e90-44a3-7de2-9899-e467fd0d191a",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
