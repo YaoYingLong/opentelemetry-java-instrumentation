@@ -1,0 +1,122 @@
+instrumentation/executors/README.md
+  s_aaa87981afc5d9::t_44445b9af0fec6 7
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/ExecutorsInstrumentationModule.java
+  s_c58c561fd25f8f::t_44085c77888079 14-15
+  s_080c7176e13903::t_7321f9aa88945b 35-36
+instrumentation/executors/metadata.yaml
+  s_aaa87981afc5d9::t_44445b9af0fec6 25-34
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_6b28355610f513::t_14a68619994218 53
+  s_c58c561fd25f8f::t_44085c77888079 1-52,54-65
+instrumentation/executors/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_080c7176e13903::t_89603f7b596e94 11
+  s_33774d6cdc6aa6::t_ccf206899c5af1 190-214,488-503
+  s_6b28355610f513::t_1bd0488eb962bc 315-318,320,327,330
+  s_6b28355610f513::t_d742efe5776581 302-305,310,313,329
+  s_080c7176e13903::t_c8be18ef780e88 50-57
+  s_33774d6cdc6aa6::t_04e6539d9ddd60 235
+  s_33774d6cdc6aa6::t_783eeef83b1235 238
+  s_33774d6cdc6aa6::t_4aaafa876be50a 215-234,236-237,239-246,504-520
+  s_080c7176e13903::t_e51823fa8454e1 10,12,18-19,23-25,35,43,49,59-145,176-186,264,292-295,297-298,300-301,306-309,311-312,314,319,321-322,324-326,331-355,362-373,375,377-380,382-399,402-429,435-444,463-470,484-487
+  s_aaa87981afc5d9::t_64dbd545737126 36-37,265-291
+  s_080c7176e13903::t_8a45d68ca081e7 263
+  s_080c7176e13903::t_26e248b2abb504 374,400-401,450,460-461
+  s_c58c561fd25f8f::t_ba9afc1114816c 146-175,430-434,521-527,529-531
+  s_833f7f4ed3b61f::t_2fdccfb69b9d9c 15,20-21,187-189,248-261
+  s_080c7176e13903::t_c68852aec64ff9 323,328,447-449,451-459,462
+  s_c58c561fd25f8f::t_b221339912a138 445-446
+  s_fe93e81066d18d::t_ca769f6f2180a0 247
+  s_6b28355610f513::t_6b62339149cc32 296,299
+  s_080c7176e13903::t_cdfc294244a664 1-9,13-14,16-17,22,26-34,38-42,44-48,58,262,356-361,376,381,471-483,528,532-533
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_c58c561fd25f8f::t_44085c77888079 1-64,66-103
+  s_6b28355610f513::t_14a68619994218 65
+instrumentation/executors/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPerTaskExecutorMetricsTest.java
+  s_6b28355610f513::t_1bd0488eb962bc 16,117-135,137-141,153,155,198-201
+  s_833f7f4ed3b61f::t_797bce0bfb8661 13,17-18,100-105,107-111
+  s_fe93e81066d18d::t_ca769f6f2180a0 106
+  s_080c7176e13903::t_e9724179eb9dea 205
+  s_080c7176e13903::t_b58e3394c8f0f6 1-12,14-15,19-99,112-116,136,142-152,154,156-197,202-204
+instrumentation/executors/javaagent/build.gradle.kts
+  s_aaa87981afc5d9::t_64dbd545737126 45-67
+instrumentation/executors/bootstrap/build.gradle.kts
+  s_aaa87981afc5d9::t_be85ec68203047 4-7
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/JvmExecutorMetrics.java
+  s_080c7176e13903::t_7321f9aa88945b 1-142
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/ThreadPoolExecutorMetrics.java
+  s_833f7f4ed3b61f::t_a5556bd2b46674 11-12,28,56-57,61-63,65,69-70,72,76,173,175-191,204,206-210,255-256,285-287,292-293
+  s_6b28355610f513::t_b2ee72ee61c24c 215
+  s_33774d6cdc6aa6::t_02308c7e012458 103-105
+  s_fe93e81066d18d::t_ca769f6f2180a0 136,139,142,149,164,174,192-201,205,211-212
+  s_33774d6cdc6aa6::t_8419bd947a644d 58-60,64,71,83-89,91-102,106-118
+  s_aaa87981afc5d9::t_ff333a03ccfdb7 252
+  s_33774d6cdc6aa6::t_b8b896871e8d57 31,35-39,41-50,75,123-127,135,137-138,140-141,143-148,150-162,165,202,236,306-321
+  s_aaa87981afc5d9::t_be85ec68203047 15,21-26,55,216-224,226-229,250-251
+  s_6b28355610f513::t_14a68619994218 30,34,53-54,225,230-235,237-249,263,272,279,288,299-301,305,322
+  s_080c7176e13903::t_7321f9aa88945b 1-10,13-14,16-20,27,29,32-33,40,51-52,66-68,73-74,77-82,90,119-122,128-134,163,166-171,203,213,253-254,257-262,264-271,273-278,280-284,289-291,294-298,302-304,323
+  s_33774d6cdc6aa6::t_289a53e8e54549 172,214
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "4cfdb1e5e22e3852b90d578d95ba6a7c8f2bdb41",
+  "prompts": {},
+  "sessions": {
+    "s_080c7176e13903": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ef0-e83c-71f0-bfb8-37091b1311de",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_33774d6cdc6aa6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7514-d622-7752-b9e7-98446c77efdd",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_6b28355610f513": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7055-4a98-79a2-8afe-1a40d55fdf73",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_833f7f4ed3b61f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f72d6-a77f-75f2-af92-edbeb05d3432",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_aaa87981afc5d9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6f81-d750-73e2-a327-3a0b853f80f2",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_c58c561fd25f8f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6f5d-4a28-7042-a6c1-ddd9144b2823",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_fe93e81066d18d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f754d-edfb-7a51-b783-6c555ca38675",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    }
+  }
+}
