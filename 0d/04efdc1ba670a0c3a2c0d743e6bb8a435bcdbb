@@ -1,0 +1,83 @@
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/ExecutorsInstrumentationModule.java
+  s_080c7176e13903::t_7321f9aa88945b 35-36
+  s_c58c561fd25f8f::t_44085c77888079 14-15
+instrumentation/executors/README.md
+  s_aaa87981afc5d9::t_44445b9af0fec6 7
+instrumentation/executors/metadata.yaml
+  s_aaa87981afc5d9::t_44445b9af0fec6 25-34
+instrumentation/executors/javaagent/build.gradle.kts
+  s_aaa87981afc5d9::t_64dbd545737126 45-67
+instrumentation/executors/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_080c7176e13903::t_c8be18ef780e88 47-54
+  s_080c7176e13903::t_89603f7b596e94 11
+  s_c58c561fd25f8f::t_ba9afc1114816c 143-172,352-356,410-416,418-420
+  s_6b28355610f513::t_d742efe5776581 224-227,232,235,251
+  s_aaa87981afc5d9::t_64dbd545737126 33-34,184-213
+  s_6b28355610f513::t_6b62339149cc32 218,221
+  s_6b28355610f513::t_1bd0488eb962bc 237-240,242,249,252
+  s_080c7176e13903::t_cdfc294244a664 1-9,13-16,19,23-31,35-39,41-45,55,278-283,298,303,393-405,417,421-422
+  s_080c7176e13903::t_e51823fa8454e1 10,12,17-18,20-22,32,40,46,56-142,173-183,214-217,219-220,222-223,228-231,233-234,236,241,243-244,246-248,253-277,284-295,297,299-302,304-321,324-351,357-366,385-392,406-409
+  s_080c7176e13903::t_c68852aec64ff9 245,250,369-371,373-381,384
+  s_c58c561fd25f8f::t_b221339912a138 367-368
+  s_080c7176e13903::t_26e248b2abb504 296,322-323,372,382-383
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/ThreadPoolExecutorMetrics.java
+  s_6b28355610f513::t_b2ee72ee61c24c 38,54,174
+  s_080c7176e13903::t_7321f9aa88945b 1-12,14-19,21-25,32-35,37,39-40,42-43,45-46,50-51,55-78,82-84,86-124,126-127,130-133,141-143,149-159,162-166,168-169,212-213,215-220,222-229,231-236,238-242,245-247,249-254,258-260,263,265-291
+  s_6b28355610f513::t_14a68619994218 36,41,44,47-48,52-53,79-81,85,125,128-129,134-140,144-148,167,170-171,184,189-208,214,221,230,237,243-244,248,255-257,261-262,264
+  s_aaa87981afc5d9::t_be85ec68203047 13,20,26-31,49,172-173,175-183,185-188,209-210
+  s_080c7176e13903::t_26e248b2abb504 160-161
+  s_aaa87981afc5d9::t_ff333a03ccfdb7 211
+instrumentation/executors/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPerTaskExecutorMetricsTest.java
+  s_6b28355610f513::t_1bd0488eb962bc 15,102-120,122-126,138,140,183-186
+  s_080c7176e13903::t_b58e3394c8f0f6 1-14,16-101,121,127-137,139,141-182,187-189
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/JvmExecutorMetrics.java
+  s_080c7176e13903::t_7321f9aa88945b 1-142
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_c58c561fd25f8f::t_44085c77888079 1-64,66-103
+  s_6b28355610f513::t_14a68619994218 65
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_6b28355610f513::t_14a68619994218 53
+  s_c58c561fd25f8f::t_44085c77888079 1-52,54-65
+instrumentation/executors/bootstrap/build.gradle.kts
+  s_aaa87981afc5d9::t_be85ec68203047 4-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "0d04efdc1ba670a0c3a2c0d743e6bb8a435bcdbb",
+  "prompts": {},
+  "sessions": {
+    "s_080c7176e13903": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ef0-e83c-71f0-bfb8-37091b1311de",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6b28355610f513": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7055-4a98-79a2-8afe-1a40d55fdf73",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_aaa87981afc5d9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6f81-d750-73e2-a327-3a0b853f80f2",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_c58c561fd25f8f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6f5d-4a28-7042-a6c1-ddd9144b2823",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    }
+  }
+}
