@@ -1,0 +1,40 @@
+instrumentation/executors/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPerTaskExecutorMetricsTest.java
+  s_7e00803c6a1bb8::t_fe89571157d009 52,130,181-184,195-197
+  s_7e00803c6a1bb8::t_b85da227a30b36 194
+  s_7e00803c6a1bb8::t_cda687990a7f2c 45-46,51,53,67,85,89,124,129,133
+instrumentation/executors/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_7e00803c6a1bb8::t_366f23cee01819 26,152,226,229-235,239,285-286,305-307,314-326,341-353,367,393-394
+  s_7e00803c6a1bb8::t_7b3a906c7c67b7 199,236,242,261
+  s_7e00803c6a1bb8::t_b85da227a30b36 195
+  s_7e00803c6a1bb8::t_c968c4303b72f7 333,336
+  s_7e00803c6a1bb8::t_917598f37374aa 192-193,198,200-203
+  s_7e00803c6a1bb8::t_ad4467e05d2536 221,337
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_7e00803c6a1bb8::t_61631dfab91129 12,40,53-61,63
+  s_7e00803c6a1bb8::t_5869d564486c2f 39,62
+  s_7e00803c6a1bb8::t_a8b19ac4f6d796 38
+instrumentation/executors/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/ThreadPoolExecutorMetrics.java
+  s_7e00803c6a1bb8::t_b85da227a30b36 46,117,282
+  s_7e00803c6a1bb8::t_89e94aeeb014fa 35,37-38,41-42,45,52-54,58-61,65-68,72-75,79-80,82-83,87-88
+  s_7e00803c6a1bb8::t_99a67c25b2f1c7 277-280
+  s_7e00803c6a1bb8::t_948ac0e89f64c9 206-232,234-253,257-276,281,283-292,294-306,323
+instrumentation/executors/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_7e00803c6a1bb8::t_5c37adfed22c6d 48-51,67,69,78-89,91
+  s_7e00803c6a1bb8::t_15f3faf2765ba2 47
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "ae09686fb98922d29c72dd52f5d6a7dc65d19064",
+  "prompts": {},
+  "sessions": {
+    "s_7e00803c6a1bb8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7d6e-621c-77b0-9e1d-e496a5b2f889",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
