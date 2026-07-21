@@ -1,0 +1,25 @@
+instrumentation/executors/jdk21-testing/build.gradle.kts
+  s_c8a7e921c438a5::t_7a1b0345548755 39
+instrumentation/executors/javaagent/build.gradle.kts
+  s_c8a7e921c438a5::t_7a1b0345548755 80
+instrumentation/executors/metadata.yaml
+  s_c8a7e921c438a5::t_7a1b0345548755 35-39
+instrumentation/executors/README.md
+  s_c8a7e921c438a5::t_7a1b0345548755 8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "994e465e44b72c4cc4f2c2b0c9304098dc859a6a",
+  "prompts": {},
+  "sessions": {
+    "s_c8a7e921c438a5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f82c1-d15b-7e53-aa34-9d564a701b05",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
