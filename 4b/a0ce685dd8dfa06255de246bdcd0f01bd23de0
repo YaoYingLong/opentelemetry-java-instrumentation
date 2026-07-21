@@ -1,0 +1,45 @@
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/build.gradle.kts
+  s_ce3bf27b95075d::t_60f38727005f22 16-24,26-31
+instrumentation/tomcat/tomcat-jdbc-8.5/metadata.yaml
+  s_ce3bf27b95075d::t_60f38727005f22 2-6
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatJdbcInstrumentationTest.java
+  s_ce3bf27b95075d::t_f4282931a4d5ec 19,29,37-38,40-58,60-64,66-90,92
+  s_361b0b872af8e6::t_9b97723030bff2 91
+  s_556bb48a5398de::t_d0b24cf670ecd6 17,93-100,102
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatConnectionPoolMetrics.java
+  s_556bb48a5398de::t_78f72bee9484f7 123-140
+  s_ce3bf27b95075d::t_60f38727005f22 17,23,38,89-91,93-95,97-119
+  s_ce3bf27b95075d::t_3c3374f302df21 19,96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "4ba0ce685dd8dfa06255de246bdcd0f01bd23de0",
+  "prompts": {},
+  "sessions": {
+    "s_361b0b872af8e6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f4a0a-d6cc-7dc3-96f7-29437d33de73",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_556bb48a5398de": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f82ae-da87-7ea2-b7b8-93540314c854",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    },
+    "s_ce3bf27b95075d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f8285-44e6-7722-9c1e-78de669025ff",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
