@@ -1,0 +1,27 @@
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetrics.java
+  s_f62f2240625594::t_a604faafe97744 19,24,29-33,40,42-84,90,93,102-106,116,118,135-140,144-148,158-159,162
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolMetricsTest.java
+  s_f62f2240625594::t_849811b74b0bdf 25,28,34-38,64-86,113,118,122-125,131,145-235,238-291,294-295
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/AsyncSemaphoreAccessor.java
+  s_f62f2240625594::t_a604faafe97744 11,21,32,39-40,42,45-52,57,60-61,63,66-70,75
+instrumentation/redisson/redisson-metrics-2.3/javaagent/build.gradle.kts
+  s_f62f2240625594::t_849811b74b0bdf 19,24-43,58
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/ClientConnectionsEntryInstrumentation.java
+  s_f62f2240625594::t_a604faafe97744 17,44-45,59-60,63-67,69-77,80-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "3f022fccc00dd4dd0dcbd6e585cdd46aa551138f",
+  "prompts": {},
+  "sessions": {
+    "s_f62f2240625594": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb1c2-13f8-7940-aa8b-8e4ff40adc34",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
