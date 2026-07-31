@@ -1,0 +1,24 @@
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatJdbcInstrumentationTest.java
+  s_034628efe5c534::t_178c2ecb5da631 97
+  s_034628efe5c534::t_cbf009553c2946 95,112-120
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/PoolPropertiesInstrumentation.java
+  s_034628efe5c534::t_d84b7d8d7d66aa 8,10,28-30,34,38
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatConnectionPoolMetrics.java
+  s_034628efe5c534::t_d84b7d8d7d66aa 40-41,54-57,92,123,125,128
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "a72fa25878418c30c648fb38a2e399a81a0f18a3",
+  "prompts": {},
+  "sessions": {
+    "s_034628efe5c534": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb620-7c9c-7841-9d27-4e312d10a81e",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
