@@ -1,0 +1,68 @@
+instrumentation/apache-dbcp-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationTest.java
+  s_02b029f3396c4f::t_5497ef73896bb4 125-128,130-132,137-142
+  s_02b029f3396c4f::t_48462dc544506d 133-136
+  s_a12658a65d96e4::t_613cf316cf7969 124
+  s_845bc16cb52037::t_f22b3ed738a10f 119-122
+  s_6f2dbdd44a19aa::t_b02701da1980d4 123
+  s_02b029f3396c4f::t_4701d2aafc3050 129
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/org/apache/commons/dbcp2/OpenTelemetryBasicDataSourceUtil.java
+  s_02b029f3396c4f::t_01bfbbe95e63c0 13
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpSingletons.java
+  s_7152494d15b5d6::t_6aa6e887214b9a 12,25-27
+  s_7152494d15b5d6::t_27e83f4ef9ddcd 28-29
+instrumentation/apache-dbcp-2.0/testing/src/main/java/io/opentelemetry/instrumentation/apachedbcp/AbstractApacheDbcpInstrumentationTest.java
+  s_7152494d15b5d6::t_7c4270f15b30d1 36
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/BasicDataSourceInstrumentation.java
+  s_02b029f3396c4f::t_a6dc3c6b3c3555 76-77
+  s_7152494d15b5d6::t_a1b5d1cc586371 72-73,75
+  s_02b029f3396c4f::t_01bfbbe95e63c0 38-41,62-71,74
+  s_7152494d15b5d6::t_6aa6e887214b9a 49-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "b7f411e029ec2eb58c2b1d456b86e7a3e5147a73",
+  "prompts": {},
+  "sessions": {
+    "s_02b029f3396c4f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb1c0-7aa4-7c61-bee2-95acc7a5ebd1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_6f2dbdd44a19aa": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f68f7-553c-7551-b7d8-2a67329d44bc",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_7152494d15b5d6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb5e9-5c64-7ad1-ae64-3ae91bcb16b5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_845bc16cb52037": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f46a7-b2b8-7f32-a8ef-944a3318b373",
+        "model": "gpt-5.5"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_a12658a65d96e4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb23a-3431-7273-b5f3-42291f3dfefb",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
