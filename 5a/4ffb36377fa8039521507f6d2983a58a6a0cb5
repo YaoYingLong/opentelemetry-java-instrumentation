@@ -1,0 +1,28 @@
+.github/config/latest-dep-versions.json
+  s_23f638f1ea4fbf::t_12359a30c860f0 458
+instrumentation/redisson/redisson-metrics-2.3/javaagent/build.gradle.kts
+  s_23f638f1ea4fbf::t_e6f13e6e677422 10
+docs/supported-libraries.md
+  s_23f638f1ea4fbf::t_3866b583101cb5 20-176,192
+  s_23f638f1ea4fbf::t_007d4e531f55df 193
+.github/scripts/instrumentations.sh
+  s_23f638f1ea4fbf::t_12359a30c860f0 379-380
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonMetricsInstrumentationModule.java
+  s_23f638f1ea4fbf::t_e6f13e6e677422 26-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5a4ffb36377fa8039521507f6d2983a58a6a0cb5",
+  "prompts": {},
+  "sessions": {
+    "s_23f638f1ea4fbf": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb32a-8115-7711-910f-fa1ab778a264",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
