@@ -1,0 +1,30 @@
+instrumentation/hbase/hbase-client-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/common/HbaseClientUtil.java
+  s_ea7827edf23025::t_0171b12bd7018e 8-10,12,14-15,33,45-62
+  s_ea7827edf23025::t_dc33ad94dbbcf7 63-64
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/AbstractRpcClientInstrumentation.java
+  s_ea7827edf23025::t_0171b12bd7018e 8,65
+instrumentation/hbase/hbase-client-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_0/HbaseInstrumentationModule.java
+  s_ea7827edf23025::t_0171b12bd7018e 15
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/AbstractRpcClientInstrumentation.java
+  s_ea7827edf23025::t_0171b12bd7018e 11,67
+instrumentation/hbase/hbase-client-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/common/RetryingCallableInstrumentation.java
+  s_ea7827edf23025::t_0171b12bd7018e 6,20
+instrumentation/hbase/hbase-client-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/v1_4/HbaseInstrumentationModule.java
+  s_ea7827edf23025::t_0171b12bd7018e 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.18",
+  "base_commit_sha": "5fa3b88d7aa466d72d47c4d37a8fd67dc228e450",
+  "prompts": {},
+  "sessions": {
+    "s_ea7827edf23025": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb5e5-c76c-7402-94a9-08941f0aa8e2",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
