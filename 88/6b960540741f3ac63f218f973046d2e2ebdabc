@@ -1,0 +1,26 @@
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsTest.java
+  s_eea04f798906f4::t_68b54fa132f4f9 148-149
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetrics.java
+  s_eea04f798906f4::t_9377b572acdee8 112
+instrumentation/executors-metrics/README.md
+  s_eea04f798906f4::t_2565fc7562b8e4 6
+  s_eea04f798906f4::t_eb339af1f0b9d7 3-5
+instrumentation/executors-metrics/metadata.yaml
+  s_eea04f798906f4::t_2565fc7562b8e4 17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "886b960540741f3ac63f218f973046d2e2ebdabc",
+  "prompts": {},
+  "sessions": {
+    "s_eea04f798906f4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fbd72-1a19-7042-8ccc-256e96ddbc0d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
