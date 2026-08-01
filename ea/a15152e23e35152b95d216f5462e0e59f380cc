@@ -1,0 +1,28 @@
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatJdbcInstrumentationTest.java
+  s_8b6d760fb0fbf7::t_11917ca364f943 77,101-109,119,125
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatConnectionPoolMetrics.java
+  s_8b6d760fb0fbf7::t_3b15204e1b1c7d 84
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/PoolPropertiesInstrumentation.java
+  s_8b6d760fb0fbf7::t_4d431149d6d7de 14,38
+  s_8b6d760fb0fbf7::t_3b15204e1b1c7d 39-40
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/build.gradle.kts
+  s_8b6d760fb0fbf7::t_4d431149d6d7de 17-18,28-29
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatJdbcSingletons.java
+  s_8b6d760fb0fbf7::t_4d431149d6d7de 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "eaa15152e23e35152b95d216f5462e0e59f380cc",
+  "prompts": {},
+  "sessions": {
+    "s_8b6d760fb0fbf7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb820-2d0f-79d0-adb8-142467b5de78",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
