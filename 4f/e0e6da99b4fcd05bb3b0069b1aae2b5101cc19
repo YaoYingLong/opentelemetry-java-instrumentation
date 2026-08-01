@@ -1,0 +1,21 @@
+instrumentation/apache-dbcp-2.0/metadata.yaml
+  s_fb4a15aac626d3::t_f2df23b69c8c04 5-13
+instrumentation/apache-dbcp-2.0/javaagent/README.md
+  s_fb4a15aac626d3::t_f2df23b69c8c04 6-11,13-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "4fe0e6da99b4fcd05bb3b0069b1aae2b5101cc19",
+  "prompts": {},
+  "sessions": {
+    "s_fb4a15aac626d3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fbd27-048b-7611-ba91-0befefd633d4",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
