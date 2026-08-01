@@ -1,0 +1,42 @@
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_d7985257ff1895::t_258d1905697e9f 233
+  s_d7985257ff1895::t_28df61d5dab640 122-130,132,134-136,138
+  s_d7985257ff1895::t_299acdfb195927 131,133,137
+  s_d7985257ff1895::t_7d237354d1f505 50-75,118-121,229-232,234-251,253-257
+  s_d7985257ff1895::t_c1197330b80254 252,258
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/JdkExecutorMetrics.java
+  s_d7985257ff1895::t_258d1905697e9f 41,56,81-82
+  s_d7985257ff1895::t_9c162c9c23451d 6,12-13,18,21,24-25,29,32,36,39-40,42-50,52,55,63,67,77,80,83,85,87-91,98-101,104,109,118,120-122,132
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_d7985257ff1895::t_9c162c9c23451d 16,69,80,91,102,113
+instrumentation/executors-metrics/bootstrap/build.gradle.kts
+  s_d7985257ff1895::t_78966541f8c238 6
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsTest.java
+  s_d7985257ff1895::t_7824c93b7aca7d 76,81-82,84-86,89-103,105-107
+  s_d7985257ff1895::t_60f415101edcd0 8,66-68,126-128,146-148,156,167
+  s_d7985257ff1895::t_78966541f8c238 1-7,9-65,69-75,77-80,83,87-88,104,108-125,129-145,149-155,157-166,168-189
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_d7985257ff1895::t_9c162c9c23451d 15,56,64-66,76
+  s_d7985257ff1895::t_258d1905697e9f 21
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetrics.java
+  s_d7985257ff1895::t_60f415101edcd0 29,40
+  s_d7985257ff1895::t_98cae8d4282d8d 1-28,30-39,41-173
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_d7985257ff1895::t_98cae8d4282d8d 30,59,67,75,83,91,99,107,112,115,122,126,130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "eeff7abab90934fe81a275705b760e7b000e1d4f",
+  "prompts": {},
+  "sessions": {
+    "s_d7985257ff1895": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fb84c-0df0-7c02-9136-01cf9230fd0b",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
