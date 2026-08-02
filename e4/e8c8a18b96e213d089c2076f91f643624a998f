@@ -1,0 +1,24 @@
+instrumentation/apache-dbcp-2.0/javaagent/build.gradle.kts
+  s_ab82813d30db25::t_03b91ae1aa98a1 28
+instrumentation/apache-dbcp-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpSingletons.java
+  s_ab82813d30db25::t_03b91ae1aa98a1 41-45
+instrumentation/apache-dbcp-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachedbcp/v2_0/ApacheDbcpInstrumentationTest.java
+  s_ab82813d30db25::t_26865253b39816 42-48
+  s_ab82813d30db25::t_6a21ee760736ed 41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "e4e8c8a18b96e213d089c2076f91f643624a998f",
+  "prompts": {},
+  "sessions": {
+    "s_ab82813d30db25": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc20c-25eb-7482-8218-3d3a9630795b",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
