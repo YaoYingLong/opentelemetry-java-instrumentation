@@ -1,0 +1,32 @@
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/build.gradle.kts
+  s_a6077c0feda426::t_b91b172dd7a1d9 28
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatJdbcInstrumentationTest.java
+  s_a6077c0feda426::t_461369a6bb2fa1 50-56
+  s_d6c9fa5d7cda84::t_9b49411e6d39a2 49
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/jdbc/v8_5/TomcatConnectionPoolMetrics.java
+  s_a6077c0feda426::t_b91b172dd7a1d9 96-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "3005aaf9bda47012f1e9dd451774f3a9e0c1c9e9",
+  "prompts": {},
+  "sessions": {
+    "s_a6077c0feda426": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc1dc-7bf2-7520-b1ec-048355b3e08f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_d6c9fa5d7cda84": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc1d8-4fe6-70d3-8944-df82f709d9f6",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
