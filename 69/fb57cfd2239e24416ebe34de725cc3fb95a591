@@ -1,0 +1,31 @@
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_e43ee0b7a8e80a::t_535ef906b23938 16
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_e43ee0b7a8e80a::t_535ef906b23938 6
+instrumentation/executors-metrics/README.md
+  s_e43ee0b7a8e80a::t_ac6765e95ca24f 3-5
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_e43ee0b7a8e80a::t_535ef906b23938 17
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_e43ee0b7a8e80a::t_535ef906b23938 6
+instrumentation/executors-metrics/bootstrap/build.gradle.kts
+  s_e43ee0b7a8e80a::t_535ef906b23938 6
+instrumentation/executors-metrics/javaagent/build.gradle.kts
+  s_e43ee0b7a8e80a::t_58214337e4c533 15
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "69fb57cfd2239e24416ebe34de725cc3fb95a591",
+  "prompts": {},
+  "sessions": {
+    "s_e43ee0b7a8e80a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fbd98-c437-73b0-9d78-1c8d898c8788",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
