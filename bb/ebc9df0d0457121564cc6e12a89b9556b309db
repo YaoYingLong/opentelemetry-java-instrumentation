@@ -1,0 +1,19 @@
+instrumentation/apache-dbcp-2.0/javaagent/build.gradle.kts
+  s_bfd6df3f3132ec::t_1d1717e4b7349c 34-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "bbebc9df0d0457121564cc6e12a89b9556b309db",
+  "prompts": {},
+  "sessions": {
+    "s_bfd6df3f3132ec": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc27e-80a6-7282-9b3e-ac7c9b18e46e",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
