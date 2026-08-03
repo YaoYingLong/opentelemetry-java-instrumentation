@@ -1,0 +1,21 @@
+instrumentation/alibaba-druid-1.0/testing/src/main/java/io/opentelemetry/instrumentation/alibabadruid/AbstractDruidInstrumentationTest.java
+  s_5035c522285c7a::t_37b209c25258cc 66,74
+instrumentation/alibaba-druid-1.0/library/src/main/java/io/opentelemetry/instrumentation/alibabadruid/v1_0/ConnectionPoolMetrics.java
+  s_5035c522285c7a::t_0374618f561917 21,28-56,61-62
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "b2d0a90d1c33bcba8bc836c628c196a8476388f9",
+  "prompts": {},
+  "sessions": {
+    "s_5035c522285c7a": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc55a-544c-7103-8444-0c12f179bd5d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
