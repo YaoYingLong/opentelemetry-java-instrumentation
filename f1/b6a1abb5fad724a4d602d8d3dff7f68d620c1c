@@ -1,0 +1,47 @@
+instrumentation/apache-commons-pool-2.0/library/README.md
+  s_5fd99ea2777503::t_a1006749684576 45-51
+instrumentation/apache-commons-pool-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachecommonspool/v2_0/CommonsPoolInstrumentationModule.java
+  s_5fd99ea2777503::t_a1006749684576 28
+instrumentation/apache-commons-pool-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachecommonspool/v2_0/GenericObjectPoolInstrumentation.java
+  s_5fd99ea2777503::t_a1006749684576 11,21-23,25,28-30,37-43,47,54-58,61,63-64,70,73-77
+  s_5fd99ea2777503::t_e8b16fec165559 62
+instrumentation/apache-commons-pool-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachecommonspool/v2_0/CommonsPoolInstrumentationTest.java
+  s_5fd99ea2777503::t_befc4552bc1d6f 39,45,57,63-81
+instrumentation/apache-commons-pool-2.0/javaagent/README.md
+  s_5fd99ea2777503::t_a1006749684576 1-17
+instrumentation/apache-commons-pool-2.0/library/src/main/java/io/opentelemetry/instrumentation/apachecommonspool/v2_0/CommonsPoolMetrics.java
+  s_5fd99ea2777503::t_a1006749684576 26-51,60-61,76-77,95-102
+.github/scripts/instrumentations.sh
+  s_5fd99ea2777503::t_a1006749684576 14
+instrumentation/apache-commons-pool-2.0/library/src/main/java/io/opentelemetry/instrumentation/apachecommonspool/v2_0/CommonsPoolTelemetry.java
+  s_5fd99ea2777503::t_a1006749684576 9-10,25-26,30-41
+instrumentation/apache-commons-pool-2.0/testing/src/main/java/io/opentelemetry/instrumentation/apachecommonspool/AbstractCommonsPoolInstrumentationTest.java
+  s_5fd99ea2777503::t_8b42aab7154df6 198
+  s_5fd99ea2777503::t_befc4552bc1d6f 62,70,88,101-102,109,132-133,135,142,177-178,181-189,194-197,199-203
+  s_5fd99ea2777503::t_3e1b965d6d7e6e 63,81
+  s_bcdb756b596ab7::t_1dee537f0469d6 204
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f1b6a1abb5fad724a4d602d8d3dff7f68d620c1c",
+  "prompts": {},
+  "sessions": {
+    "s_5fd99ea2777503": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc633-6a20-7140-bb3f-80f8b8e1067f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_bcdb756b596ab7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc719-d3ed-7bc1-a2ca-1cd515eececa",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
