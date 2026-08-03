@@ -1,0 +1,29 @@
+instrumentation/jdbc/javaagent/build.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 14
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/build.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 17
+instrumentation/jdbc/jdbc-common/javaagent/build.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 1-16
+instrumentation/apache-dbcp-2.0/javaagent/build.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 18
+instrumentation/c3p0-0.9/javaagent/build.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 18
+settings.gradle.kts
+  s_eb5cf73aee0462::t_335407de55a878 397
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "638a995aa72eb75b659e8a7a27dd137275da7986",
+  "prompts": {},
+  "sessions": {
+    "s_eb5cf73aee0462": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc5a7-5791-7d62-9e8d-551efefa61ae",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
