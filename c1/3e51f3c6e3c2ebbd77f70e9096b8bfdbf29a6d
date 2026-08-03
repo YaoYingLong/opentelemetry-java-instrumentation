@@ -1,0 +1,41 @@
+instrumentation/executors-metrics/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsTest.java
+  s_438237cd9213a2::t_3bc26b1101233c 47,81-83,86-88,102-104,110-113,115,124-125,128-130,134-136,139,141,156-167
+  s_6b28355610f513::t_1bd0488eb962bc 168
+  s_080c7176e13903::t_b58e3394c8f0f6 169
+  s_438237cd9213a2::t_7fb5be81cb207a 91,107,132
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_438237cd9213a2::t_3b7d0e2d7fa43a 178,442
+  s_438237cd9213a2::t_9c0dab59be8a22 142
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "c13e51f3c6e3c2ebbd77f70e9096b8bfdbf29a6d",
+  "prompts": {},
+  "sessions": {
+    "s_080c7176e13903": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ef0-e83c-71f0-bfb8-37091b1311de",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_438237cd9213a2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc55c-0d0d-7562-9f0e-337c3b32dd5c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_6b28355610f513": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7055-4a98-79a2-8afe-1a40d55fdf73",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": null
+    }
+  }
+}
