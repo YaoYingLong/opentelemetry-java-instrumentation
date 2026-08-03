@@ -1,0 +1,19 @@
+docs/supported-libraries.md
+  s_03ebb742296bfb::t_b05e7a74e6d1e4 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "38c06525795727eed46067e5e81e4fd34dec4c8c",
+  "prompts": {},
+  "sessions": {
+    "s_03ebb742296bfb": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc558-aa25-7ae0-a0b5-1e0ae8c72f1f",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
