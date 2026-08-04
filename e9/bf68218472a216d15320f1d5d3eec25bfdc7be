@@ -1,0 +1,19 @@
+instrumentation/apache-commons-pool-2.0/testing/src/main/java/io/opentelemetry/instrumentation/apachecommonspool/AbstractCommonsPoolInstrumentationTest.java
+  s_ac880aa7b9399b::t_060d88853b9d51 218,222,248,251
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "e9bf68218472a216d15320f1d5d3eec25bfdc7be",
+  "prompts": {},
+  "sessions": {
+    "s_ac880aa7b9399b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcb10-0521-7be3-b6d1-0c6bfd69920f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
