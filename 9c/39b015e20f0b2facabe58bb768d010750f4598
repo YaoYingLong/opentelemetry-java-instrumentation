@@ -1,0 +1,31 @@
+instrumentation/jdbc/javaagent/build.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 14
+instrumentation/tomcat/tomcat-jdbc-8.5/javaagent/build.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 17
+settings.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 397
+instrumentation/c3p0-0.9/javaagent/build.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 18
+instrumentation/apache-dbcp-2.0/javaagent/build.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 18
+instrumentation/jdbc/javaagent-common/build.gradle.kts
+  s_2f54a97e9118dd::t_7af4c4fb8ec961 8-9
+.fossa.yml
+  s_2f54a97e9118dd::t_224b2eea60c99a 187-189
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "9c39b015e20f0b2facabe58bb768d010750f4598",
+  "prompts": {},
+  "sessions": {
+    "s_2f54a97e9118dd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fca89-545e-7ba0-8389-d45fb509f365",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
