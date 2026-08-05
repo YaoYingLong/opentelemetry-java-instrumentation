@@ -1,0 +1,19 @@
+instrumentation/alibaba-druid-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/alibabadruid/v1_0/DruidSingletons.java
+  s_89d6f476cc55d2::t_c4b72d5c37eb0f 12,28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "f135960ead74dedd4b75fcefb4c75b057da20f7f",
+  "prompts": {},
+  "sessions": {
+    "s_89d6f476cc55d2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcfbe-3f42-7220-9d43-68004637544a",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
