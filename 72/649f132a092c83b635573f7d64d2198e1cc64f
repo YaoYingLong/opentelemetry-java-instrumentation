@@ -1,0 +1,42 @@
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_237c106f4859b8::t_e9526215ed0553 54-55,62-63,71
+  s_237c106f4859b8::t_a61104882c876d 91,93,95
+  s_237c106f4859b8::t_8eddfbdb6532a3 24
+instrumentation/executors-metrics/README.md
+  s_237c106f4859b8::t_a61104882c876d 3-6
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_237c106f4859b8::t_b96f3d68744fc9 8,24,93,116-142,144-148
+  s_237c106f4859b8::t_8eddfbdb6532a3 143
+  s_237c106f4859b8::t_ac1c3a578e53b2 149-150
+instrumentation/executors-metrics/metadata.yaml
+  s_237c106f4859b8::t_a61104882c876d 5-6
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_237c106f4859b8::t_a61104882c876d 14,58-60,65-66,89
+  s_96d0b7de779d1b::t_9a8f2d7add4ff7 90-91,103
+instrumentation/executors-metrics/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/JvmExecutorMetricsAssertions.java
+  s_237c106f4859b8::t_b96f3d68744fc9 10,27-28,40,74-87,130-131,153,171-172,203-204,211-214,228,263,266,273,325-327
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.19",
+  "base_commit_sha": "72649f132a092c83b635573f7d64d2198e1cc64f",
+  "prompts": {},
+  "sessions": {
+    "s_237c106f4859b8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd037-c219-7642-b136-99986f8fbf5a",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_96d0b7de779d1b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcfb6-3ad1-7e93-8346-53cb725c1d6c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
