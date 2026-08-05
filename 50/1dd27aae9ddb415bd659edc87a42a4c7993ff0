@@ -1,0 +1,57 @@
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsTest.java
+  s_64e5ecc9c57ec1::t_e48e6cff202c10 32-33,156-186,188-267,376,383-387,389
+  s_64e5ecc9c57ec1::t_1bf8ce1900858b 187
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_64e5ecc9c57ec1::t_1bf8ce1900858b 361,404-407
+  s_64e5ecc9c57ec1::t_a4f7d1304baf53 10,20,318,350-360,362,370-374,390-394,399-403,408-411
+instrumentation/executors-metrics/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/JvmExecutorMetricsAssertions.java
+  s_64e5ecc9c57ec1::t_f434ab7249f493 16,21,28-29,37,55-65,89-116,135,140,255-257,367,370-378
+  s_43a8651ab5094e::t_a394f59acde1e6 379
+instrumentation/executors-metrics/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsTest.java
+  s_64e5ecc9c57ec1::t_1bf8ce1900858b 127,134
+  s_64e5ecc9c57ec1::t_a4f7d1304baf53 121-126,128-133,135-143,193-201
+  s_64e5ecc9c57ec1::t_dc81cb47ca3e8b 120,202
+instrumentation/executors-metrics/README.md
+  s_64e5ecc9c57ec1::t_e2ecfe2b01ddd0 7-10
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetrics.java
+  s_64e5ecc9c57ec1::t_1bf8ce1900858b 188,207
+  s_64e5ecc9c57ec1::t_d39203fa808ba4 13,51-63,133-136,174,178,187,191-202,210-211,218
+  s_65f8d6f6c9acc4::t_2ec6d6a240b138 189-190,203-206,208-209,212-217,219
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_64e5ecc9c57ec1::t_d39203fa808ba4 13,20,25-26,42,51,53-57
+  s_64e5ecc9c57ec1::t_1bf8ce1900858b 52
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_64e5ecc9c57ec1::t_d39203fa808ba4 20,43-47,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "501dd27aae9ddb415bd659edc87a42a4c7993ff0",
+  "prompts": {},
+  "sessions": {
+    "s_43a8651ab5094e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd11c-b4e4-7122-90bd-2ba3612ead75",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_64e5ecc9c57ec1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd15d-3364-72a1-ac72-13cb7903e280",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_65f8d6f6c9acc4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd10c-50c4-7710-a70f-1b3667869515",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
