@@ -1,0 +1,20 @@
+instrumentation/redisson/redisson-metrics-3.26/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v3_26/RedissonConnectionPoolMetricsTest.java
+  s_4cac42c934fe46::t_c3e65e3327304d 19,26,28,82-83,87,89-90,92,95-108,166,253-254,275,280,296,301-302
+  s_4cac42c934fe46::t_16ca69418727d0 304-305
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "3e69994c88b1429595771725589cfba7fcfd6afd",
+  "prompts": {},
+  "sessions": {
+    "s_4cac42c934fe46": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fd4cb-3d7f-78a2-a3f2-09434f426a1e",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
