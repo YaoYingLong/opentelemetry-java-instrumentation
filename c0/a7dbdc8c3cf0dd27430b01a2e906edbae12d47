@@ -1,0 +1,23 @@
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpSingletons.java
+  s_b97f9c82e6fd16::t_6bc7289b70130a 18-21
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpDataSourceMetrics.java
+  s_b97f9c82e6fd16::t_6bc7289b70130a 18
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpInstrumentationTest.java
+  s_b97f9c82e6fd16::t_b210961a6427f5 132,134,138-139,146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "c0a7dbdc8c3cf0dd27430b01a2e906edbae12d47",
+  "prompts": {},
+  "sessions": {
+    "s_b97f9c82e6fd16": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019feb19-c32f-7021-900b-afdd5241c3a0",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
