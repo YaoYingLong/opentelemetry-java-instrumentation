@@ -1,0 +1,41 @@
+instrumentation/hikaricp-3.0/testing/src/main/java/io/opentelemetry/instrumentation/hikaricp/AbstractHikariInstrumentationTest.java
+  s_e2a1dba915ce8d::t_17f042c21dc815 10,13,23,41-45,50-51,85,150-168,180
+  s_e2a1dba915ce8d::t_2cce24d633355b 174-175
+  s_e2a1dba915ce8d::t_d7dac3f13c074b 169-173,176-179
+instrumentation/hikaricp-3.0/javaagent/build.gradle.kts
+  s_e2a1dba915ce8d::t_49c0dad231612a 18-20
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariCpInstrumentationModule.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 8,24
+instrumentation/hikaricp-3.0/library/src/main/java/io/opentelemetry/instrumentation/hikaricp/v3_0/HikariTelemetry.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 42-52
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariPoolInstrumentation.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 12,48-49,58
+instrumentation/hikaricp-3.0/library/src/main/java/io/opentelemetry/instrumentation/hikaricp/v3_0/OpenTelemetryMetricsTrackerFactory.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 24,27-29,32,42,44
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariSingletons.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 8,11,13-15,20-24,28-38,40-43,47-51
+  s_e2a1dba915ce8d::t_44f1f2ed1ab3f4 52
+instrumentation/hikaricp-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariInstrumentationTest.java
+  s_e2a1dba915ce8d::t_9b9bac80f2df49 9,14,21,50-92
+  s_e2a1dba915ce8d::t_696efc7dc0d787 135-145
+  s_e2a1dba915ce8d::t_17f042c21dc815 8,10-11,13,19-20,22-23,37,42-49,93-134,146-213
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariConfigInstrumentation.java
+  s_e2a1dba915ce8d::t_49c0dad231612a 1-30,34-42,48,53-54,57-69
+  s_e2a1dba915ce8d::t_86d7e98d6ff67c 31-33,43-47,49-52,55-56
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "fd0d701bfc5ef77c98c459cbc180d679b71163db",
+  "prompts": {},
+  "sessions": {
+    "s_e2a1dba915ce8d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fe9be-7544-71f2-9d07-76d6846b54da",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
