@@ -1,0 +1,47 @@
+docs/supported-libraries.md
+  s_ac1aa1f24437c7::t_56227ac535e842 163
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpInstrumentationModule.java
+  s_ac1aa1f24437c7::t_ca0d75cb911e06 1-37
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/BasicDataSourceInstrumentation.java
+  s_ac1aa1f24437c7::t_ca0d75cb911e06 1-49,51-57,59-72,75-77
+  s_ac1aa1f24437c7::t_79942fb7f26b55 50,58,73-74
+instrumentation/tomcat/tomcat-dbcp-8.0/metadata.yaml
+  s_ac1aa1f24437c7::t_56227ac535e842 1-27
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/build.gradle.kts
+  s_ac1aa1f24437c7::t_165b050dd5569f 1-37
+.github/scripts/instrumentations.sh
+  s_ac1aa1f24437c7::t_56227ac535e842 340-341
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpSingletons.java
+  s_ac1aa1f24437c7::t_ca0d75cb911e06 1-30
+settings.gradle.kts
+  s_ac1aa1f24437c7::t_165b050dd5569f 713
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/org/apache/tomcat/dbcp/dbcp2/OpenTelemetryBasicDataSourceUtil.java
+  s_ac1aa1f24437c7::t_ca0d75cb911e06 1-25
+.github/config/latest-dep-versions.json
+  s_ac1aa1f24437c7::t_e4797a262958c2 354
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpInstrumentationTest.java
+  s_ac1aa1f24437c7::t_165b050dd5569f 1-259
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/README.md
+  s_ac1aa1f24437c7::t_56227ac535e842 1-14
+instrumentation/tomcat/tomcat-dbcp-8.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/tomcat/dbcp/v8_0/TomcatDbcpDataSourceMetrics.java
+  s_ac1aa1f24437c7::t_79942fb7f26b55 9,20,28,33,59,65-66
+  s_ac1aa1f24437c7::t_ca0d75cb911e06 1-8,10-19,21-27,29-32,34-58,60-64,67
+.fossa.yml
+  s_ac1aa1f24437c7::t_22d8159608ebef 1063-1065
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "a5c77ce9e1c6c348e8dea8034dd9434f8e6bbede",
+  "prompts": {},
+  "sessions": {
+    "s_ac1aa1f24437c7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fe9b9-e3b0-7662-97e0-ea35f70956ab",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
