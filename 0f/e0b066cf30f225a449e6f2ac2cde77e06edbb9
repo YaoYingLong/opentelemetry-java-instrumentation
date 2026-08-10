@@ -1,0 +1,46 @@
+instrumentation/vibur-dbcp-11.0/javaagent/build.gradle.kts
+  s_c96232ad92d8b0::t_8ad19756657ff1 18-19
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburDbcpDataSourceInstrumentation.java
+  s_c96232ad92d8b0::t_8ad19756657ff1 39-43
+instrumentation/vibur-dbcp-11.0/library/src/main/java/io/opentelemetry/instrumentation/viburdbcp/v11_0/ViburTelemetry.java
+  s_c96232ad92d8b0::t_8ad19756657ff1 29-33
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburSingletons.java
+  s_c96232ad92d8b0::t_8ad19756657ff1 9-11,13-15,19-22,29-42
+  s_c96232ad92d8b0::t_d0e93c7d576a1c 43
+instrumentation/vibur-dbcp-11.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburInstrumentationTest.java
+  s_c96232ad92d8b0::t_586ad702577290 64
+  s_c96232ad92d8b0::t_8f3ebeb76173ee 8-10,14-18,20-22,40-63,65-100
+instrumentation/vibur-dbcp-11.0/library/src/main/java/io/opentelemetry/instrumentation/viburdbcp/v11_0/ConnectionPoolMetrics.java
+  s_c96232ad92d8b0::t_8ad19756657ff1 27-31,33,37,39
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburConfigInstrumentation.java
+  s_c96232ad92d8b0::t_8ad19756657ff1 1-40
+instrumentation/vibur-dbcp-11.0/testing/src/main/java/io/opentelemetry/instrumentation/viburdbcp/AbstractViburInstrumentationTest.java
+  s_c96232ad92d8b0::t_8f3ebeb76173ee 27-28,51,75-85
+  s_e2a1dba915ce8d::t_0704339bb5773d 86
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburDbcpInstrumentationModule.java
+  s_c96232ad92d8b0::t_586ad702577290 9,33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "0fe0b066cf30f225a449e6f2ac2cde77e06edbb9",
+  "prompts": {},
+  "sessions": {
+    "s_c96232ad92d8b0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fe9be-a996-7a11-80ab-9c5fa4bb6086",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_e2a1dba915ce8d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fe9be-7544-71f2-9d07-76d6846b54da",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
