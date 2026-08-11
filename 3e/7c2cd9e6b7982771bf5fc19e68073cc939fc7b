@@ -1,0 +1,38 @@
+instrumentation/executors-metrics/jdk21-testing/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsTest.java
+  s_4eef94ca3895e7::t_f12dd563fe59d0 96,197-199
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_4eef94ca3895e7::t_1520a779467680 33
+  s_4eef94ca3895e7::t_df3006f9389e27 22,30-32,34,36-38,41-44,47
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistryTest.java
+  s_4eef94ca3895e7::t_1520a779467680 50,71-72,103-104,106,125-126,141-142,146-147,260,411-412
+  s_4eef94ca3895e7::t_f4ac0e5ac3e2e4 1-13,15,17-36,61-70,73-88,91-102,105,107-108,110-122,124,127,129-140,143-145,148,153-169,171-195,198-213,215-217,219-226,228-232,234-254,256-258,261-266,268-285,287-289,291-309,311-326,328-331,336-340,342-351,353-368,370-372,376-392,394-410,413-448
+  s_4eef94ca3895e7::t_7aed667da56766 14,16,37-49,51-60,89-90,109,123,128,149-152,170,196-197,214,218,227,233,255,259,267,286,290,310,327,332-335,341,352,369,373-375,393
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_4eef94ca3895e7::t_1520a779467680 62
+  s_4eef94ca3895e7::t_f12dd563fe59d0 15,60-61,74,87
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_4eef94ca3895e7::t_f12dd563fe59d0 16,71-72,88,99,110,121
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistry.java
+  s_4eef94ca3895e7::t_df3006f9389e27 22,31-41,46,52,61,64-65,68,79-80,83,88-91,93-94,96,142,164-165,187-188,202-205,224-225,273-274,278,287
+  s_4eef94ca3895e7::t_1520a779467680 42
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_4eef94ca3895e7::t_f12dd563fe59d0 20,350,400
+instrumentation/executors-metrics/README.md
+  s_4eef94ca3895e7::t_f12dd563fe59d0 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "3e7c2cd9e6b7982771bf5fc19e68073cc939fc7b",
+  "prompts": {},
+  "sessions": {
+    "s_4eef94ca3895e7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019feee7-ac53-7592-9c41-d6c30c8c4772",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
