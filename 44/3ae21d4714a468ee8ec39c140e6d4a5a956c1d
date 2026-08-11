@@ -1,0 +1,38 @@
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariSingletons.java
+  s_8be56fc70fe5f5::t_71502cf6e96f02 22,29,33,35,41,48-52
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcConnectionPoolNameUtilTest.java
+  s_8be56fc70fe5f5::t_df89f78b0df7ea 57-67
+  s_8be56fc70fe5f5::t_d6efc8181f01d0 34,47-56
+  s_8be56fc70fe5f5::t_9d729719799d33 12,14,23-26,28-32
+  s_8be56fc70fe5f5::t_721536d4b4769d 35-46
+  s_8be56fc70fe5f5::t_2ad62f6cc28686 27
+  s_8be56fc70fe5f5::t_900d62d22dcb6f 33
+instrumentation/hikaricp-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariInstrumentationTest.java
+  s_8be56fc70fe5f5::t_f0a6064e765bd4 98-100
+  s_8be56fc70fe5f5::t_2bb505c8111139 95-97,101-105
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcConnectionPoolNameUtil.java
+  s_8be56fc70fe5f5::t_b5127e134a003e 24
+  s_8be56fc70fe5f5::t_1601f33b37b1b5 11,22,27,32,69-71
+  s_8be56fc70fe5f5::t_8fc91e87378eb9 9-10,19-21,23,25-26,28-31,33-38,73
+  s_8be56fc70fe5f5::t_133838480a983f 72
+  s_8be56fc70fe5f5::t_de3a73542276bf 39
+  s_8be56fc70fe5f5::t_665318c5a24c08 74
+instrumentation/hikaricp-3.0/javaagent/build.gradle.kts
+  s_8be56fc70fe5f5::t_e86acad04eadb0 23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "443ae21d4714a468ee8ec39c140e6d4a5a956c1d",
+  "prompts": {},
+  "sessions": {
+    "s_8be56fc70fe5f5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fee93-d604-7ac3-a891-966c81b80999",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
