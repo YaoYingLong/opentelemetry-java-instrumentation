@@ -1,0 +1,24 @@
+instrumentation/vibur-dbcp-11.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburInstrumentationTest.java
+  s_278fce1c7dedd4::t_98461f30ed439c 96-104
+  s_278fce1c7dedd4::t_d8a43300cf5c74 95
+instrumentation/vibur-dbcp-11.0/library/README.md
+  s_278fce1c7dedd4::t_b96a94d18968c8 47-57
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburSingletons.java
+  s_278fce1c7dedd4::t_cd763f225b8c0f 21,31,33,38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "7af57716947bba3f5c1c105f0c1efc0537c709f0",
+  "prompts": {},
+  "sessions": {
+    "s_278fce1c7dedd4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fee97-224e-7c10-8634-59a34b3b7fa1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
