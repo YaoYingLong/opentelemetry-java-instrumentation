@@ -1,0 +1,28 @@
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistryTest.java
+  s_ebb585eff9d987::t_82ca7fb86005fb 12,15-16,213-227,229-245,449-455
+  s_ebb585eff9d987::t_a243e986112c91 18,228
+  s_ebb585eff9d987::t_f046147e7b96e7 212
+  s_ebb585eff9d987::t_2268884ff8e3e8 456
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_ebb585eff9d987::t_a0fdc33bb2d26c 52-55
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_ebb585eff9d987::t_a0fdc33bb2d26c 76,99
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistry.java
+  s_ebb585eff9d987::t_a0fdc33bb2d26c 172
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "a0909182745a5a2638d7c0b6835411f2659916d0",
+  "prompts": {},
+  "sessions": {
+    "s_ebb585eff9d987": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff3a9-4c5d-7fc0-87b0-0f7bae677290",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
