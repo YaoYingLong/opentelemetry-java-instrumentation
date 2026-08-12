@@ -1,0 +1,23 @@
+instrumentation/hikaricp-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hikaricp/v3_0/HikariSingletons.java
+  s_17f2dcd502f1ff::t_443885114faa54 41-42,44-52
+instrumentation/hikaricp-3.0/library/src/main/java/io/opentelemetry/instrumentation/hikaricp/v3_0/HikariTelemetry.java
+  s_17f2dcd502f1ff::t_443885114faa54 42
+instrumentation/hikaricp-3.0/library/src/main/java/io/opentelemetry/instrumentation/hikaricp/v3_0/OpenTelemetryMetricsTrackerFactory.java
+  s_17f2dcd502f1ff::t_443885114faa54 26,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5cbecc91322f47a763de8a46f65bac068a7b1162",
+  "prompts": {},
+  "sessions": {
+    "s_17f2dcd502f1ff": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff3ab-e49b-7710-b7c1-d32ea514e465",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
