@@ -1,0 +1,33 @@
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_e47ecf6afbe767::t_ed7380eca8361f 51,62-63,69-72
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_e47ecf6afbe767::t_9fb7ad875b02f7 122,148,153
+  s_e47ecf6afbe767::t_e5440540c8bc94 118-119,123-147,149-152,154,168,491-510
+  s_e47ecf6afbe767::t_1d17c268f37293 511
+instrumentation/executors-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_e47ecf6afbe767::t_ed7380eca8361f 20,62-64,66,68
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistry.java
+  s_e47ecf6afbe767::t_105d80cd6049c1 26,51
+  s_e47ecf6afbe767::t_9fb7ad875b02f7 55,57,155,181,218
+  s_e47ecf6afbe767::t_ed7380eca8361f 40,44-46,52-54,145,157
+instrumentation/executors-metrics/bootstrap/src/test/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/ExecutorMetricsRegistryTest.java
+  s_e47ecf6afbe767::t_9fb7ad875b02f7 174,266
+  s_e47ecf6afbe767::t_51a44f2a34162b 117
+  s_e47ecf6afbe767::t_d862fd047c2544 39,92,98,128,200,218,253,295,326,348,367,392,423,434,438
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "82c023f86cc203bfea39a2afe9696e27b31de0af",
+  "prompts": {},
+  "sessions": {
+    "s_e47ecf6afbe767": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ff8cb-bfe8-70b2-b457-d607cbeb47af",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
