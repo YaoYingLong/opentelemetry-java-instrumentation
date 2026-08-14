@@ -1,0 +1,19 @@
+instrumentation/vibur-dbcp-11.0/metadata.yaml
+  s_015b7cbae6b004::t_cd80244195d967 3-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "c7eca2dce65e2acb1f8675858394256c31f34078",
+  "prompts": {},
+  "sessions": {
+    "s_015b7cbae6b004": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ffdf5-4dda-77e2-96ec-47f7ba23e70c",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
