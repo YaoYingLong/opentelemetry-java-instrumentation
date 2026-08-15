@@ -1,0 +1,19 @@
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_c65b4b7fdfc526::t_78099c5567faa5 67,76,84,92,100,108,116,124,131,135,139
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "5b45cdf160eb81809fbfbc1dc31adefb7c2e211b",
+  "prompts": {},
+  "sessions": {
+    "s_c65b4b7fdfc526": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a003ef-8f49-7633-9618-54ba8c86837f",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
