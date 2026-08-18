@@ -1,0 +1,35 @@
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpAsyncClientInstrumentationModule.java
+  s_9890512a2e5c7c::t_1e81caccc58cd3 8,23-25
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpAsyncClientTest.java
+  s_9890512a2e5c7c::t_a2f5276752cc64 430
+  s_9890512a2e5c7c::t_3e902c33c8b18d 14,30,46-50,231-236,238-265,293-299,301-303,306-327
+  s_9890512a2e5c7c::t_053e55bfde650b 8-13,15,22,26,29,31,34,37,40,53,155-190,193-203,205-225,227-228
+  s_9890512a2e5c7c::t_2c133303c7118d 328-332
+  s_9890512a2e5c7c::t_5fa51c7113e4f9 191-192,277-284
+  s_9890512a2e5c7c::t_ce26c52cac5ad4 32,43-44,333-429
+  s_9890512a2e5c7c::t_13a01648f5015f 266-276,285-292,304-305
+  s_9890512a2e5c7c::t_c4ae529601b12d 204,226,229-230
+  s_9890512a2e5c7c::t_42906e6d8d73db 237,300
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpPipeliningClientInstrumentation.java
+  s_9890512a2e5c7c::t_1e81caccc58cd3 1-77,81-92,94-103,105-111,113-151,156-342,346-352,356,360-366,368-369,373-374,376-379,381-390,392-401,403-407,418-421
+  s_9890512a2e5c7c::t_75d50bc25b1fb3 93,104,112,343-345,367,370-372,375,380,391,402,408-411
+  s_9890512a2e5c7c::t_88aaf641f4cc59 152-155,357-359
+  s_9890512a2e5c7c::t_73df85d92941b3 353-355,412-417
+  s_9890512a2e5c7c::t_c4ae529601b12d 78-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "26a09d5f60ce9fac1c8829196d64885034e03250",
+  "prompts": {},
+  "sessions": {
+    "s_9890512a2e5c7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00f34-e5ad-7ef0-86c1-66c25d43a625",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
