@@ -1,0 +1,38 @@
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpPipeliningClientTest.java
+  s_a685e2656f993f::t_7ffc0ced430232 1-63,65-99,101-156,158-376,418-424,426-478
+  s_a685e2656f993f::t_daa095b1c9e695 64,100,157,425
+  s_9890512a2e5c7c::t_b7453fade64690 377-417
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpAsyncClientInstrumentationModule.java
+  s_9890512a2e5c7c::t_1e81caccc58cd3 8,23-25
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpPipeliningClientInstrumentation.java
+  s_9890512a2e5c7c::t_73df85d92941b3 288-290,347-352
+  s_9890512a2e5c7c::t_1e81caccc58cd3 1-77,81-92,94-99,101-107,109-147,152-190,194-198,200-203,205-208,210-218,220-223,225-242,244-247,249-252,254-257,259-263,266-270,272-275,277-280,282-287,291,295-301,303-304,308-309,311-314,316-325,327-336,338-342,353-356
+  s_9890512a2e5c7c::t_c4ae529601b12d 78-80
+  s_9890512a2e5c7c::t_88aaf641f4cc59 148-151,292-294
+  s_9890512a2e5c7c::t_c5afad8cb25f38 191-193,199,204,209,219,224,243,248,253,258,264-265,271,276,281
+  s_9890512a2e5c7c::t_75d50bc25b1fb3 93,100,108,302,305-307,310,315,326,337,343-346
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "8b122d2b74a6ad5c9ed22696fe737f53c460a0c4",
+  "prompts": {},
+  "sessions": {
+    "s_9890512a2e5c7c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a00f34-e5ad-7ef0-86c1-66c25d43a625",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a685e2656f993f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a014f7-08b9-7a03-863e-ccb717040427",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
