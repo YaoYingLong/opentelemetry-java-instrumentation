@@ -1,0 +1,21 @@
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpPipeliningClientTest.java
+  s_eb7a869867ca88::t_f8e4f54f016ddd 82-86,514,540,549
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpPipeliningClientInstrumentation.java
+  s_eb7a869867ca88::t_9d93859f73f91f 102,127,132,193-194,197,353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "fdb0d23a2fc6fe6d191f1263cc27ffeb76d712ff",
+  "prompts": {},
+  "sessions": {
+    "s_eb7a869867ca88": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a01d10-3c70-76f1-bdd0-8f04e607bf51",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
