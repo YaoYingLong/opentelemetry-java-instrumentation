@@ -1,0 +1,19 @@
+instrumentation/apache-commons-pool-2.0/metadata.yaml
+  s_ca451076ee3659::t_2113e7492908c5 5-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "8587f87618b8c8558b5036286205a14107cc873d",
+  "prompts": {},
+  "sessions": {
+    "s_ca451076ee3659": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02217-74cd-77f2-ba4b-54c113c62ee8",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
