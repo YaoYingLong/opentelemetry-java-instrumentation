@@ -1,0 +1,50 @@
+instrumentation/oracle-ucp-11.2/javaagent/build.gradle.kts
+  s_697e90c5956b8d::t_50d30b6a8ec21a 18-20
+instrumentation/oracle-ucp-11.2/testing/src/main/java/io/opentelemetry/instrumentation/oracleucp/AbstractOracleUcpInstrumentationTest.java
+  s_697e90c5956b8d::t_13773d00cb2de3 16,45-47,80,102-113
+instrumentation/oracle-ucp-11.2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/PoolDataSourceInstrumentation.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 1-53
+instrumentation/oracle-ucp-11.2/library/src/main/java/io/opentelemetry/instrumentation/oracleucp/v11_2/OracleUcpTelemetry.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 29-33
+instrumentation/oracle-ucp-11.2/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/OracleUcpInstrumentationTest.java
+  s_697e90c5956b8d::t_13773d00cb2de3 29-35
+instrumentation/oracle-ucp-11.2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/OracleUcpInstrumentationModule.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 8,24-25
+instrumentation/oracle-ucp-11.2/library/src/main/java/io/opentelemetry/instrumentation/oracleucp/v11_2/ConnectionPoolMetrics.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 27-31,33,37,39
+instrumentation/oracle-ucp-11.2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/UniversalConnectionPoolInstrumentation.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 13,40-42,52-61
+instrumentation/oracle-ucp-11.2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/OracleUcpSingletons.java
+  s_697e90c5956b8d::t_50d30b6a8ec21a 9-11,13-15,19-24,32-50
+instrumentation/oracle-ucp-11.2/library/src/test/java/io/opentelemetry/instrumentation/oracleucp/v11_2/OracleUcpInstrumentationTest.java
+  s_697e90c5956b8d::t_13773d00cb2de3 49-52
+instrumentation/oracle-ucp-11.2/library/src/test/java/io/opentelemetry/instrumentation/oracleucp/v11_2/OracleUcpTelemetryTest.java
+  s_697e90c5956b8d::t_e6fccdd890e708 58
+  s_697e90c5956b8d::t_352448e9edd649 38
+  s_697e90c5956b8d::t_25d34ea7269c70 17,32,41
+  s_697e90c5956b8d::t_5750af6d349091 1-16,18-31,33-37,39-40,42-57,59-74
+instrumentation/oracle-ucp-11.2/library/README.md
+  s_697e90c5956b8d::t_f8e3c9bc13ffd3 43-48,53-62
+instrumentation/oracle-ucp-11.2/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/oracleucp/v11_2/OracleUcpPoolNameTest.java
+  s_697e90c5956b8d::t_25d34ea7269c70 18,21,42,57,74,149-155
+  s_697e90c5956b8d::t_e6fccdd890e708 40,46,55,60,72,77,86,91,93,97,106,111,114,118,129-130,137-138
+  s_697e90c5956b8d::t_c9cf6f970a6fad 113
+  s_697e90c5956b8d::t_f4ed8ef24b3de0 133-134
+  s_697e90c5956b8d::t_5750af6d349091 1-17,19-20,22-39,41,43-45,47-54,56,58-59,61-71,73,75-76,78-85,87-90,92,94-96,98-105,107-110,112,115-117,119-128,131-132,135-136,139-148,156-198
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "47ab405379e8362bc0d08d19630d9ed17b6a19b0",
+  "prompts": {},
+  "sessions": {
+    "s_697e90c5956b8d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02303-d18b-7592-b400-f69accac4563",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
