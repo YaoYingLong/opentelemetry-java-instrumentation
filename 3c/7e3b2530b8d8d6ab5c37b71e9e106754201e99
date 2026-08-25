@@ -1,0 +1,34 @@
+instrumentation/lettuce/lettuce-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v5_0/LettuceClientInstrumentation.java
+  s_dfb74d393d4061::t_0b267bdc20ed11 51-56
+  s_dfb74d393d4061::t_99301461b452e0 100
+  s_dfb74d393d4061::t_f2c25208afe66d 63-65,73-74,76-80,83-91
+  s_dfb74d393d4061::t_e4dfa229dae97b 57-61
+  s_dfb74d393d4061::t_012d2daca7d78a 9-10,22,75,81-82,92-97,101-104
+instrumentation/lettuce/lettuce-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v5_0/LettuceAsyncClientTest.java
+  s_dfb74d393d4061::t_acd6b6d5abd6a8 120-121
+  s_dfb74d393d4061::t_f2f8459f37e69b 69,713
+  s_dfb74d393d4061::t_b47af58005fe15 122-131
+instrumentation/lettuce/lettuce-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/lettuce/v5_0/LettuceSingletons.java
+  s_dfb74d393d4061::t_012d2daca7d78a 48,50,59,139-140,142-166
+  s_dfb74d393d4061::t_99301461b452e0 49,57-58
+instrumentation/lettuce/lettuce-5.0/javaagent/build.gradle.kts
+  s_dfb74d393d4061::t_5d1f1bdeb4f955 35,56
+  s_dfb74d393d4061::t_d335f2fc0bd435 31-32,36-37,39-42,44-55,57-58,60-63,88-95,97-102,158
+  s_dfb74d393d4061::t_acd6b6d5abd6a8 33-34,38,43,59,64-87,96
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "3c7e3b2530b8d8d6ab5c37b71e9e106754201e99",
+  "prompts": {},
+  "sessions": {
+    "s_dfb74d393d4061": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a02476-6869-7821-bd20-3cc28d5889c4",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
