@@ -1,0 +1,36 @@
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceSyncClientTest.java
+  s_1b8a9f739dc220::t_bf0cda2917a2e7 323,325-326,481,501,521
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceClientTest.java
+  s_1b8a9f739dc220::t_bf0cda2917a2e7 11-12,115-132
+  s_1b8a9f739dc220::t_f38e23e85b60b1 133
+instrumentation/lettuce/lettuce-5.1/library/src/test/java/io/opentelemetry/instrumentation/lettuce/v5_1/LettuceDbAttributesGetterTest.java
+  s_1b8a9f739dc220::t_a397c9f3eb1a9d 1-22,24,32
+  s_1b8a9f739dc220::t_6dd5b6f401e6d5 23
+  s_1b8a9f739dc220::t_0db4ff759c914f 25-31
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceSyncClientAuthTest.java
+  s_1b8a9f739dc220::t_d23c24f74ddbf1 94,114,134
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceAsyncClientTest.java
+  s_1b8a9f739dc220::t_bf0cda2917a2e7 223,225-226
+instrumentation/lettuce/lettuce-5.1/testing/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/AbstractLettuceReactiveClientTest.java
+  s_1b8a9f739dc220::t_bf0cda2917a2e7 10,15,278-281,283-284
+instrumentation/lettuce/lettuce-5.1/library/src/main/java/io/opentelemetry/instrumentation/lettuce/v5_1/LettuceDbAttributesGetter.java
+  s_1b8a9f739dc220::t_6dd5b6f401e6d5 46
+  s_1b8a9f739dc220::t_2690ceb7c60ded 10,56,58-59
+  s_1b8a9f739dc220::t_89a4a9397ca042 45,47-55,57,60-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7883b5adf0529d58fd0e729eb9e825e49c74afd2",
+  "prompts": {},
+  "sessions": {
+    "s_1b8a9f739dc220": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a03c5e-4a53-7232-8cfb-634d5cd8bac6",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
