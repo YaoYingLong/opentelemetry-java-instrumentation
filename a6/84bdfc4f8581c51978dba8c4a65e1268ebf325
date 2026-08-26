@@ -1,0 +1,19 @@
+instrumentation/lettuce/lettuce-5.0/javaagent/build.gradle.kts
+  s_4da286df53d59f::t_e5155588a5da52 33-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "a684bdfc4f8581c51978dba8c4a65e1268ebf325",
+  "prompts": {},
+  "sessions": {
+    "s_4da286df53d59f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a03dcc-72ab-7980-9292-91449337592e",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
