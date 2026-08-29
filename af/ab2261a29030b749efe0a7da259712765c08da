@@ -1,0 +1,21 @@
+instrumentation/redisson/redisson-metrics-2.3/javaagent/build.gradle.kts
+  s_51920445bffab7::t_2a75c0acc00050 67-76,79
+instrumentation/redisson/redisson-metrics-common-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/common/v2_3/RedissonConnectionPoolMetrics.java
+  s_51920445bffab7::t_2a75c0acc00050 88
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "afab2261a29030b749efe0a7da259712765c08da",
+  "prompts": {},
+  "sessions": {
+    "s_51920445bffab7": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a04cba-593b-7f52-bc90-58afb8fd57dc",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
