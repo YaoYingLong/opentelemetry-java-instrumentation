@@ -1,0 +1,19 @@
+instrumentation/oracle-ucp-11.2/library/src/main/java/io/opentelemetry/instrumentation/oracleucp/v11_2/OracleUcpTelemetry.java
+  s_8886e7a013b19d::t_4f93e6f7030230 29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "9f4c8a8b9abb9eeeaba2696c79b4c33bb04ceb73",
+  "prompts": {},
+  "sessions": {
+    "s_8886e7a013b19d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a057e3-ab17-7233-80dd-bb11640daa86",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
