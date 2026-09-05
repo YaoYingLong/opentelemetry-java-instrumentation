@@ -1,0 +1,19 @@
+instrumentation/redisson/redisson-metrics-2.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/redissonmetrics/v2_3/RedissonConnectionPoolAccessor.java
+  s_5de39454a2416b::t_cfab21aab36032 30,93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "c8559a14263e30dcc9afe09a8f95f2b3fade2263",
+  "prompts": {},
+  "sessions": {
+    "s_5de39454a2416b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a07181-7d04-7460-a12d-41772d3cd980",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
