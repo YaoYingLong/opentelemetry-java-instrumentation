@@ -1,0 +1,29 @@
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JvmExecutorMetrics.java
+  s_b82feb4c25a98e::t_4b67880bce8ce3 84,86
+instrumentation/executors-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/ThreadPoolExecutorMetricsTest.java
+  s_b82feb4c25a98e::t_2d85057622e8bf 26,93,298,323,456,616
+  s_b82feb4c25a98e::t_34612cbeda38f4 119-184,186-234
+  s_b82feb4c25a98e::t_69d6c224b65086 185
+instrumentation/executors-metrics/bootstrap/src/main/java/io/opentelemetry/javaagent/bootstrap/executors/metrics/JdkExecutorMetrics.java
+  s_b82feb4c25a98e::t_4b67880bce8ce3 75,100,115
+instrumentation/executors-metrics/README.md
+  s_b82feb4c25a98e::t_4b67880bce8ce3 4-9
+instrumentation/executors-metrics/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/JvmExecutorMetricsAssertions.java
+  s_b82feb4c25a98e::t_2d85057622e8bf 42,162-163,195,209-210,274,277
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "fd9bdd02bb87ee888ba958cbaaa2f35472ce1db9",
+  "prompts": {},
+  "sessions": {
+    "s_b82feb4c25a98e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a085c0-1520-7681-af34-5047619960cd",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
