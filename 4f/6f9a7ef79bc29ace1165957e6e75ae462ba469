@@ -1,0 +1,21 @@
+instrumentation/executor-metrics/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsTest.java
+  s_926e17368d23f6::t_d57ef7366e0b83 32,433-553,653,656-657,666,678,688
+instrumentation/executor-metrics/README.md
+  s_926e17368d23f6::t_188b14fc56e9f2 12-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "4f6f9a7ef79bc29ace1165957e6e75ae462ba469",
+  "prompts": {},
+  "sessions": {
+    "s_926e17368d23f6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a09e7b-7695-7880-ae48-43eac4ade032",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
