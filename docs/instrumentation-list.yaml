@@ -7904,6 +7904,7 @@ libraries:
     name: io.opentelemetry.cassandra-4.0
   has_javaagent: true
   javaagent_target_versions:
+  - com.datastax.oss:java-driver-core-shaded:[4.0,4.4)
   - com.datastax.oss:java-driver-core:[4.0,4.4)
   configuration_refs:
   - common.db.query-sanitization.enabled
@@ -8322,21 +8323,61 @@ libraries:
         type: STRING
       - name: server.port
         type: LONG
-- name: couchbase-3.1
+- name: couchbase-3.0
   display_name: Couchbase Client
   description: |
-    Couchbase instrumentation is owned by the Couchbase project for versions 3+. This instrumentation automatically configures the instrumentation provided by the Couchbase library.
+    This instrumentation uses the Couchbase tracing SPI to create spans for Couchbase Java SDK 3.0.
   semantic_conventions:
   - DATABASE_CLIENT_SPANS
   library_link: https://github.com/couchbase/couchbase-java-client
-  features:
-  - AUTO_INSTRUMENTATION_SHIM
+  source_path: instrumentation/couchbase/couchbase-3.0
+  scope:
+    name: io.opentelemetry.couchbase-3.0
+  has_javaagent: true
+  javaagent_target_versions:
+  - com.couchbase.client:java-client:[3.0,3.1)
+  telemetry:
+  - when: default
+    spans:
+    - span_kind: INTERNAL
+      attributes:
+      - name: couchbase.client_context.request_id
+        type: STRING
+      - name: couchbase.document_id
+        type: STRING
+      - name: couchbase.operation_id
+        type: STRING
+      - name: peer.latency
+        type: LONG
+      - name: peer.service
+        type: STRING
+  - when: otel.semconv-stability.opt-in=database
+    spans:
+    - span_kind: INTERNAL
+      attributes:
+      - name: couchbase.client_context.request_id
+        type: STRING
+      - name: couchbase.document_id
+        type: STRING
+      - name: couchbase.operation_id
+        type: STRING
+      - name: peer.latency
+        type: LONG
+      - name: peer.service
+        type: STRING
+- name: couchbase-3.1
+  display_name: Couchbase Client
+  description: |
+    This instrumentation uses the Couchbase tracing SPI to create database client spans for Couchbase Java SDK 3.1.
+  semantic_conventions:
+  - DATABASE_CLIENT_SPANS
+  library_link: https://github.com/couchbase/couchbase-java-client
   source_path: instrumentation/couchbase/couchbase-3.1
   scope:
     name: io.opentelemetry.couchbase-3.1
   has_javaagent: true
   javaagent_target_versions:
-  - com.couchbase.client:java-client:[3.1,3.1.6)
+  - com.couchbase.client:java-client:[3.1,3.2)
   configuration_refs:
   - otel.instrumentation.couchbase.experimental-span-attributes-6c36d22e
   telemetry:
@@ -8397,102 +8438,6 @@ libraries:
       - name: db.couchbase.local_id
         type: STRING
       - name: db.couchbase.operation_id
-        type: LONG
-      - name: db.couchbase.scope
-        type: STRING
-      - name: db.couchbase.server_duration
-        type: LONG
-      - name: db.couchbase.service
-        type: STRING
-      - name: db.namespace
-        type: STRING
-      - name: db.operation.name
-        type: STRING
-      - name: db.system.name
-        type: STRING
-      - name: network.peer.address
-        type: STRING
-      - name: network.peer.port
-        type: LONG
-- name: couchbase-3.1.6
-  display_name: Couchbase Client
-  description: |
-    Couchbase instrumentation is owned by the Couchbase project for versions 3+. This instrumentation automatically configures the instrumentation provided by the Couchbase library.
-  semantic_conventions:
-  - DATABASE_CLIENT_SPANS
-  library_link: https://github.com/couchbase/couchbase-java-client
-  features:
-  - AUTO_INSTRUMENTATION_SHIM
-  source_path: instrumentation/couchbase/couchbase-3.1.6
-  scope:
-    name: io.opentelemetry.couchbase-3.1.6
-  has_javaagent: true
-  javaagent_target_versions:
-  - com.couchbase.client:java-client:[3.1.6,3.2.0)
-  configuration_refs:
-  - otel.instrumentation.couchbase.experimental-span-attributes-6c36d22e
-  telemetry:
-  - when: default
-    spans:
-    - span_kind: INTERNAL
-      attributes:
-      - name: db.couchbase.collection
-        type: STRING
-      - name: db.couchbase.local_id
-        type: STRING
-      - name: db.couchbase.operation_id
-        type: LONG
-      - name: db.couchbase.retries
-        type: LONG
-      - name: db.couchbase.scope
-        type: STRING
-      - name: db.couchbase.server_duration
-        type: LONG
-      - name: db.couchbase.service
-        type: STRING
-      - name: db.name
-        type: STRING
-      - name: db.operation
-        type: STRING
-      - name: db.system
-        type: STRING
-      - name: net.host.name
-        type: STRING
-      - name: net.host.port
-        type: LONG
-      - name: net.peer.name
-        type: STRING
-      - name: net.peer.port
-        type: LONG
-      - name: net.transport
-        type: STRING
-  - when: otel.semconv-stability.opt-in=database
-    spans:
-    - span_kind: INTERNAL
-      attributes:
-      - name: db.collection.name
-        type: STRING
-      - name: db.namespace
-        type: STRING
-      - name: db.operation.name
-        type: STRING
-      - name: db.system.name
-        type: STRING
-      - name: network.peer.address
-        type: STRING
-      - name: network.peer.port
-        type: LONG
-  - when: otel.semconv-stability.opt-in=database,otel.instrumentation.couchbase.experimental-span-attributes=true
-    spans:
-    - span_kind: INTERNAL
-      attributes:
-      - name: db.collection.name
-        type: STRING
-      - name: db.couchbase.local_id
-        type: STRING
-      - name: db.couchbase.operation_id
-        type: LONG
-      - name: db.couchbase.retries
         type: LONG
       - name: db.couchbase.scope
         type: STRING
@@ -8513,18 +8458,16 @@ libraries:
 - name: couchbase-3.2
   display_name: Couchbase Client
   description: |
-    Couchbase instrumentation is owned by the Couchbase project for versions 3+. This instrumentation automatically configures the instrumentation provided by the Couchbase library.
+    This instrumentation uses the Couchbase tracing SPI to create database client spans for Couchbase Java SDK 3.2 and later.
   semantic_conventions:
   - DATABASE_CLIENT_SPANS
   library_link: https://github.com/couchbase/couchbase-java-client
-  features:
-  - AUTO_INSTRUMENTATION_SHIM
   source_path: instrumentation/couchbase/couchbase-3.2
   scope:
     name: io.opentelemetry.couchbase-3.2
   has_javaagent: true
   javaagent_target_versions:
-  - com.couchbase.client:java-client:[3.2.0,3.4.0)
+  - com.couchbase.client:java-client:[3.2.0,)
   configuration_refs:
   - otel.instrumentation.couchbase.experimental-span-attributes-6c36d22e
   telemetry:
@@ -8583,106 +8526,6 @@ libraries:
   - when: otel.semconv-stability.opt-in=database,otel.instrumentation.couchbase.experimental-span-attributes=true
     spans:
     - span_kind: INTERNAL
-      attributes:
-      - name: db.collection.name
-        type: STRING
-      - name: db.couchbase.document_id
-        type: STRING
-      - name: db.couchbase.local_id
-        type: STRING
-      - name: db.couchbase.operation_id
-        type: LONG
-      - name: db.couchbase.retries
-        type: LONG
-      - name: db.couchbase.scope
-        type: STRING
-      - name: db.couchbase.server_duration
-        type: LONG
-      - name: db.couchbase.service
-        type: STRING
-      - name: db.namespace
-        type: STRING
-      - name: db.operation.name
-        type: STRING
-      - name: db.system.name
-        type: STRING
-      - name: network.peer.address
-        type: STRING
-      - name: network.peer.port
-        type: LONG
-- name: couchbase-3.4
-  display_name: Couchbase Client
-  description: |
-    Couchbase instrumentation is owned by the Couchbase project for versions 3+. This instrumentation automatically configures the instrumentation provided by the Couchbase library.
-  semantic_conventions:
-  - DATABASE_CLIENT_SPANS
-  library_link: https://github.com/couchbase/couchbase-java-client
-  features:
-  - AUTO_INSTRUMENTATION_SHIM
-  source_path: instrumentation/couchbase/couchbase-3.4
-  scope:
-    name: io.opentelemetry.couchbase-3.4
-  has_javaagent: true
-  javaagent_target_versions:
-  - com.couchbase.client:java-client:[3.4.0,)
-  configuration_refs:
-  - otel.instrumentation.couchbase.experimental-span-attributes-6c36d22e
-  telemetry:
-  - when: default
-    spans:
-    - span_kind: CLIENT
-      attributes:
-      - name: db.couchbase.collection
-        type: STRING
-      - name: db.couchbase.document_id
-        type: STRING
-      - name: db.couchbase.local_id
-        type: STRING
-      - name: db.couchbase.operation_id
-        type: LONG
-      - name: db.couchbase.retries
-        type: LONG
-      - name: db.couchbase.scope
-        type: STRING
-      - name: db.couchbase.server_duration
-        type: LONG
-      - name: db.couchbase.service
-        type: STRING
-      - name: db.name
-        type: STRING
-      - name: db.operation
-        type: STRING
-      - name: db.system
-        type: STRING
-      - name: net.host.name
-        type: STRING
-      - name: net.host.port
-        type: LONG
-      - name: net.peer.name
-        type: STRING
-      - name: net.peer.port
-        type: LONG
-      - name: net.transport
-        type: STRING
-  - when: otel.semconv-stability.opt-in=database
-    spans:
-    - span_kind: CLIENT
-      attributes:
-      - name: db.collection.name
-        type: STRING
-      - name: db.namespace
-        type: STRING
-      - name: db.operation.name
-        type: STRING
-      - name: db.system.name
-        type: STRING
-      - name: network.peer.address
-        type: STRING
-      - name: network.peer.port
-        type: LONG
-  - when: otel.semconv-stability.opt-in=database,otel.instrumentation.couchbase.experimental-span-attributes=true
-    spans:
-    - span_kind: CLIENT
       attributes:
       - name: db.collection.name
         type: STRING
@@ -18177,7 +18020,7 @@ libraries:
         type: STRING
   - when: otel.semconv-stability.opt-in=database
     metric_refs:
-    - db.client.operation.duration-32559b79
+    - db.client.operation.duration-bfd9d23c
     spans:
     - span_kind: CLIENT
       attributes:
@@ -18187,6 +18030,10 @@ libraries:
         type: STRING
       - name: error.type
         type: STRING
+      - name: network.peer.address
+        type: STRING
+      - name: network.peer.port
+        type: LONG
       - name: server.address
         type: STRING
       - name: server.port
