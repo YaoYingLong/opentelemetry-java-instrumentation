@@ -4717,6 +4717,28 @@ definitions:
         type: STRING
       - name: server.port
         type: LONG
+    messaging.client.operation.duration-df200871:
+      name: messaging.client.operation.duration
+      description: Duration of messaging operation initiated by a producer or consumer
+        client.
+      instrument: histogram
+      data_type: HISTOGRAM
+      unit: s
+      attributes:
+      - name: messaging.destination.name
+        type: STRING
+      - name: messaging.destination.subscription.name
+        type: STRING
+      - name: messaging.operation.name
+        type: STRING
+      - name: messaging.operation.type
+        type: STRING
+      - name: messaging.system
+        type: STRING
+      - name: server.address
+        type: STRING
+      - name: server.port
+        type: LONG
     messaging.client.operation.duration-f4822aab:
       name: messaging.client.operation.duration
       description: Duration of messaging operation initiated by a producer or consumer
@@ -4984,6 +5006,25 @@ definitions:
       unit: s
       attributes:
       - name: messaging.destination.name
+        type: STRING
+      - name: messaging.operation
+        type: STRING
+      - name: messaging.system
+        type: STRING
+      - name: server.address
+        type: STRING
+      - name: server.port
+        type: LONG
+    messaging.publish.duration-da85138c:
+      name: messaging.publish.duration
+      description: Measures the duration of publish operation.
+      instrument: histogram
+      data_type: HISTOGRAM
+      unit: s
+      attributes:
+      - name: messaging.destination.name
+        type: STRING
+      - name: messaging.destination.partition.id
         type: STRING
       - name: messaging.operation
         type: STRING
@@ -8956,6 +8997,7 @@ libraries:
   has_javaagent: true
   javaagent_target_versions:
   - com.couchbase.client:java-client:[3.2.0,)
+  - com.couchbase.client:java-client:[3.4.3,)
   configuration_refs:
   - otel.instrumentation.couchbase.emit-experimental-telemetry-28ea332f
   - otel.instrumentation.couchbase.experimental-span-attributes
@@ -9469,8 +9511,6 @@ libraries:
         type: LONG
       - name: server.address
         type: STRING
-      - name: server.port
-        type: LONG
 - name: elasticsearch-transport-6.0
   display_name: Elasticsearch Transport Client
   description: |
@@ -9560,8 +9600,6 @@ libraries:
         type: LONG
       - name: server.address
         type: STRING
-      - name: server.port
-        type: LONG
 - name: executors
   display_name: Java Executors
   description: |
@@ -15850,7 +15888,7 @@ libraries:
   telemetry:
   - when: otel.instrumentation.common.messaging.experimental.receive-telemetry.enabled=true
     metric_refs:
-    - messaging.publish.duration-05731f17
+    - messaging.publish.duration-da85138c
     - messaging.receive.duration-4b4a91de
     - messaging.receive.messages-2499c5ac
     spans:
@@ -15941,7 +15979,7 @@ libraries:
   - when: otel.semconv-stability.preview=messaging
     metric_refs:
     - messaging.client.consumed.messages-5c21579f
-    - messaging.client.operation.duration-dab7c60a
+    - messaging.client.operation.duration-df200871
     - messaging.client.sent.messages-38a90199
     - messaging.process.duration-9ee3dd0a
     spans:
