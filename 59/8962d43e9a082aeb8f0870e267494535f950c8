@@ -1,0 +1,21 @@
+instrumentation/executor-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPerTaskExecutorMetricsInstrumentation.java
+  s_b48be2f0666a7b::t_3239985c161215 54-56,58,60-61,68,81
+instrumentation/executor-metrics/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/executors/metrics/ThreadPoolExecutorMetricsInstrumentation.java
+  s_b48be2f0666a7b::t_3239985c161215 62,77,88,99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "598962d43e9a082aeb8f0870e267494535f950c8",
+  "prompts": {},
+  "sessions": {
+    "s_b48be2f0666a7b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a175ea-3d28-7583-b44c-7ca9dc03171b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
