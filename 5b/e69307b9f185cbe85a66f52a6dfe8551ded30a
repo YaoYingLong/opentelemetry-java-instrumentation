@@ -1,0 +1,23 @@
+instrumentation/apache-httpclient/apache-httpclient-4.3/library/README.md
+  s_380c4dda569342::t_3f94258af19056 5-8
+CHANGELOG.md
+  s_380c4dda569342::t_3f94258af19056 7-10
+instrumentation/apache-httpclient/apache-httpclient-4.3/testing/src/main/java/io/opentelemetry/instrumentation/apachehttpclient/v4_3/AbstractApacheHttpClientTest.java
+  s_380c4dda569342::t_fc62d2d7caaf99 8-19,25-26,30-31,39-40,47,139-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "5be69307b9f185cbe85a66f52a6dfe8551ded30a",
+  "prompts": {},
+  "sessions": {
+    "s_380c4dda569342": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a187e0-4753-7530-a5d9-b41b11e516d8",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
