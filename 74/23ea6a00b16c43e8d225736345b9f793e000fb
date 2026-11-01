@@ -1,0 +1,41 @@
+instrumentation/apache-httpclient/apache-httpclient-4.3/testing/src/main/java/io/opentelemetry/instrumentation/apachehttpclient/v4_3/AbstractApacheHttpClientTest.java
+  s_d8dd8ba6a0404c::t_b0197cdc117260 176-180
+  s_d8dd8ba6a0404c::t_90554f9138b62b 138-143,167-175,185-188,191-192
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/AbstractHttpClientTest.java
+  s_80a45d815ca7c1::t_08326acb0ae4a8 187-204,206-211,213,215-222
+  s_d8dd8ba6a0404c::t_90554f9138b62b 48,57,64-65,87,119-121,152-186,223-224
+  s_80a45d815ca7c1::t_ec58f2f1ba21b9 205,212,214
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientTestOptions.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 73-76,137-138,176-178
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientTypeAdapter.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 8,31-45
+testing-common/src/test/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientProxyAssertionsTest.java
+  s_d8dd8ba6a0404c::t_47a74fed2c98c0 1-9,11-28,30-31,33-44,47-56,67-99,102-103,106-114,116-131,133-158
+  s_d8dd8ba6a0404c::t_29a0094d5d560e 29,32,45-46,101,104-105
+  s_80a45d815ca7c1::t_08326acb0ae4a8 132
+  s_80a45d815ca7c1::t_327bffa25adec7 10,57-66,100,115
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7423ea6a00b16c43e8d225736345b9f793e000fb",
+  "prompts": {},
+  "sessions": {
+    "s_80a45d815ca7c1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a196bb-5396-70a0-a31d-3dcdf0300785",
+        "model": "gpt-6-astra"
+      },
+      "human_author": null
+    },
+    "s_d8dd8ba6a0404c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19550-808b-7fd1-826d-78117384294a",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
