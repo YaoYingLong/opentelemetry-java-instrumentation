@@ -1,0 +1,29 @@
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientTestOptions.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 73-76,137-138,176-178
+instrumentation/apache-httpclient/apache-httpclient-4.3/testing/src/main/java/io/opentelemetry/instrumentation/apachehttpclient/v4_3/AbstractApacheHttpClientTest.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 138-143,167-175,185-188,191-192
+  s_d8dd8ba6a0404c::t_b0197cdc117260 176-180
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/AbstractHttpClientTest.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 48,57,64-65,87,119-121,152-194,1155,1164,1168,1174-1175,1215-1227
+testing-common/src/test/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientProxyAssertionsTest.java
+  s_d8dd8ba6a0404c::t_47a74fed2c98c0 1-27,29-30,32-43,46-60,62-66,68-70,72-74,76,78-82,84-88,91-92,95-120,122-147
+  s_d8dd8ba6a0404c::t_29a0094d5d560e 28,31,44-45,89-90,93-94,121
+testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/http/HttpClientTypeAdapter.java
+  s_d8dd8ba6a0404c::t_90554f9138b62b 8,31-45
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "fc31806a1813367dad8083a897d9e6866e831f93",
+  "prompts": {},
+  "sessions": {
+    "s_d8dd8ba6a0404c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19550-808b-7fd1-826d-78117384294a",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
