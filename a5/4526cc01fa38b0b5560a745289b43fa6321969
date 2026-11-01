@@ -1,0 +1,20 @@
+instrumentation/apache-httpasyncclient-4.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachehttpasyncclient/v4_1/ApacheHttpAsyncClientTest.java
+  s_fe6d4f3bb22a41::t_f975d170db9af4 8-9
+  s_fe6d4f3bb22a41::t_022d9150ac912c 207-208
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "a54526cc01fa38b0b5560a745289b43fa6321969",
+  "prompts": {},
+  "sessions": {
+    "s_fe6d4f3bb22a41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a196df-d018-7592-bd9d-233f42a83a31",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
