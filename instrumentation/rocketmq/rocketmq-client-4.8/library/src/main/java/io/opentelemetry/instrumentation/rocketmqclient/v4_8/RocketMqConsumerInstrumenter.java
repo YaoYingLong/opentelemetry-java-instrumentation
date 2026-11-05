@@ -12,6 +12,8 @@ import javax.annotation.Nullable;
 import org.apache.rocketmq.client.hook.ConsumeMessageContext;
 import org.apache.rocketmq.common.message.MessageExt;
 
+// 按实际交给 Listener 的消息数选择处理模型；消息由一次批量发送产生，也可能被分次消费。
+// 单条可采用消息上下文作为父；多条只建立一个 Process Span，并逐条添加来源 Link。
 final class RocketMqConsumerInstrumenter {
 
   private final Instrumenter<RocketMqConsumerRequest, ConsumeMessageContext>
@@ -33,6 +35,7 @@ final class RocketMqConsumerInstrumenter {
       String consumerGroup,
       @Nullable String namespace) {
     int batchSize = msgs.size();
+    // 空列表已由调用方 Hook 拦截；集合中只有一条消息时仍使用单条消费的父上下文规则。
     if (batchSize == 1) {
       RocketMqConsumerRequest request =
           new RocketMqConsumerRequest(msgs.get(0), consumerGroup, batchSize, namespace);
@@ -43,6 +46,7 @@ final class RocketMqConsumerInstrumenter {
       return null;
     }
 
+    // 一个请求代表整个消费批次，避免按消息数创建多个覆盖同一次 Listener 调用的 Process Span。
     RocketMqConsumerRequest request =
         new RocketMqConsumerRequest(msgs, consumerGroup, batchSize, namespace);
     if (!batchProcessInstrumenter.shouldStart(parentContext, request)) {
@@ -53,6 +57,8 @@ final class RocketMqConsumerInstrumenter {
   }
 
   void end(ConsumerContext consumerContext, ConsumeMessageContext response) {
+    // 使用开始时保存的请求决定结束哪个 Instrumenter，避免从完成时线程上下文重新推导。
+    // SDK Hook 没有提供原始业务 Throwable，错误分类依赖 response 中的消费返回类型与状态。
     RocketMqConsumerRequest request = consumerContext.getRequest();
     if (request.getBatchSize() == 1) {
       singleProcessInstrumenter.end(consumerContext.getContext(), request, response, null);
@@ -62,6 +68,7 @@ final class RocketMqConsumerInstrumenter {
   }
 
   static final class ConsumerContext {
+    // 绑定同一次 start/end 的 Context 与请求；Scope 由外层 Hook 的 ContextAndScope 单独持有。
     private final Context context;
     private final RocketMqConsumerRequest request;
 

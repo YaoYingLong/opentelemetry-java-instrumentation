@@ -16,6 +16,7 @@ import org.apache.rocketmq.client.apis.message.MessageView;
 import org.apache.rocketmq.client.java.impl.producer.SendReceiptImpl;
 import org.apache.rocketmq.client.java.message.PublishingMessageImpl;
 
+/** 保存本模块复用的 Instrumenter，在类初始化时统一读取遥测配置并完成装配。 */
 public class RocketMqSingletons {
 
   private static final Instrumenter<PublishingMessageImpl, SendReceiptImpl> producerInstrumenter;
@@ -27,6 +28,7 @@ public class RocketMqSingletons {
 
   static {
     OpenTelemetry openTelemetry = GlobalOpenTelemetry.get();
+    // headers 控制哪些消息属性被采集为遥测属性，与传播器注入 traceparent 等字段是两件事。
     IncludeExclude messagingHeaders = ExperimentalConfig.get().getMessagingHeaders();
     boolean receiveInstrumentationEnabled =
         ExperimentalConfig.get().messagingReceiveInstrumentationEnabled();
@@ -36,6 +38,8 @@ public class RocketMqSingletons {
     consumerReceiveInstrumenter =
         RocketMqInstrumenterFactory.createConsumerReceiveInstrumenter(
             openTelemetry, messagingHeaders, receiveInstrumentationEnabled);
+    // SimpleConsumer 没有本模块可包装的业务监听器，因此即使关闭实验性 Receive 遥测，
+    // 仍启用其拉取遥测；shouldStart 仍会遵守 Instrumenter 的正常抑制规则。
     simpleConsumerReceiveInstrumenter =
         RocketMqInstrumenterFactory.createConsumerReceiveInstrumenter(
             openTelemetry, messagingHeaders, true);

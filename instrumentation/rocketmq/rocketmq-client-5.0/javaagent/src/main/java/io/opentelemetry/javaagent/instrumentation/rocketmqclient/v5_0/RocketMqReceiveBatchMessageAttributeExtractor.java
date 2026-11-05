@@ -13,6 +13,12 @@ import java.util.List;
 import javax.annotation.Nullable;
 import org.apache.rocketmq.client.apis.message.MessageView;
 
+/**
+ * 将整批消息一致的 RocketMQ 字段提升到 Receive Span。
+ *
+ * <p>各 Getter 已完成公共值判断；不一致或没有值时返回 null，AttributesBuilder 会忽略。 消息之间不同的字段留给
+ * RocketMqReceiveSpanLinksExtractor 在各自的 Link 上记录。
+ */
 class RocketMqReceiveBatchMessageAttributeExtractor
     implements AttributesExtractor<RocketMqReceiveRequest, List<MessageView>> {
 

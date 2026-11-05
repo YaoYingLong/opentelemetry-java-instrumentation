@@ -15,6 +15,7 @@ import javax.annotation.Nullable;
 import org.apache.rocketmq.client.apis.consumer.ConsumeResult;
 import org.apache.rocketmq.client.apis.message.MessageView;
 
+/** 提供一次监听器处理对应的单条消息字段，并把消费返回值或异常转换成通用错误类型。 */
 class RocketMqConsumerProcessAttributeGetter
     implements MessagingAttributesGetter<MessageView, ConsumeResult> {
 
@@ -71,6 +72,7 @@ class RocketMqConsumerProcessAttributeGetter
   @Override
   public String getErrorType(
       MessageView messageView, @Nullable ConsumeResult consumeResult, @Nullable Throwable error) {
+    // FAILURE 是业务回调明确报告的失败；抛异常时使用异常类名，与 Span 的错误状态相互配合。
     if (consumeResult == ConsumeResult.FAILURE) {
       return ConsumeResult.FAILURE.name();
     }

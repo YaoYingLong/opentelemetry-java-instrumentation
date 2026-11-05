@@ -18,6 +18,7 @@ import org.apache.rocketmq.client.apis.consumer.ConsumeResult;
 import org.apache.rocketmq.client.apis.message.MessageView;
 import org.apache.rocketmq.client.java.message.MessageViewImpl;
 
+/** 为单条消息的 Process Span 补充 RocketMQ 字段；这里无需做 Receive 批次的公共值合并。 */
 class RocketMqConsumerProcessAttributeExtractor
     implements AttributesExtractor<MessageView, ConsumeResult> {
 
@@ -42,8 +43,10 @@ class RocketMqConsumerProcessAttributeExtractor
         .getDeliveryTimestamp()
         .ifPresent(s -> attributes.put(ROCKETMQ_MESSAGE_DELIVERY_TIMESTAMP, s));
     attributes.put(ROCKETMQ_MESSAGE_KEYS, new ArrayList<>(messageView.getKeys()));
+    // 接收回调已从协议请求中取出消费组，并随 MessageView 一起传递到当前处理线程。
     String consumerGroup = VirtualFieldStore.getConsumerGroupByMessage(messageView);
     attributes.put(MESSAGING_CONSUMER_GROUP_NAME, consumerGroup);
+    // namespace 来自消息所关联队列的 Topic Resource，空字符串统一视为未提供。
     String namespace =
         ((MessageViewImpl) messageView).getMessageQueue().getTopicResource().getNamespace();
     attributes.put(ROCKETMQ_NAMESPACE, StringUtils.emptyToNull(namespace));

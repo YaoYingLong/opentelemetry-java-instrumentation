@@ -12,7 +12,11 @@ import org.apache.rocketmq.shaded.com.google.common.util.concurrent.Futures;
 import org.apache.rocketmq.shaded.com.google.common.util.concurrent.MoreExecutors;
 import org.apache.rocketmq.shaded.com.google.common.util.concurrent.SettableFuture;
 
-/** Future converter, which converts a future of a list into a list of futures. */
+/**
+ * 将一个“整批结果的 Future”拆成“每条结果各自的 Future”，供各条消息独立结束 Send Span。
+ *
+ * <p>这里只分发完成信号，不拆分网络请求。调用方传入消息数量，成功结果按列表下标对应； SDK 的发送完成路径负责检查回执数量，整批失败时所有子 Future 使用同一个异常完成。
+ */
 public class FutureConverter {
   private FutureConverter() {}
 
@@ -23,6 +27,7 @@ public class FutureConverter {
       futures.add(f);
     }
     ListFutureCallback<T> futureCallback = new ListFutureCallback<>(futures);
+    // 不另建线程；若原 Future 已完成，子 Future 可能在 convert 返回前就已完成。
     Futures.addCallback(future, futureCallback, MoreExecutors.directExecutor());
     return futures;
   }

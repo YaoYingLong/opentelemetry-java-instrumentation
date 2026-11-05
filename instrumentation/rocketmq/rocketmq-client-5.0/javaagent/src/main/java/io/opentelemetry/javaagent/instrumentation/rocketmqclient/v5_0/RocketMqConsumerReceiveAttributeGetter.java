@@ -13,6 +13,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 import org.apache.rocketmq.client.apis.message.MessageView;
 
+/** 提供整个 Receive 批次的通用属性；逐条消息的身份和差异由 Link 表达。 */
 class RocketMqConsumerReceiveAttributeGetter
     implements MessagingAttributesGetter<RocketMqReceiveRequest, List<MessageView>> {
 
@@ -52,8 +53,7 @@ class RocketMqConsumerReceiveAttributeGetter
   @Nullable
   @Override
   public String getMessageId(RocketMqReceiveRequest request, @Nullable List<MessageView> unused) {
-    // receiving is a batching operation, so the message id always goes on the links describing the
-    // individual messages
+    // Receive 始终按批次建模，即便只收到一条消息，消息 ID 也放在该消息的 Link 上。
     return null;
   }
 
@@ -67,13 +67,14 @@ class RocketMqConsumerReceiveAttributeGetter
   @Override
   public Long getBatchMessageCount(
       RocketMqReceiveRequest request, @Nullable List<MessageView> messages) {
+    // 成功时记录实际消息数；失败响应为 null，不能把失败报告为成功收到 0 条消息。
     return messages != null ? (long) messages.size() : null;
   }
 
   @Override
   public Collection<String> getMessageHeaderNames(RocketMqReceiveRequest request) {
-    // per-message headers that vary across a batch belong on the span links, so the receive span
-    // does not capture any headers
+    // 批次中的消息头可能不同，当前实现不在 Receive Span 上采集消息头。
+    // Link 提取器另行记录消息 ID 和 RocketMQ 字段，并未自动采集任意用户消息头。
     return emptyList();
   }
 }

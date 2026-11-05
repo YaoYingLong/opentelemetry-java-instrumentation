@@ -12,14 +12,22 @@ import io.opentelemetry.javaagent.extension.instrumentation.InstrumentationModul
 import io.opentelemetry.javaagent.extension.instrumentation.TypeInstrumentation;
 import java.util.List;
 
+/**
+ * RocketMQ gRPC 客户端插桩的注册入口，由 Agent 通过 SPI 发现。
+ *
+ * <p>发送链路依次经过消息构造、发送和异步回执；PushConsumer 分别记录接收与监听器处理， SimpleConsumer
+ * 则在主动拉取的入口记录接收。下面的类型插桩共同完成这些生命周期的衔接。
+ */
 @AutoService(InstrumentationModule.class)
 public class RocketMqInstrumentationModule extends InstrumentationModule {
   public RocketMqInstrumentationModule() {
+    // 同时提供带版本和不带版本的启用名称；实际匹配的 SDK 类型由各 TypeInstrumentation 决定。
     super("rocketmq-client-5.0", "rocketmq-client");
   }
 
   @Override
   public List<TypeInstrumentation> typeInstrumentations() {
+    // 这里是注册清单，列表顺序不代表运行时调用顺序；具体时机由匹配的方法决定。
     return asList(
         new PublishingMessageImplInstrumentation(),
         new ProducerImplInstrumentation(),

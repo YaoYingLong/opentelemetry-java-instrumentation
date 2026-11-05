@@ -19,6 +19,11 @@ import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.matcher.ElementMatcher;
 import org.apache.rocketmq.client.apis.consumer.MessageListener;
 
+/**
+ * 在 SDK 创建 ConsumeService 时替换 MessageListener，让实际业务消费进入统一的 Process 包装器。
+ *
+ * <p>兼容监听器处于第 2 或第 3 个参数的构造签名；只替换监听器参数，不接管 SDK 的调度与重试。
+ */
 final class ConsumeServiceInstrumentation implements TypeInstrumentation {
   @Override
   public ElementMatcher<TypeDescription> typeMatcher() {
@@ -51,7 +56,7 @@ final class ConsumeServiceInstrumentation implements TypeInstrumentation {
     @AssignReturned.ToArguments(@ToArgument(1))
     @Advice.OnMethodEnter(suppress = Throwable.class, inline = false)
     public static MessageListener onEnter(@Advice.Argument(1) MessageListener messageListener) {
-      // Replace messageListener by wrapper.
+      // 返回值通过 AssignReturned 写回构造参数，SDK 后续调用保存的监听器时就会进入包装器。
       return MessageListenerWrapper.wrapIfNeeded(messageListener);
     }
   }
@@ -61,7 +66,7 @@ final class ConsumeServiceInstrumentation implements TypeInstrumentation {
     @AssignReturned.ToArguments(@ToArgument(2))
     @Advice.OnMethodEnter(suppress = Throwable.class, inline = false)
     public static MessageListener onEnter(@Advice.Argument(2) MessageListener messageListener) {
-      // Replace messageListener by wrapper.
+      // 另一种构造签名复用同一包装逻辑，wrapIfNeeded 避免已有包装器被再次包装。
       return MessageListenerWrapper.wrapIfNeeded(messageListener);
     }
   }

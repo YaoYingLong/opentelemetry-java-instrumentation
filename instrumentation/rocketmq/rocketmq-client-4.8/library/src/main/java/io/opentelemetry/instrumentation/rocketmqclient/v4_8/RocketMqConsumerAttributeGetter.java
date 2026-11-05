@@ -20,6 +20,7 @@ import org.apache.rocketmq.client.hook.ConsumeMessageContext;
 import org.apache.rocketmq.common.MixAll;
 import org.apache.rocketmq.common.message.MessageExt;
 
+// 提取消费侧公共属性；批次公共值由 request 统一计算，错误优先使用 SDK 的 ConsumeReturnType。
 final class RocketMqConsumerAttributeGetter
     implements MessagingAttributesGetter<RocketMqConsumerRequest, ConsumeMessageContext> {
 
@@ -73,6 +74,7 @@ final class RocketMqConsumerAttributeGetter
   @Override
   public Long getBatchMessageCount(
       RocketMqConsumerRequest request, @Nullable ConsumeMessageContext unused) {
+    // 消费模型由本次 Listener 实际收到的条数决定，单条消费不输出 batch.message_count。
     return request.isBatch() ? (long) request.getBatchSize() : null;
   }
 
@@ -86,6 +88,7 @@ final class RocketMqConsumerAttributeGetter
     if (responseErrorType != null) {
       return responseErrorType;
     }
+    // 当前消费 Hook 的结束路径传入 null Throwable；保留公共 Getter 对直接传入异常的处理契约。
     return error == null ? null : error.getClass().getName();
   }
 
@@ -102,15 +105,19 @@ final class RocketMqConsumerAttributeGetter
     // a listener that exceeded the configured consume timeout even when that listener eventually
     // returned a success status
     Map<String, String> props = response.getProps();
+    // EXCEPTION、RETURNNULL、TIME_OUT、FAILED 都保留 SDK 分类，SUCCESS 表示不设置 error.type。
+    // Listener 原异常已由 SDK 捕获，Hook 中的分类不等于拿到了异常对象或堆栈。
     String consumeReturnType = props == null ? null : props.get(MixAll.CONSUME_CONTEXT_TYPE);
     if (consumeReturnType != null) {
       return ConsumeReturnType.SUCCESS.name().equals(consumeReturnType) ? null : consumeReturnType;
     }
+    // 只有缺少 ConsumeReturnType 时才回退到消费状态，避免抹掉超时、抛异常、返回 null 的区别。
     return response.isSuccess() ? null : response.getStatus();
   }
 
   @Override
   public List<String> getMessageHeader(RocketMqConsumerRequest request, String name) {
+    // Header 采集面向单条消息；批量请求不把不同消息的值拼成无法区分来源的数组。
     if (request.isBatch()) {
       // per-message attributes that vary across a batch belong on the span links; merging the
       // headers of every message into one multi-valued attribute would lose which message each

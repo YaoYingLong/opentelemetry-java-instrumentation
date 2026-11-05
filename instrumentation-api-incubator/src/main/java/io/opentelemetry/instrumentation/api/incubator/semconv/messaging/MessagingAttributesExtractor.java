@@ -119,6 +119,10 @@ public final class MessagingAttributesExtractor<REQUEST, RESPONSE>
     Set<String> exactNames = new LinkedHashSet<>();
     boolean enumerate = false;
     if (headers != null) {
+      /**
+       * otel.instrumentation.common.messaging.headers.included=order-id,tenant-*
+       * otel.instrumentation.common.messaging.headers.excluded=internal-*
+       */
       List<String> included = headers.getIncluded();
       // a selector without included patterns matches every header name that is not excluded
       enumerate = included.isEmpty();

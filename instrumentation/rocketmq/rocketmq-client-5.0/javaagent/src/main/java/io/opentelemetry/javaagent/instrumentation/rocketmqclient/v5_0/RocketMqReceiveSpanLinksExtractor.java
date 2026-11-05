@@ -22,6 +22,12 @@ import java.util.List;
 import java.util.Objects;
 import org.apache.rocketmq.client.apis.message.MessageView;
 
+/**
+ * 为接收批次中的各条消息提交指向其生产端上下文的 Link，并携带消息级属性。
+ *
+ * <p>Receive Span 可以关联多个生产端 Span；消息 ID 始终属于对应 Link，批次共有的其他字段 已由 Span
+ * 属性提取器记录，这里仅补充各条消息的差异，避免重复存储相同信息。
+ */
 class RocketMqReceiveSpanLinksExtractor implements SpanLinksExtractor<RocketMqReceiveRequest> {
   // copied from semconv
   private static final AttributeKey<Long> ROCKETMQ_MESSAGE_DELIVERY_TIMESTAMP =
@@ -44,6 +50,8 @@ class RocketMqReceiveSpanLinksExtractor implements SpanLinksExtractor<RocketMqRe
   public void extract(
       SpanLinksBuilder spanLinks, Context parentContext, RocketMqReceiveRequest request) {
     for (MessageView message : request.getMessages()) {
+      // Link 只能反映消息本身携带的上下文，因此以 root 为提取起点；若使用 parentContext，
+      // 缺少传播字段的消息可能错误地关联到消费者当前的 Span。
       Context extracted = propagator.extract(Context.root(), message, getter);
       AttributesBuilder attributes = Attributes.builder();
       if (!Objects.equals(message.getTopic(), request.getDestination())) {
@@ -68,6 +76,7 @@ class RocketMqReceiveSpanLinksExtractor implements SpanLinksExtractor<RocketMqRe
           || !new HashSet<>(messageKeys).equals(new HashSet<>(request.getMessageKeys()))) {
         attributes.put(ROCKETMQ_MESSAGE_KEYS, messageKeys);
       }
+      // 是否接受该 SpanContext 由底层 SpanBuilder 决定；没有有效传播上下文时不会凭空创建生产端 Span。
       spanLinks.addLink(Span.fromContext(extracted).getSpanContext(), attributes.build());
     }
   }

@@ -25,6 +25,12 @@ import org.apache.rocketmq.client.apis.producer.Transaction;
 import org.apache.rocketmq.client.java.message.MessageImpl;
 import org.apache.rocketmq.client.java.message.PublishingMessageImpl;
 
+/**
+ * 将应用线程的 Context 附着到 SDK 的待发送消息，并在读取消息属性时补入传播字段。
+ *
+ * <p>同时匹配 PublishingMessageImpl 与 MessageImpl，以覆盖 getProperties 在消息实现或父类上的声明。
+ * 真正合并属性前仍检查消息类型，只对待发送消息生效。
+ */
 final class PublishingMessageImplInstrumentation implements TypeInstrumentation {
 
   @Override
@@ -64,6 +70,7 @@ final class PublishingMessageImplInstrumentation implements TypeInstrumentation 
      */
     @Advice.OnMethodExit(suppress = Throwable.class, inline = false)
     public static void onExit(@Advice.This PublishingMessageImpl message) {
+      // 只保存父上下文，Send Span 要等内部发送入口拿到路由信息后才创建。
       VirtualFieldStore.setContextByMessage(message, Context.current());
     }
   }
@@ -81,6 +88,8 @@ final class PublishingMessageImplInstrumentation implements TypeInstrumentation 
       PublishingMessageImpl message = (PublishingMessageImpl) messageImpl;
       Map<String, String> extraProperties = VirtualFieldStore.getExtraPropertiesByMessage(message);
       if (extraProperties != null) {
+        // SDK 的属性读取结果还会用于构造 Protobuf userProperties；在此合并才能随消息发出。
+        // 同名字段由传播器本次写入的值覆盖，附加属性本身保存在 VirtualField 中。
         properties.putAll(extraProperties);
       }
       return properties;

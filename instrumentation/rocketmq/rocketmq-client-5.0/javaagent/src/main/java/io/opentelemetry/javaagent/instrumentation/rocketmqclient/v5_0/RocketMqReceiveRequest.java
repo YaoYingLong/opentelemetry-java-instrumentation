@@ -18,6 +18,12 @@ import javax.annotation.Nullable;
 import org.apache.rocketmq.client.apis.message.MessageView;
 import org.apache.rocketmq.client.java.message.MessageViewImpl;
 
+/**
+ * 为两种接收入口提供统一的遥测请求视图，并按需计算一批消息的公共属性。
+ *
+ * <p>底层 ConsumerImpl 路径直接持有协议请求；SimpleConsumer 路径持有消费组及从返回消息恢复的 Topic/namespace。消息共有的值放在 Receive
+ * Span 上，不同的值由 Link 提取器逐条记录。
+ */
 class RocketMqReceiveRequest {
 
   @Nullable private final ReceiveMessageRequest request;
@@ -52,10 +58,13 @@ class RocketMqReceiveRequest {
   }
 
   static RocketMqReceiveRequest create(String consumerGroup) {
+    // SimpleConsumer 失败时尚未拿到消息，也没有暴露内部协议请求，因此不推测 Topic 或 namespace。
     return new RocketMqReceiveRequest(null, null, consumerGroup, emptyList());
   }
 
   static RocketMqReceiveRequest create(String consumerGroup, List<MessageView> messages) {
+    // 调用方已过滤成功的空列表；SDK 在一次拉取中选择一个 Topic，第一条消息提供其 namespace。
+    // 展示在 Span 上的 destination 仍由下面的公共值逻辑检查全部消息。
     MessageView message = messages.get(0);
     String namespace =
         StringUtils.emptyToNull(
@@ -65,6 +74,7 @@ class RocketMqReceiveRequest {
 
   @Nullable
   String getRequestDestination() {
+    // 保留请求目标供无消息的失败路径使用；有消息时，实际批次的 Topic 由 getDestination 返回。
     ReceiveMessageRequest request = this.request;
     return request == null ? destination : request.getMessageQueue().getTopic().getName();
   }
@@ -112,6 +122,8 @@ class RocketMqReceiveRequest {
   }
 
   private BatchMessageAttributes getBatchMessageAttributes() {
+    // 延迟到属性或 Link 真正需要时再遍历消息；关闭遥测或被抑制的接收无需做整批属性比较。
+    // 一个请求的多个 Getter 共用这次计算结果，避免在逐条提取 Link 时重复扫描整批消息。
     BatchMessageAttributes attributes = batchMessageAttributes;
     if (attributes == null) {
       attributes =
@@ -124,6 +136,7 @@ class RocketMqReceiveRequest {
   @Nullable
   private static <T> T commonValue(
       List<MessageView> messages, Function<MessageView, T> valueExtractor) {
+    // 只有所有消息值都相等才提升为批次属性；null 表示未提供公共值，不能用首条代表整批。
     if (messages.isEmpty()) {
       return null;
     }
@@ -142,6 +155,7 @@ class RocketMqReceiveRequest {
       return null;
     }
     List<String> keys = new ArrayList<>(messages.get(0).getKeys());
+    // keys 按集合比较：顺序不影响是否相同；相同时保留第一条消息的列表用于输出。
     HashSet<String> keySet = new HashSet<>(keys);
     for (int i = 1; i < messages.size(); i++) {
       if (!keySet.equals(new HashSet<>(messages.get(i).getKeys()))) {

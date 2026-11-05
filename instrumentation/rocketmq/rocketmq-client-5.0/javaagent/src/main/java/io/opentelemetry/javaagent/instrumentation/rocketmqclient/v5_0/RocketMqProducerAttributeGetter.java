@@ -15,6 +15,7 @@ import javax.annotation.Nullable;
 import org.apache.rocketmq.client.java.impl.producer.SendReceiptImpl;
 import org.apache.rocketmq.client.java.message.PublishingMessageImpl;
 
+/** 提供单条发送消息的通用字段，由 Messaging 提取器生成名称、消息属性及选中的消息头属性。 */
 class RocketMqProducerAttributeGetter
     implements MessagingAttributesGetter<PublishingMessageImpl, SendReceiptImpl> {
 
@@ -52,6 +53,7 @@ class RocketMqProducerAttributeGetter
 
   @Override
   public String getMessageId(PublishingMessageImpl message, @Nullable SendReceiptImpl sendReceipt) {
+    // 待发送消息已经持有 SDK 分配的 ID，即使没有成功回执也能取得。
     return message.getMessageId().toString();
   }
 
@@ -65,6 +67,7 @@ class RocketMqProducerAttributeGetter
   @Override
   public Long getBatchMessageCount(
       PublishingMessageImpl publishingMessage, @Nullable SendReceiptImpl sendReceipt) {
+    // 底层虽然使用消息列表发送，但本模块为每条消息分别创建 Send Span，因此这里不报告批次数量。
     return null;
   }
 

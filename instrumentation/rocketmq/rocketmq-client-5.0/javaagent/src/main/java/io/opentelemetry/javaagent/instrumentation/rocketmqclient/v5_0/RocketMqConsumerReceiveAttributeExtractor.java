@@ -15,6 +15,7 @@ import java.util.List;
 import javax.annotation.Nullable;
 import org.apache.rocketmq.client.apis.message.MessageView;
 
+/** 从统一接收请求中提取消费组和 namespace，兼容协议请求与 SimpleConsumer 返回消息两种来源。 */
 class RocketMqConsumerReceiveAttributeExtractor
     implements AttributesExtractor<RocketMqReceiveRequest, List<MessageView>> {
 
@@ -27,6 +28,7 @@ class RocketMqConsumerReceiveAttributeExtractor
       AttributesBuilder attributes, Context parentContext, RocketMqReceiveRequest request) {
     String consumerGroup = request.getConsumerGroup();
     attributes.put(MESSAGING_CONSUMER_GROUP_NAME, consumerGroup);
+    // 失败时可能没有 namespace；AttributesBuilder 忽略 null，不会输出空占位属性。
     attributes.put(ROCKETMQ_NAMESPACE, request.getNamespace());
   }
 

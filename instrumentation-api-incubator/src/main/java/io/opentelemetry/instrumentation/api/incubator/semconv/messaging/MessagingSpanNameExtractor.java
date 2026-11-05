@@ -39,12 +39,17 @@ public final class MessagingSpanNameExtractor<REQUEST> implements SpanNameExtrac
 
   @Override
   public String extract(REQUEST request) {
+    // 对于rocketmq来说这里固定返回的是null
     String destinationName = getter.getDestinationTemplate(request);
     if (destinationName == null
+        // rocketmq中isTemporaryDestination默认返回false
         && !getter.isTemporaryDestination(request)
+        // rocketmq中isAnonymousDestination默认返回false
         && !getter.isAnonymousDestination(request)) {
+      // 返回的是具体的topic
       destinationName = getter.getDestination(request);
     }
+    // 如果destinationName为空，直接返回send，否则返回的是send 实际topic
     return destinationName == null ? operationName : operationName + " " + destinationName;
   }
 }

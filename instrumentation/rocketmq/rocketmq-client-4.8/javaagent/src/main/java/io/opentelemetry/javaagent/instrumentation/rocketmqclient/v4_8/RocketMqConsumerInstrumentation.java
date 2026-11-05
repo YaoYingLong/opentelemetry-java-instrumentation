@@ -17,6 +17,8 @@ import net.bytebuddy.matcher.ElementMatcher;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl;
 
+// 自动为 PushConsumer 安装消费 Hook；正常的顺序消费和并发消费都通过该 Hook 包围 Listener 调用。
+// 此入口不匹配 PullConsumer 或 LitePullConsumer，也不创建拉取消息的 Receive Span。
 class RocketMqConsumerInstrumentation implements TypeInstrumentation {
 
   @Override
@@ -38,6 +40,7 @@ class RocketMqConsumerInstrumentation implements TypeInstrumentation {
                 value = "defaultMQPushConsumerImpl",
                 declaringType = DefaultMQPushConsumer.class)
             DefaultMQPushConsumerImpl defaultMqPushConsumerImpl) {
+      // 在 SDK 启动消费服务之前注册，后续由 SDK 在消费线程上成对调用 Before/After。
       defaultMqPushConsumerImpl.registerConsumeMessageHook(consumeMessageHook());
     }
   }

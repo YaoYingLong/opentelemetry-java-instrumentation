@@ -18,6 +18,11 @@ import org.apache.rocketmq.client.apis.consumer.SimpleConsumer;
 import org.apache.rocketmq.client.apis.message.MessageView;
 import org.apache.rocketmq.shaded.com.google.common.util.concurrent.ListenableFuture;
 
+/**
+ * 在 SimpleConsumer 同步 receive 和异步 receiveAsync 共用的 receive0 入口记录一次完整拉取。
+ *
+ * <p>入口捕获消费组、调用方上下文和开始时间；返回时替换内部 Future，由完成路径记录结果。 这里只观察 SDK 拉取，不自动为应用拿到消息后的任意业务代码创建 Process Span。
+ */
 final class SimpleConsumerImplInstrumentation implements TypeInstrumentation {
 
   @Override
@@ -44,6 +49,7 @@ final class SimpleConsumerImplInstrumentation implements TypeInstrumentation {
     public static ListenableFuture<List<MessageView>> onExit(
         @Advice.Enter SimpleConsumerReceiveOperation operation,
         @Advice.Return ListenableFuture<List<MessageView>> future) {
+      // Enter Advice 发生被抑制的异常时 operation 可能为 null，此时保持 SDK 原始返回值。
       return operation == null ? future : operation.wrap(future);
     }
   }

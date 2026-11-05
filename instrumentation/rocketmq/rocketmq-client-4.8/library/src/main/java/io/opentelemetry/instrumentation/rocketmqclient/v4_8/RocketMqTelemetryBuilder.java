@@ -16,6 +16,7 @@ public final class RocketMqTelemetryBuilder {
 
   private final OpenTelemetry openTelemetry;
 
+  // 默认不采集消息 Header，实验属性也默认关闭；trace 上下文传播由 OpenTelemetry 的 propagator 决定。
   private IncludeExclude headers = IncludeExclude.builder().build();
   private boolean captureExperimentalSpanAttributes;
 
@@ -31,6 +32,7 @@ public final class RocketMqTelemetryBuilder {
   @CanIgnoreReturnValue
   public RocketMqTelemetryBuilder setCaptureExperimentalSpanAttributes(
       boolean captureExperimentalSpanAttributes) {
+    // 控制 rocketmq.message.tag、broker_address、queue_id 等附加属性，不控制 Span 的创建与传播。
     this.captureExperimentalSpanAttributes = captureExperimentalSpanAttributes;
     return this;
   }
@@ -49,6 +51,8 @@ public final class RocketMqTelemetryBuilder {
    */
   @CanIgnoreReturnValue
   public RocketMqTelemetryBuilder setHeaders(IncludeExclude headers) {
+    // 匹配消息 properties 名称，区分大小写，支持 * / ?；excluded 优先，空选择器不采集。
+    // 非空的仅排除选择器会选择其余全部字段；选择结果写成 messaging.header.<name> 字符串数组。
     this.headers = headers;
     return this;
   }
@@ -66,6 +70,7 @@ public final class RocketMqTelemetryBuilder {
   @Deprecated // may be removed in the next minor release
   @CanIgnoreReturnValue
   public RocketMqTelemetryBuilder setCapturedHeaders(Collection<String> capturedHeaders) {
+    // 旧 API 只支持精确名称，适配时不把旧调用中的 * / ? 悄悄解释为新的通配符规则。
     return setHeaders(
         DeprecatedCaptureNames.toSelectorOrEmpty(
             capturedHeaders,

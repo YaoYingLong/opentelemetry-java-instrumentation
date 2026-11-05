@@ -32,6 +32,12 @@ import org.apache.rocketmq.client.apis.message.MessageView;
 import org.apache.rocketmq.client.java.impl.producer.SendReceiptImpl;
 import org.apache.rocketmq.client.java.message.PublishingMessageImpl;
 
+/**
+ * 组装 Send、Receive、Process 三种操作的名称、属性、指标、错误和传播策略。
+ *
+ * <p>Getter 提供 SDK 字段，通用 Messaging 提取器负责映射消息语义；RocketMQ 专用提取器补充 namespace、tag、message group
+ * 等字段。Advice 和回调负责调用 start/end，工厂不管理单次操作状态。
+ */
 final class RocketMqInstrumenterFactory {
   private static final String INSTRUMENTATION_NAME = "io.opentelemetry.rocketmq-client-5.0";
 
@@ -60,6 +66,8 @@ final class RocketMqInstrumenterFactory {
             .addAttributesExtractor(new RocketMqProducerAttributeExtractor())
             .addOperationMetrics(MessagingProducerMetrics.get());
     setMessagingSendExceptionEventExtractor(instrumenterBuilder);
+    // Producer Instrumenter 的 start 会把新建 Span 的上下文注入消息。
+    // Setter 先写入附加属性，消息 getProperties() 的 Advice 再将其合并到 SDK 返回的 Map。
     return instrumenterBuilder.buildProducerInstrumenter(new MessageMapSetter());
   }
 
@@ -82,6 +90,8 @@ final class RocketMqInstrumenterFactory {
             .addAttributesExtractor(attributesExtractor)
             .addAttributesExtractor(new RocketMqConsumerReceiveAttributeExtractor())
             .addOperationMetrics(MessagingConsumerMetrics.get());
+    // 一次 Receive 对应一批消息：公共字段放在 Span 上，消息 ID 和不同的字段放在各自的 Link 上。
+    // 使用普通 Instrumenter 保留调用方父上下文，通过 Link 关联各条消息携带的生产端上下文。
     instrumenterBuilder.addAttributesExtractor(new RocketMqReceiveBatchMessageAttributeExtractor());
     instrumenterBuilder.addSpanLinksExtractor(
         new RocketMqReceiveSpanLinksExtractor(
@@ -110,6 +120,7 @@ final class RocketMqInstrumenterFactory {
             .setSpanStatusExtractor(
                 (spanStatusBuilder, messageView, consumeResult, error) -> {
                   if (consumeResult == ConsumeResult.FAILURE) {
+                    // 监听器正常返回 FAILURE 也表示处理失败，不必等到 Java 异常才标记 ERROR。
                     spanStatusBuilder.setStatus(StatusCode.ERROR);
                   } else {
                     SpanStatusExtractor.getDefault()
@@ -117,10 +128,13 @@ final class RocketMqInstrumenterFactory {
                   }
                 });
     if (!receiveInstrumentationEnabled) {
+      // PushConsumer 关闭 Receive 遥测时，由 Process 补记已消费消息数；开启时交给 Receive 记录。
       instrumenterBuilder.addOperationMetrics(MessagingConsumerMetrics.getConsumedMessages());
     }
     setMessagingProcessExceptionEventExtractor(instrumenterBuilder);
 
+    // 公共工厂始终关联消息携带的生产端上下文；已有有效环境 Span 时保留它作为父 Span，
+    // 否则使用消息中提取的上下文作为父上下文，同时保留提取到的其他上下文值。
     return MessagingProcessInstrumenterFactory.create(
         instrumenterBuilder,
         openTelemetry.getPropagators().getTextMapPropagator(),
