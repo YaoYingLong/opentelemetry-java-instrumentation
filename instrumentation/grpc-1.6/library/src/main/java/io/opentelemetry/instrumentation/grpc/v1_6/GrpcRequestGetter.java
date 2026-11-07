@@ -13,6 +13,7 @@ import io.opentelemetry.context.propagation.TextMapGetter;
 import java.util.Iterator;
 import javax.annotation.Nullable;
 
+/** 将 GrpcRequest 中的 Metadata 适配为文本传播载体，供 propagator 读取 traceparent、baggage 等传播字段。 */
 final class GrpcRequestGetter implements TextMapGetter<GrpcRequest> {
 
   static final GrpcRequestGetter INSTANCE = new GrpcRequestGetter();
@@ -37,6 +38,7 @@ final class GrpcRequestGetter implements TextMapGetter<GrpcRequest> {
 
   @Override
   public Iterator<String> getAll(@Nullable GrpcRequest request, String key) {
+    // 多值传播字段保留全部取值；没有 carrier 或指定头时用空迭代器表示缺失。
     if (request == null) {
       return emptyIterator();
     }

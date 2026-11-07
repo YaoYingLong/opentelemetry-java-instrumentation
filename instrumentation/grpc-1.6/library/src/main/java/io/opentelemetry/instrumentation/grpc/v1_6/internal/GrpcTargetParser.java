@@ -17,6 +17,9 @@ import javax.annotation.Nullable;
  * href="https://grpc.github.io/grpc/core/md_doc_naming.html">gRPC Name Resolution spec</a> and <a
  * href="https://github.com/open-telemetry/semantic-conventions/pull/3317">semantic conventions</a>.
  *
+ * <p>把 target 转成遥测中的逻辑服务地址，不执行名称解析或建立连接。DNS 目标取 endpoint，Unix 目标取路径， 其他 resolver
+ * 目标通常保留完整字符串；无法提供目标地址时返回 null，由 GrpcRequest 再尝试 authority。
+ *
  * <p>This class is internal and is hence not for public use. Its APIs are unstable and can change
  * at any time.
  */
@@ -45,16 +48,19 @@ public class GrpcTargetParser {
 
   @Nullable
   public static ParsedTarget parse(@Nullable String target) {
+    // 用户原始 target 可能像 host:port，也可能像 resolver:值，需要结合当前 resolver 注册情况消除歧义。
     return parseTarget(target, false);
   }
 
   @Nullable
   public static ParsedTarget parseComputedTarget(@Nullable String target) {
+    // gRPC 已经选择 resolver 的 target，不再用当前默认 resolver 重新解释其单冒号形式。
     return parseTarget(target, true);
   }
 
   @Nullable
   public static String createDnsTargetFromUri(@Nullable URI uri) {
+    // 从 URI 的 authority 构造 DNS target，移除 user-info，并转义 IPv6 方括号使其能出现在 URI 路径中。
     if (uri == null) {
       return null;
     }
@@ -77,6 +83,7 @@ public class GrpcTargetParser {
     }
 
     int schemeEnd = target.indexOf("://");
+    // 显式 scheme:// 可以直接按 scheme 分流；没有它时必须先区分 IPv6、裸主机和单冒号写法。
     if (schemeEnd == -1) {
       // Bracketed IPv6 like "[::1]" or "[::1]:8080"
       if (target.startsWith("[")) {
@@ -96,6 +103,8 @@ public class GrpcTargetParser {
       }
 
       if (isValidScheme(originalScheme)) {
+        // 例如 custom:123 的前缀既可能是主机也可能是 resolver 名称。
+        // 已计算目标、已有对应 provider 或默认 resolver 非 DNS 时，保留整个 target，不擅自拆出端口。
         if (computedTarget) {
           return new ParsedTarget(target, null);
         }
@@ -122,6 +131,7 @@ public class GrpcTargetParser {
     }
 
     if ("directaddress".equals(scheme)) {
+      // 此内部目标本身不能提供可用 endpoint，返回 null 让调用方回退到 channel authority。
       return null;
     }
 
@@ -135,6 +145,7 @@ public class GrpcTargetParser {
    */
   @Nullable
   public static ParsedTarget parseAuthority(@Nullable String authority) {
+    // authority 已明确是主机/端口语义，不参与 resolver scheme 判断。
     if (authority == null || authority.isEmpty()) {
       return null;
     }
@@ -157,6 +168,8 @@ public class GrpcTargetParser {
 
   @Nullable
   private static ParsedTarget parseDnsScheme(String target) {
+    // dns://resolver/host:port 中，resolver 是解析服务的 authority，真正的 RPC 目标在 path 中。
+    // dns:host:port 是 opaque URI，因此从 schemeSpecificPart 读取。
     try {
       URI uri = new URI(target);
       String endpoint = uri.isOpaque() ? uri.getSchemeSpecificPart() : uri.getPath();
@@ -178,6 +191,7 @@ public class GrpcTargetParser {
 
   @Nullable
   private static ParsedTarget parseUnixScheme(String target) {
+    // Unix socket 路径本身就是地址，没有网络端口；支持 unix 和 unix-abstract 两种 scheme。
     try {
       URI uri = new URI(target);
       String endpoint = uri.isOpaque() ? uri.getSchemeSpecificPart() : uri.getPath();
@@ -196,6 +210,7 @@ public class GrpcTargetParser {
 
   @Nullable
   private static ParsedTarget parseHostPort(String hostPort) {
+    // 带方括号的 IPv6 可明确区分端口；裸 IPv6 含多个冒号时整体保留，避免把末段地址误认成端口。
     if (hostPort.isEmpty()) {
       return null;
     }
@@ -237,6 +252,7 @@ public class GrpcTargetParser {
 
   @Nullable
   private static Integer parsePort(String portStr) {
+    // 无效或越界端口仅省略 port，调用方仍可保留已经解析出的主机部分。
     try {
       int port = Integer.parseInt(portStr);
       if (port >= 0 && port <= 65535) {
@@ -275,6 +291,8 @@ public class GrpcTargetParser {
   }
 
   private static ResolverSelection getResolverSelection(String scheme) {
+    // 这里只查询 provider 是否注册及默认 scheme，不调用 resolver 做网络查询。
+    // 较旧版本缺少注册表 API 或反射失败时，按无自定义 provider、默认 DNS 的分支处理。
     if (getDefaultRegistryMethod == null
         || getDefaultSchemeMethod == null
         || getProviderForSchemeMethod == null) {

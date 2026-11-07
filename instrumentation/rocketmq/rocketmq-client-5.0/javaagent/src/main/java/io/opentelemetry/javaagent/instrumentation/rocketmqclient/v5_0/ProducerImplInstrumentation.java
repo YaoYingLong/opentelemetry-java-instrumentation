@@ -84,6 +84,7 @@ final class ProducerImplInstrumentation implements TypeInstrumentation {
         VirtualFieldStore.setNamespaceByMessage(message, namespace);
 
         // 构造 PublishingMessageImpl 时仍在应用调用线程，保存的 Context 可以跨路由查询等异步步骤传递。
+        // 在PublishingMessageImplInstrumentation中被设置
         Context parentContext = VirtualFieldStore.getContextByMessage(message);
         if (parentContext == null) {
           parentContext = Context.current();
@@ -104,6 +105,7 @@ final class ProducerImplInstrumentation implements TypeInstrumentation {
         // directExecutor 在完成线程执行；若 Future 已完成，也可能在注册回调时立即执行。
         Futures.addCallback(
             future,
+            // 在SendSpanFinishingCallback的onSuccess和onFailure中结束span
             new SendSpanFinishingCallback(instrumenter, context, message),
             MoreExecutors.directExecutor());
       }

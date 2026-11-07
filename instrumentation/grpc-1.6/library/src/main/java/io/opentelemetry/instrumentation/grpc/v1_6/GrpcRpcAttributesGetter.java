@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.stream.StreamSupport;
 import javax.annotation.Nullable;
 
+/** 把 gRPC 请求/结果适配为通用 RPC 语义字段；属性名、写入时机和指标处理由对应的 RPC 提取器负责。 */
 final class GrpcRpcAttributesGetter implements RpcAttributesGetter<GrpcRequest, Status> {
 
   private final boolean isClient;
@@ -55,6 +56,7 @@ final class GrpcRpcAttributesGetter implements RpcAttributesGetter<GrpcRequest, 
   @Nullable
   public String getErrorType(
       GrpcRequest request, @Nullable Status response, @Nullable Throwable error) {
+    // 协议状态被当前角色判为错误时使用状态名称；否则仅在有异常时使用异常类名。
     if (response != null
         && (isClient ? !response.isOk() : GrpcSpanStatusExtractor.isServerError(response))) {
       return response.getCode().name();
@@ -63,6 +65,7 @@ final class GrpcRpcAttributesGetter implements RpcAttributesGetter<GrpcRequest, 
   }
 
   List<String> metadataValue(GrpcRequest request, String key) {
+    // 此方法读取 ASCII 多值头，调用方 GrpcAttributesExtractor 已过滤二进制头和非法名称。
     if (request.getMetadata() == null) {
       return emptyList();
     }

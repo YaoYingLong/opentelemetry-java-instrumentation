@@ -17,10 +17,16 @@ import io.opentelemetry.instrumentation.api.instrumenter.Instrumenter;
 import io.opentelemetry.instrumentation.grpc.v1_6.internal.Internal;
 import javax.annotation.Nullable;
 
-/** Entrypoint for instrumenting gRPC servers or clients. */
+/**
+ * Entrypoint for instrumenting gRPC servers or clients.
+ *
+ * <p>library 的接入入口：手动接入时由应用把拦截器装到 gRPC builder，自动插桩时由 GrpcSingletons 完成安装。 本对象持有可复用的 instrumenter
+ * 和传播器，每次 RPC 的独立状态由各拦截器创建的包装器持有。
+ */
 public final class GrpcTelemetry {
 
   static {
+    // 将包内创建逻辑提供给 internal 包；这个入口接收 gRPC 已计算的 target，保留与原始 target 的语义区别。
     Internal.setClientInterceptorFactory(
         (telemetry, target) -> telemetry.newTracingClientInterceptor(target, true));
   }
@@ -62,6 +68,7 @@ public final class GrpcTelemetry {
    * #createClientInterceptor(String)} when the configured channel target is available.
    */
   public ClientInterceptor createClientInterceptor() {
+    // 没有 target 时，后续从 Channel.authority() 提取服务地址。
     return newTracingClientInterceptor(null, false);
   }
 
@@ -79,6 +86,7 @@ public final class GrpcTelemetry {
    * @param target the configured gRPC channel target, for example {@code dns:///host:8443}
    */
   public ClientInterceptor createClientInterceptor(String target) {
+    // 这里的 target 是应用配置 channel 时使用的原始字符串，不是 overrideAuthority 的替代值。
     return newTracingClientInterceptor(requireNonNull(target, "target"), false);
   }
 
@@ -90,6 +98,7 @@ public final class GrpcTelemetry {
    * services, which server interceptors never see.
    */
   public void configureServerBuilder(ServerBuilder<?> serverBuilder) {
+    // 两个入口互补：拦截器追踪正常分发的 RPC，stream tracer 补充“找不到服务方法”的失败请求。
     serverBuilder.intercept(createServerInterceptor());
     serverBuilder.addStreamTracerFactory(
         new TracingServerStreamTracerFactory(serverInstrumenter, propagators));

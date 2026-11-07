@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+/** 统一请求头选择器的大小写，并为每个头名构造 rpc.request.header. 前缀的字符串数组属性键。 */
 final class CapturedGrpcRequestHeadersUtil {
   private static final String RPC_REQUEST_HEADER_KEY_ATTRIBUTE_PREFIX = "rpc.request.header.";
 
@@ -44,6 +45,7 @@ final class CapturedGrpcRequestHeadersUtil {
 
   private static Map<String, AttributeKey<List<String>>> createLiteralAttributeKeys(
       IncludeExclude selector, String prefix) {
+    // 只预建配置中明确列出的头名；通配符和仅排除选择器的匹配结果来自请求，不保留为动态缓存。
     Map<String, AttributeKey<List<String>>> result = new HashMap<>();
     for (String pattern : selector.getIncluded()) {
       if (pattern.indexOf('*') == -1 && pattern.indexOf('?') == -1) {
@@ -57,6 +59,7 @@ final class CapturedGrpcRequestHeadersUtil {
       String metadataKey,
       Map<String, AttributeKey<List<String>>> literalRequestHeaderAttributeKeys,
       String prefix) {
+    // 字面量头名复用预建键，其余按当前请求创建，不让远端可控的头名长期占用缓存。
     AttributeKey<List<String>> attributeKey = literalRequestHeaderAttributeKeys.get(metadataKey);
     return attributeKey != null ? attributeKey : AttributeKey.stringArrayKey(prefix + metadataKey);
   }

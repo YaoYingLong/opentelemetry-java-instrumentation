@@ -30,9 +30,13 @@ public class RocketMqInstrumentationModule extends InstrumentationModule {
     // 这里是注册清单，列表顺序不代表运行时调用顺序；具体时机由匹配的方法决定。
     return asList(
         new PublishingMessageImplInstrumentation(),
+        // 拦截ProducerImpl的send0和sendAsync方法
         new ProducerImplInstrumentation(),
+        // 拦截面向单个队列的异步接收ConsumerImpl的receiveMessage方法
         new ConsumerImplInstrumentation(),
+        // 拦截ConsumeService的构造方法，给构造函数中的参数MessageListener添加warp
         new ConsumeServiceInstrumentation(),
+        // 拦截SimpleConsumerImpl的receive0方法
         new SimpleConsumerImplInstrumentation());
   }
 }

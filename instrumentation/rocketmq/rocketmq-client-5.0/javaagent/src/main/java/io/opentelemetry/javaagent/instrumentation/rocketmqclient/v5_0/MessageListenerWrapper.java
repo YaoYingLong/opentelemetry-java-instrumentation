@@ -39,6 +39,7 @@ public class MessageListenerWrapper implements MessageListener {
     // 公共 Process Instrumenter 再结合消息携带的生产端上下文，确定父 Span 和 Link。
     Context parentContext = VirtualFieldStore.getContextByMessage(messageView);
     if (parentContext == null) {
+      // 一般来说走该逻辑
       parentContext = Context.current();
     }
     Instrumenter<MessageView, ConsumeResult> processInstrumenter = consumerProcessInstrumenter();

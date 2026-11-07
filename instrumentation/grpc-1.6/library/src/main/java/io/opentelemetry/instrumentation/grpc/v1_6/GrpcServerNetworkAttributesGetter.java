@@ -12,6 +12,7 @@ import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import javax.annotation.Nullable;
 
+/** 服务端视角：server.address/port 来自请求 authority，network.peer 地址来自连接的远端客户端。 */
 final class GrpcServerNetworkAttributesGetter
     implements ServerAttributesGetter<GrpcRequest>, NetworkAttributesGetter<GrpcRequest, Status> {
 
@@ -40,6 +41,7 @@ final class GrpcServerNetworkAttributesGetter
   public InetSocketAddress getNetworkPeerInetSocketAddress(
       GrpcRequest request, @Nullable Status status) {
     SocketAddress address = request.getPeerSocketAddress();
+    // 只有 IP socket 才能提供 InetSocketAddress；进程内或其他传输地址不强行转换。
     if (address instanceof InetSocketAddress) {
       return (InetSocketAddress) address;
     }

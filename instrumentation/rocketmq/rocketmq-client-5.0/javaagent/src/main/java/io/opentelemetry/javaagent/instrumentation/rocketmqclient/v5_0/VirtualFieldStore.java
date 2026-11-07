@@ -59,6 +59,7 @@ public class VirtualFieldStore {
     return MESSAGE_EXTRA_PROPERTIES.get(message);
   }
 
+  // 在MessageMapSetter中被调用
   public static void setExtraPropertiesByMessage(
       PublishingMessageImpl message, Map<String, String> extraProperties) {
     MESSAGE_EXTRA_PROPERTIES.set(message, extraProperties);

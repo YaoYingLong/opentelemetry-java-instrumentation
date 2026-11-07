@@ -22,7 +22,7 @@ import io.opentelemetry.instrumentation.grpc.v1_6.internal.GrpcConfig;
 import java.util.concurrent.atomic.AtomicReference;
 import javax.annotation.Nullable;
 
-// Holds singleton references.
+/** 为各处 Advice 共享遥测配置、builder 安装标记和上下文桥接器，避免每次 RPC 重复构造这些组件。 */
 public class GrpcSingletons {
 
   public static final VirtualField<ManagedChannelBuilder<?>, Boolean>
@@ -37,6 +37,7 @@ public class GrpcSingletons {
   private static final AtomicReference<Context.Storage> storageReference = new AtomicReference<>();
 
   static {
+    // Agent 使用全局 OpenTelemetry；配置在该 helper 初始化时读取，再交给 library builder 组装两端 instrumenter。
     OpenTelemetry openTelemetry = GlobalOpenTelemetry.get();
     DeclarativeConfigProperties config =
         DeclarativeConfigUtil.getInstrumentationConfig(openTelemetry, "grpc");
@@ -72,6 +73,7 @@ public class GrpcSingletons {
   }
 
   public static Context.Storage setStorage(Context.Storage storage) {
+    // 首次访问 storage() 可能发生竞争，CAS 发布一个桥接器，所有调用方都返回已发布的同一实例。
     storageReference.compareAndSet(null, new ContextStorageBridge(storage));
     return storage();
   }

@@ -22,6 +22,12 @@ import io.opentelemetry.context.Scope;
 import io.opentelemetry.instrumentation.api.instrumenter.Instrumenter;
 import java.util.concurrent.atomic.AtomicLongFieldUpdater;
 
+/**
+ * 服务端已注册方法的追踪入口：从请求 Metadata 提取远端上下文，创建 SERVER span，并包装调用及监听器。
+ *
+ * <p>请求可以包含多条流式消息，span 覆盖整个 RPC。close 先保存服务端选择的状态，正常结束由 onComplete 确认，取消由 onCancel
+ * 处理；这里显式捕获的异常路径则直接结束 span 并继续抛出异常。
+ */
 final class TracingServerInterceptor implements ServerInterceptor {
 
   private static final AttributeKey<Boolean> GRPC_CANCELED =
@@ -65,6 +71,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
       ServerCallHandler<REQUEST, RESPONSE> next) {
     String authority = call.getAuthority();
     if (authority == null) {
+      // 部分适配框架通过额外插桩保存 authority；读取同一个 ServerCall 上的补充值。
       // Armeria grpc server call does not implement getAuthority(). In
       // ArmeriaServerCallInstrumentation we store the value for the authority header in a virtual
       // field.
@@ -82,6 +89,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
       return next.startCall(call, headers);
     }
 
+    // 此 instrumenter 由 buildServerInstrumenter 创建，start 会以当前上下文为基础从 headers 提取远端父链路。
     Context context = instrumenter.start(parentContext, request);
 
     try (Scope ignored = context.makeCurrent()) {
@@ -114,12 +122,15 @@ final class TracingServerInterceptor implements ServerInterceptor {
     }
 
     TracingServerCallListener start(Metadata headers, ServerCallHandler<REQUEST, RESPONSE> next) {
+      // 外层已激活 SERVER context。ContextStorageBridge 将它关联到当前 gRPC Context，
+      // Contexts.interceptCall 再负责在后续业务 Listener 回调中 attach/detach 这个 gRPC Context。
       return new TracingServerCallListener(
           Contexts.interceptCall(io.grpc.Context.current(), this, headers, next), context, request);
     }
 
     @Override
     public void sendMessage(RESPONSE message) {
+      // 服务端发送的是响应消息；大小记录和 SENT 事件都以服务端视角解释。
       request.setResponseSize(BodySizeUtil.getBodySize(message));
       try (Scope ignored = context.makeCurrent()) {
         super.sendMessage(message);
@@ -133,6 +144,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
     @Override
     public void close(Status status, Metadata trailers) {
+      // 发起关闭不等于监听器已收到完成通知，先保存状态供 onComplete 使用。
       this.status = status;
       try {
         delegate().close(status, trailers);
@@ -154,6 +166,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
       }
 
       private void end(Context context, GrpcRequest request, Status response, Throwable error) {
+        // 结束时汇总该 RPC 的双向消息数；grpc.canceled 的判断使用外层 close 保存的 status。
         if (captureExperimentalSpanAttributes) {
           Span span = Span.fromContext(context);
           span.setAttribute(
@@ -169,6 +182,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
       @Override
       public void onMessage(REQUEST message) {
+        // 这里收到的是请求消息；真正的业务 delegate 由 Contexts.interceptCall 恢复 gRPC/OTel 上下文。
         request.setRequestSize(BodySizeUtil.getBodySize(message));
         long messageId = RECEIVED_MESSAGE_ID_UPDATER.incrementAndGet(TracingServerCall.this);
         if (emitMessageEvents) {
@@ -180,6 +194,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
       @Override
       public void onHalfClose() {
+        // 客户端已发完请求，但服务端仍可继续处理和发送响应，因此正常返回时不结束 span。
         try {
           delegate().onHalfClose();
         } catch (Throwable e) {
@@ -190,6 +205,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
       @Override
       public void onCancel() {
+        // 先让业务处理取消；若回调自身抛错，记录 UNKNOWN 和异常，否则以 CANCELLED 结束。
         try {
           delegate().onCancel();
         } catch (Throwable e) {
@@ -201,6 +217,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
       @Override
       public void onComplete() {
+        // 此时 RPC 生命周期已完成。业务回调正常返回后，使用 close 捕获的状态结算遥测。
         try {
           delegate().onComplete();
         } catch (Throwable e) {
@@ -208,6 +225,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
           throw e;
         }
         if (status == null) {
+          // 没观察到 close 的状态时保留“未知”，不把缺失信息当成成功。
           status = Status.UNKNOWN;
         }
         end(context, request, status, status.getCause());
@@ -215,6 +233,7 @@ final class TracingServerInterceptor implements ServerInterceptor {
 
       @Override
       public void onReady() {
+        // 就绪通知不会正常结束 RPC；只有该回调向外抛异常时才走这里的异常结束路径。
         try {
           delegate().onReady();
         } catch (Throwable e) {

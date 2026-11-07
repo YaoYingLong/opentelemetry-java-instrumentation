@@ -47,8 +47,10 @@ final class ConsumerImplInstrumentation implements TypeInstrumentation {
     public static Timer onStart(@Advice.This Object consumer) {
       // 同一次 SimpleConsumer 拉取已经由外层插桩负责，避免底层队列调用重复记录 Receive。
       if (SimpleConsumerReceiveOperation.handlesReceive(consumer)) {
+        // 如果consumer类型是SimpleConsumer直接退出
         return null;
       }
+      // 记录一下开始时间
       return Timer.start();
     }
 

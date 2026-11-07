@@ -19,6 +19,10 @@ import java.util.Set;
 import java.util.function.Predicate;
 import javax.annotation.Nullable;
 
+/**
+ * 将 gRPC 结果映射到 span 状态：客户端把所有非 OK 状态视为错误，服务端只把下列服务端错误状态标为 ERROR。 因而同一个 CANCELLED/INVALID_ARGUMENT
+ * 等结果在两端的 span 状态可以不同。
+ */
 enum GrpcSpanStatusExtractor implements SpanStatusExtractor<GrpcRequest, Status> {
   CLIENT(GrpcSpanStatusExtractor::isClientError),
   SERVER(GrpcSpanStatusExtractor::isServerError);
@@ -48,6 +52,7 @@ enum GrpcSpanStatusExtractor implements SpanStatusExtractor<GrpcRequest, Status>
       GrpcRequest request,
       @Nullable Status status,
       @Nullable Throwable error) {
+    // 优先使用调用结束时提供的协议状态；缺失时才从 gRPC 状态异常中取出，否则使用默认异常判定。
     if (status == null) {
       if (error instanceof StatusRuntimeException) {
         status = ((StatusRuntimeException) error).getStatus();
@@ -56,6 +61,7 @@ enum GrpcSpanStatusExtractor implements SpanStatusExtractor<GrpcRequest, Status>
       }
     }
     if (status != null) {
+      // 非错误状态保持默认 UNSET，不主动标记 OK。
       if (isError.test(status)) {
         spanStatusBuilder.setStatus(StatusCode.ERROR);
       }

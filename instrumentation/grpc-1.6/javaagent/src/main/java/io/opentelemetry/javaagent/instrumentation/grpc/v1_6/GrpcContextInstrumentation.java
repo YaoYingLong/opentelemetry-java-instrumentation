@@ -19,6 +19,7 @@ import net.bytebuddy.asm.Advice.AssignReturned;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.matcher.ElementMatcher;
 
+/** 替换 gRPC Context.storage() 的返回值，让 gRPC 的上下文切换同时携带 OpenTelemetry 上下文。 */
 class GrpcContextInstrumentation implements TypeInstrumentation {
   @Override
   public ElementMatcher<TypeDescription> typeMatcher() {
@@ -41,6 +42,7 @@ class GrpcContextInstrumentation implements TypeInstrumentation {
         inline = false)
     @Nullable
     public static Context.Storage onEnter() {
+      // 桥接器已初始化时返回非空值，skipOn 会跳过原 storage() 方法，退出 Advice 直接复用它。
       return storage();
     }
 
@@ -49,6 +51,7 @@ class GrpcContextInstrumentation implements TypeInstrumentation {
     public static Context.Storage onExit(
         @Advice.Return Context.Storage originalStorage,
         @Advice.Enter @Nullable Context.Storage ourStorage) {
+      // 第一次调用让原方法正常返回，再包裹其 Storage；保留原存储用于判断 gRPC 自身的传播状态。
       return ourStorage != null ? ourStorage : GrpcSingletons.setStorage(originalStorage);
     }
   }

@@ -26,6 +26,9 @@ import org.apache.rocketmq.client.java.message.MessageImpl;
 import org.apache.rocketmq.client.java.message.PublishingMessageImpl;
 
 /**
+ * 在rocketmq-client-5.0中是通过Futures.transformAsync中执行的send0方法，所以大概率构造MessageImpl和PublishingMessageImpl时
+ * 和执行send0方法不是在同一个线程中，所以这里拦截做一个关系绑定
+ *
  * 将应用线程的 Context 附着到 SDK 的待发送消息，并在读取消息属性时补入传播字段。
  *
  * <p>同时匹配 PublishingMessageImpl 与 MessageImpl，以覆盖 getProperties 在消息实现或父类上的声明。
@@ -86,6 +89,7 @@ final class PublishingMessageImplInstrumentation implements TypeInstrumentation 
         return properties;
       }
       PublishingMessageImpl message = (PublishingMessageImpl) messageImpl;
+      // 为了把 OpenTelemetry 生成的传播字段，合并到 SDK 实际发送的消息属性中，让消费端能够关联到发送端的 Trace
       Map<String, String> extraProperties = VirtualFieldStore.getExtraPropertiesByMessage(message);
       if (extraProperties != null) {
         // SDK 的属性读取结果还会用于构造 Protobuf userProperties；在此合并才能随消息发出。

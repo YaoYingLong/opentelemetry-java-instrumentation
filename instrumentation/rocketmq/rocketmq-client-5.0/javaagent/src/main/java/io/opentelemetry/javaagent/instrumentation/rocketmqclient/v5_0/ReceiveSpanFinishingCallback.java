@@ -43,6 +43,7 @@ public class ReceiveSpanFinishingCallback implements FutureCallback<ReceiveMessa
     String consumerGroup = request.getGroup().getName();
     // MessageView 本身没有消费组访问器，先从请求取出并附着到每条消息，供 Process 属性提取器使用。
     for (MessageView messageView : messageViews) {
+      // 批量消费的消息，在处理的时候会获取
       VirtualFieldStore.setConsumerGroupByMessage(messageView, consumerGroup);
     }
     Instrumenter<RocketMqReceiveRequest, List<MessageView>> receiveInstrumenter =

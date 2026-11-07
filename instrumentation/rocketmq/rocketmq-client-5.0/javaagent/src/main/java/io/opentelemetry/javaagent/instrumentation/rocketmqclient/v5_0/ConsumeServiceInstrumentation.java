@@ -32,6 +32,7 @@ final class ConsumeServiceInstrumentation implements TypeInstrumentation {
 
   @Override
   public void transform(TypeTransformer transformer) {
+    // 只拦截ConsumeService第一个参数为MessageListener的构造函数
     transformer.applyAdviceToMethod(
         isConstructor()
             .and(
@@ -41,6 +42,7 @@ final class ConsumeServiceInstrumentation implements TypeInstrumentation {
                             1, named("org.apache.rocketmq.client.apis.consumer.MessageListener")))),
         getClass().getName() + "$Constructor1Advice");
 
+    // 只拦截ConsumeService第二个参数为MessageListener的构造函数
     transformer.applyAdviceToMethod(
         isConstructor()
             .and(

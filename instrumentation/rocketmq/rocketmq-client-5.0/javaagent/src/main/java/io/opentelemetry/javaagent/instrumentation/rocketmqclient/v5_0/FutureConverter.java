@@ -28,6 +28,7 @@ public class FutureConverter {
     }
     ListFutureCallback<T> futureCallback = new ListFutureCallback<>(futures);
     // 不另建线程；若原 Future 已完成，子 Future 可能在 convert 返回前就已完成。
+    // 这里其实给future添加一个如果future执行完成，就执行futureCallback
     Futures.addCallback(future, futureCallback, MoreExecutors.directExecutor());
     return futures;
   }

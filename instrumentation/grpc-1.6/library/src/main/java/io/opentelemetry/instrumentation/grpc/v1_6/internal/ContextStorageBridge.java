@@ -17,6 +17,9 @@ import java.util.logging.Logger;
  * and OpenTelemetry contexts refer to each other to ensure that both OTel context propagation
  * mechanisms and gRPC context propagation mechanisms can be used interchangeably.
  *
+ * <p>桥接思路：OTel Context 通过 GRPC_CONTEXT 保存 gRPC Context，gRPC Context 通过 OTEL_CONTEXT 保存读取时的 OTel
+ * Context。这样任意一侧捕获并传播上下文时，都可以携带另一侧的信息。 attach 返回的恢复上下文还保存本次打开的 Scope，detach 时用它恢复原线程状态。
+ *
  * <p>This class is internal and is hence not for public use. Its APIs are unstable and can change
  * at any time.
  */
@@ -39,17 +42,20 @@ public final class ContextStorageBridge extends Context.Storage {
   private final Context.Storage originalStorage;
 
   public ContextStorageBridge(boolean propagateGrpcDeadline) {
+    // library 的 ContextStorageOverride 使用此入口，不额外维护原 gRPC Storage。
     this.propagateGrpcDeadline = propagateGrpcDeadline;
     this.originalStorage = null;
   }
 
   public ContextStorageBridge(Context.Storage originalStorage) {
+    // Agent 包裹已有 Storage，并在下方 current() 的特定跨上下文路径中隔离额外传播的 deadline/cancellation。
     propagateGrpcDeadline = false;
     this.originalStorage = originalStorage;
   }
 
   @Override
   public Context doAttach(Context toAttach) {
+    // 旧 gRPC Context 从当前 OTel Context 读取；返回值将作为调用方稍后 detach 的 toRestore 参数。
     io.opentelemetry.context.Context otelContext = io.opentelemetry.context.Context.current();
     Context current = otelContext.get(GRPC_CONTEXT);
 
@@ -58,11 +64,13 @@ public final class ContextStorageBridge extends Context.Storage {
     }
 
     if (current == toAttach) {
+      // 已是同一个上下文时不再打开实际 Scope，但仍返回携带 noop Scope 的恢复信息。
       Context result = current.withValue(OTEL_SCOPE, Scope.noop());
       result = attachOriginalContextStorage(result);
       return result;
     }
 
+    // 优先恢复 toAttach 捕获的 OTel Context；只有它没有关联值时才沿用执行线程当前的 OTel Context。
     io.opentelemetry.context.Context base = OTEL_CONTEXT.get(toAttach);
     io.opentelemetry.context.Context newOtelContext;
     if (base != null) {
@@ -79,12 +87,14 @@ public final class ContextStorageBridge extends Context.Storage {
     }
 
     Scope scope = newOtelContext.makeCurrent();
+    // Scope 存在“恢复用”的上下文中，而不是被 attach 的业务上下文中，使嵌套 attach/detach 各自配对。
     Context result = current.withValue(OTEL_SCOPE, scope);
     result = attachOriginalContextStorage(result);
     return result;
   }
 
   private Context attachOriginalContextStorage(Context context) {
+    // Agent 模式同时维护原 Storage 的 attach 栈，并保存实际传给它的对象及其返回的旧对象。
     Context result = context;
     if (originalStorage != null) {
       Context originalToRestore = originalStorage.doAttach(result);
@@ -95,6 +105,7 @@ public final class ContextStorageBridge extends Context.Storage {
 
   @Override
   public void detach(Context toDetach, Context toRestore) {
+    // 先恢复原 gRPC Storage，再关闭这次 attach 保存的 OTel Scope；二者都依赖 toRestore 中的配对信息。
     if (originalStorage != null) {
       Context originalContext = ORIGINAL_CONTEXT.get(toRestore);
       Context originalToRestore = ORIGINAL_TO_RESTORE.get(toRestore);
@@ -112,6 +123,7 @@ public final class ContextStorageBridge extends Context.Storage {
 
   @Override
   public Context current() {
+    // 每次读取都关联此刻的 OTel Context，保证在已有 gRPC Context 内新建 span 后再传播时能带上新 span。
     io.opentelemetry.context.Context otelContext = io.opentelemetry.context.Context.current();
     Context current = otelContext.get(GRPC_CONTEXT);
     if (current == null) {
@@ -126,6 +138,8 @@ public final class ContextStorageBridge extends Context.Storage {
       // The previous context is unaffected and will continue to live in its own stack.
 
       if (!propagateGrpcDeadline && originalStorage != null) {
+        // 原 Storage 的当前上下文为 null 或 ROOT，表示这条路径没有同时通过 gRPC 自身传播上下文。
+        // 此时 fork 保留键值但切断原取消/deadline 关系，避免 Agent 额外传播导致异步任务意外超时。
         Context originalCurrent = originalStorage.current();
         // check whether grpc context would have propagated without otel context
         if (originalCurrent == null || originalCurrent == Context.ROOT) {

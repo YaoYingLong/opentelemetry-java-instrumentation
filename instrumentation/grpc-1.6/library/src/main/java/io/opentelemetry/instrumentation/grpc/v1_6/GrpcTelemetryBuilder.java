@@ -34,7 +34,11 @@ import java.util.List;
 import java.util.function.UnaryOperator;
 import javax.annotation.Nullable;
 
-/** A builder of {@link GrpcTelemetry}. */
+/**
+ * A builder of {@link GrpcTelemetry}.
+ *
+ * <p>组装客户端/服务端的属性提取器、状态判断、指标和传播行为。builder 保存配置，build 创建可供拦截器复用的遥测对象。
+ */
 public final class GrpcTelemetryBuilder {
 
   private static final String INSTRUMENTATION_NAME = "io.opentelemetry.grpc-1.6";
@@ -179,6 +183,7 @@ public final class GrpcTelemetryBuilder {
 
   /** Returns a new {@link GrpcTelemetry} with the settings of this {@link GrpcTelemetryBuilder}. */
   public GrpcTelemetry build() {
+    // 默认名称来自 gRPC 完整方法名，两端可以分别包装默认提取器来定制命名。
     SpanNameExtractor<GrpcRequest> originalSpanNameExtractor = new GrpcSpanNameExtractor();
     SpanNameExtractor<? super GrpcRequest> clientSpanNameExtractor =
         clientSpanNameExtractorCustomizer.apply(originalSpanNameExtractor);
@@ -197,6 +202,8 @@ public final class GrpcTelemetryBuilder {
     GrpcRpcAttributesGetter clientRpcAttributesGetter = new GrpcRpcAttributesGetter(true);
     GrpcRpcAttributesGetter serverRpcAttributesGetter = new GrpcRpcAttributesGetter(false);
 
+    // RPC 属性、逻辑服务地址和实际网络地址由不同 getter 提供，避免将 channel target 与连接对端混为一谈。
+    // 公共扩展与两端专用扩展按下面的注册顺序加入；客户端/服务端各自使用对应的错误判定和耗时指标。
     clientInstrumenterBuilder
         .setSchemaUrl(RpcSchemaUrls.SCHEMA_URL)
         .setSpanStatusExtractor(GrpcSpanStatusExtractor.CLIENT)
@@ -209,6 +216,7 @@ public final class GrpcTelemetryBuilder {
             new GrpcAttributesExtractor(clientRpcAttributesGetter, clientRequestHeaders))
         .addOperationMetrics(RpcClientMetrics.get(GRPC_DURATION_SECONDS_BUCKETS));
     setRpcClientExceptionEventExtractor(clientInstrumenterBuilder);
+    // 大小属性交给 operation listener 使用，供指标采集，不在这里将它们作为普通 span 属性注册。
     Experimental.addOperationListenerAttributesExtractor(
         clientInstrumenterBuilder, RpcSizeAttributesExtractor.create(clientRpcAttributesGetter));
     serverInstrumenterBuilder
@@ -227,9 +235,10 @@ public final class GrpcTelemetryBuilder {
         serverInstrumenterBuilder, RpcSizeAttributesExtractor.create(serverRpcAttributesGetter));
 
     return new GrpcTelemetry(
+        // 服务端已有请求头，可在 start 时自动提取远端上下文。
         serverInstrumenterBuilder.buildServerInstrumenter(GrpcRequestGetter.INSTANCE),
-        // gRPC client interceptors require two phases, one to set up request and one to execute.
-        // So we go ahead and inject manually in this instrumentation.
+        // 客户端 interceptCall 时还没有 Metadata，故使用普通 CLIENT instrumenter；
+        // 等 ClientCall.start 拿到 headers 后，再由 TracingClientInterceptor 手动注入。
         clientInstrumenterBuilder.buildInstrumenter(SpanKindExtractor.alwaysClient()),
         openTelemetry.getPropagators(),
         captureExperimentalSpanAttributes,

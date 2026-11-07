@@ -12,6 +12,11 @@ import io.opentelemetry.instrumentation.grpc.v1_6.internal.ParsedTarget;
 import java.net.SocketAddress;
 import javax.annotation.Nullable;
 
+/**
+ * 一次 RPC 的遥测数据载体，供拦截器和属性提取器共享；它本身不是发送给远端的业务请求对象。
+ *
+ * <p>方法名和逻辑服务地址创建后不变，请求头、连接对端和消息大小则随调用阶段补充。后者使用 volatile 让不同执行线程可见最新值；请求/响应大小只保存最近一次赋值，不累计流中所有消息。
+ */
 public final class GrpcRequest {
 
   @Nullable private final MethodDescriptor<?, ?> method;
@@ -39,6 +44,7 @@ public final class GrpcRequest {
       MethodDescriptor<?, ?> method,
       @Nullable String authority,
       @Nullable ParsedTarget parsedTarget) {
+    // 优先使用配置目标；只有无法解析目标时才回退 authority，避免 authority override 覆盖真实的配置目标。
     ParsedTarget effective =
         parsedTarget != null ? parsedTarget : GrpcTargetParser.parseAuthority(authority);
     if (effective == null) {
@@ -60,6 +66,7 @@ public final class GrpcRequest {
       @Nullable Metadata metadata,
       @Nullable SocketAddress peerSocketAddress,
       @Nullable String authority) {
+    // 服务端以请求 authority 表示逻辑服务，以传输属性中的 peerSocketAddress 表示调用方连接地址。
     ParsedTarget parsed = GrpcTargetParser.parseAuthority(authority);
     return new GrpcRequest(
         method,
@@ -85,6 +92,7 @@ public final class GrpcRequest {
   }
 
   GrpcRequest(String fullMethodName, @Nullable String originalFullMethodName, Metadata metadata) {
+    // 未注册方法没有 MethodDescriptor；stream tracer 传入归一化名称及原始请求名称。
     this.method = null;
     this.fullMethodName = fullMethodName;
     this.originalFullMethodName = originalFullMethodName;

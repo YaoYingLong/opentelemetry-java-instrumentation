@@ -17,6 +17,8 @@ import javax.annotation.Nullable;
 /**
  * This class is internal and is hence not for public use. Its APIs are unstable and can change at
  * any time.
+ *
+ * <p>读取客户端/服务端各自的请求头选择器；使用统一配置视图，使后续采集逻辑只依赖 IncludeExclude。
  */
 public class GrpcConfig {
 
@@ -44,6 +46,7 @@ public class GrpcConfig {
 
   @Nullable
   private static IncludeExclude getRequestHeaders(DeclarativeConfigProperties config, String side) {
+    // 两侧独立配置 included/excluded；缺省列表转为空列表，排除优先等匹配规则由 IncludeExclude 实现。
     DeclarativeConfigProperties requestHeaders = config.get(side).get("request_headers");
     List<String> included = requestHeaders.getScalarList("included", String.class);
     List<String> excluded = requestHeaders.getScalarList("excluded", String.class);
@@ -55,6 +58,7 @@ public class GrpcConfig {
     // an empty selector is equivalent to no selector at all, matching flat configuration where
     // empty property values cannot be distinguished from unset ones
     if (!selector.isEmpty()) {
+      // 仅配置 excluded 仍是有效选择器，含义是采集除排除项之外的所有合法 ASCII 头。
       return selector;
     }
     return null;

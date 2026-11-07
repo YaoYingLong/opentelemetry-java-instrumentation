@@ -22,6 +22,7 @@ import java.util.Locale;
 import java.util.Map;
 import javax.annotation.Nullable;
 
+/** 补充 gRPC 状态名称及按配置选择的 ASCII 请求头，输出到 RPC 的属性集合。 */
 final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, Status> {
 
   // copied from RpcIncubatingAttributes
@@ -38,6 +39,7 @@ final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, 
   private final Map<String, AttributeKey<List<String>>> literalRequestHeaderAttributeKeys;
 
   GrpcAttributesExtractor(GrpcRpcAttributesGetter getter, @Nullable IncludeExclude requestHeaders) {
+    // 未配置/空选择器均表示不采集请求头；非空选择器统一小写以实现不区分大小写的匹配。
     this.getter = getter;
     if (requestHeaders == null || requestHeaders.isEmpty()) {
       this.requestHeaders = null;
@@ -51,7 +53,7 @@ final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, 
 
   @Override
   public void onStart(AttributesBuilder attributes, Context parentContext, GrpcRequest request) {
-    // Request attributes captured on request end.
+    // 统一推迟到 onEnd：客户端启动 span 时还没有 Metadata，要等 ClientCall.start 才补入。
   }
 
   @Override
@@ -68,6 +70,7 @@ final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, 
       return;
     }
     for (String key : request.getMetadata().keys()) {
+      // 遍历实际存在的头，支持通配符和仅排除配置；排除模式优先级由 IncludeExclude.matches 统一处理。
       // binary metadata and HTTP/2 pseudo-headers are never captured, even when the selector
       // matches, because reading them below with Metadata.Key.of() would throw
       if (!isAsciiMetadataKey(key)) {
@@ -81,6 +84,7 @@ final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, 
         continue;
       }
       List<String> value = getter.metadataValue(request, metadataKey);
+      // 同名头可能有多个值，作为字符串数组保存，不能只取最后一个值。
       if (!value.isEmpty()) {
         attributes.put(
             requestHeaderAttributeKey(metadataKey, literalRequestHeaderAttributeKeys), value);
@@ -92,6 +96,7 @@ final class GrpcAttributesExtractor implements AttributesExtractor<GrpcRequest, 
   // from a peer can contain HTTP/2 pseudo-headers and header names built from HTTP token characters
   // that gRPC does not allow in a metadata key.
   private static boolean isAsciiMetadataKey(String key) {
+    // 这是读取远端 Metadata 的边界：-bin 使用二进制 marshaller，伪头及非法字符也不能交给 ASCII Key.of。
     if (key.isEmpty() || key.endsWith(Metadata.BINARY_HEADER_SUFFIX)) {
       return false;
     }

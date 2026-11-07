@@ -12,6 +12,9 @@ import java.util.function.BiFunction;
 /**
  * This class is internal and is hence not for public use. Its APIs are unstable and can change at
  * any time.
+ *
+ * <p>连接 internal 包与 GrpcTelemetry 的包内实现：GrpcTelemetry 静态初始化时注册工厂， Experimental 的代理回调再通过本类创建带
+ * computed target 的拦截器，无需公开具体拦截器类型。
  */
 public class Internal {
 
