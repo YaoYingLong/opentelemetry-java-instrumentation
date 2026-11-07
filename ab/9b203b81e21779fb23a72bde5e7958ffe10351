@@ -1,0 +1,39 @@
+instrumentation/rocketmq/rocketmq-client-4.8/library/build.gradle.kts
+  s_7a7ad2ef644474::t_366a0d25aad396 30-34
+  s_7a7ad2ef644474::t_8cb3334aa8ae93 1-2,18-27,29,35-40
+instrumentation/rocketmq/rocketmq-client-4.8/metadata.yaml
+  s_7a7ad2ef644474::t_e4509053297195 24
+CHANGELOG.md
+  s_7a7ad2ef644474::t_e4509053297195 7-9
+instrumentation/rocketmq/rocketmq-client-4.8/testing/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/base/BaseConf.java
+  s_7a7ad2ef644474::t_112a6dc1a2de70 38-41
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqMetricsTest.java
+  s_7a7ad2ef644474::t_112a6dc1a2de70 12-13,30-32,60-65,67-71,74-76,161,185,189,221-222,254-255
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqProducerWrapperTest.java
+  s_7a7ad2ef644474::t_db89d13e8e4dc9 11-12,498-499
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqClientTest.java
+  s_7a7ad2ef644474::t_112a6dc1a2de70 35,51
+instrumentation/rocketmq/rocketmq-client-4.8/testing/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/AbstractRocketMqClientTest.java
+  s_7a7ad2ef644474::t_112a6dc1a2de70 16-17,206-207,225-226,363-364,382-383,551-552,576-577,632-633,653-654,690-691,707-708
+  s_7a7ad2ef644474::t_f5218945fc6b37 107-121
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqInstrumenterFactoryTest.java
+  s_7a7ad2ef644474::t_366a0d25aad396 13-16,20-21,26,30,36,38-42,48,53-54,57,65,70,93-94,100-237
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqInstrumenterFactory.java
+  s_7a7ad2ef644474::t_8dcbf2881a6822 10-11,35-36,40,140,149-152,156-175,264,277-294
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "ab9b203b81e21779fb23a72bde5e7958ffe10351",
+  "prompts": {},
+  "sessions": {
+    "s_7a7ad2ef644474": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b557-c8d3-7003-ab6e-94fc46bd962c",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
