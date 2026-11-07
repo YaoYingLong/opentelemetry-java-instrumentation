@@ -1,0 +1,106 @@
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcRequest.java
+  s_9f16e1473d57c6::t_fb14ea154e74bd 18
+  s_9f16e1473d57c6::t_e71193a4f3c6de 15-17,19,47,69,95
+instrumentation/grpc-1.6/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/grpc/v1_6/GrpcServerBuilderInstrumentation.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 23,48,54,63
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/MetadataSetter.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 12,22
+instrumentation/grpc-1.6/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/grpc/v1_6/GrpcClientBuilderBuildInstrumentation.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 23,32,49,54-55
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/TracingServerInterceptor.java
+  s_9f16e1473d57c6::t_f0241beda72ae0 25-27,30,74,92,125-126,133,147,169,185,197,208,220,228,236
+  s_9f16e1473d57c6::t_fb14ea154e74bd 28-29
+instrumentation/grpc-1.6/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/grpc/v1_6/GrpcSingletons.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 25,40,76
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/GrpcClientNetworkAttributesGetter.java
+  s_9f16e1473d57c6::t_e1ed3065ae6639 19-21,43
+instrumentation/grpc-1.6/library/src/main/java/io/grpc/override/ContextStorageOverride.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 14
+  s_9f16e1473d57c6::t_fb14ea154e74bd 15-16
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcAttributesExtractor.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 25,42,56,73,87,99
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcRequestGetter.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 16,41
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcRpcAttributesGetter.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 18,59,68
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/CapturedGrpcRequestHeadersUtil.java
+  s_9f16e1473d57c6::t_e1ed3065ae6639 19
+  s_9f16e1473d57c6::t_e71193a4f3c6de 48,62
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/Internal.java
+  s_9f16e1473d57c6::t_e1ed3065ae6639 15
+  s_9f16e1473d57c6::t_fb14ea154e74bd 16-17
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/messaging/MessagingAttributesExtractor.java
+  s_1e2ca3c8afcb37::t_9f80577420d379 36-38,40-41,83-84,100-102,180-181,211-212,243-244,270-271
+  s_1e2ca3c8afcb37::t_f7affd6164b2a0 117,178
+  s_1e2ca3c8afcb37::t_161c0126c3719c 35,39,42-44,50,63,70,85,103,121,123-124,126,128,131-135,146,150-151,154,157-158,162,165,170,177,179,182,186,198,203,208-210,213,221,223,225,229,232-233,240-242,245,251,254-255,258,269
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/TracingClientInterceptor.java
+  s_9f16e1473d57c6::t_377faa61c3be70 201
+  s_9f16e1473d57c6::t_f0241beda72ae0 30-32,35,74-75,86,95,105,134,136,150,158,186,193,210,219
+  s_9f16e1473d57c6::t_fb14ea154e74bd 33-34
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcTelemetry.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 20-22,25,29,71,89,101
+  s_9f16e1473d57c6::t_fb14ea154e74bd 23-24
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/GrpcTargetParser.java
+  s_9f16e1473d57c6::t_e1ed3065ae6639 22,51,57,63,86,106-107,134,148,171-172,194,213,255,294-295
+  s_9f16e1473d57c6::t_fb14ea154e74bd 20-21
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcServerNetworkAttributesGetter.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 15,44
+instrumentation/grpc-1.6/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/grpc/v1_6/GrpcContextInstrumentation.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 22,45,54
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/TracingServerStreamTracerFactory.java
+  s_9f16e1473d57c6::t_f0241beda72ae0 15,29
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/ContextStorageBridge.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 22,45,51,58,67,73,90,97,108,126,142
+  s_9f16e1473d57c6::t_fb14ea154e74bd 20-21
+  s_9f16e1473d57c6::t_377faa61c3be70 141
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/GrpcConfig.java
+  s_9f16e1473d57c6::t_e1ed3065ae6639 20-21,49,61
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/TracingServerStreamTracer.java
+  s_9f16e1473d57c6::t_f0241beda72ae0 22-23,36,57,68,82,84,89,98
+instrumentation/grpc-1.6/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/grpc/v1_6/GrpcInstrumentationModule.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 15-17,20
+  s_9f16e1473d57c6::t_fb14ea154e74bd 18-19
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcSpanNameExtractor.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 11
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcTelemetryBuilder.java
+  s_9f16e1473d57c6::t_941dda5f7fc536 37-41,186,205-206,219,238,240-241
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/BodySizeUtil.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 11,14,41
+  s_9f16e1473d57c6::t_fb14ea154e74bd 12-13
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/ParsedTarget.java
+  s_9f16e1473d57c6::t_fb14ea154e74bd 13-14
+  s_9f16e1473d57c6::t_e1ed3065ae6639 15
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/internal/Experimental.java
+  s_9f16e1473d57c6::t_fb14ea154e74bd 22-23
+  s_9f16e1473d57c6::t_e1ed3065ae6639 21,36,81,87,91
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcSpanStatusExtractor.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 22,25,55,64
+  s_9f16e1473d57c6::t_fb14ea154e74bd 23-24
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcAuthorityStorage.java
+  s_9f16e1473d57c6::t_e71193a4f3c6de 15
+  s_9f16e1473d57c6::t_fb14ea154e74bd 16-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "43fdde8315c9d964ab21d51ca27011d4998fd319",
+  "prompts": {},
+  "sessions": {
+    "s_1e2ca3c8afcb37": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1aace-7988-7293-9c61-db3828328f69",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_9f16e1473d57c6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1af97-5744-74c3-a4bd-6bde08ccb0a0",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
