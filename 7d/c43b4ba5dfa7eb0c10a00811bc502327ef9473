@@ -1,0 +1,43 @@
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/build.gradle.kts
+  s_12b1f84c62d564::t_074062dabdc3e9 28-33,42-45,66-84
+  s_5c087a7c940b34::t_b1bd07865fe0d7 35
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqReceiveSpanLinksExtractorTest.java
+  s_ea0ce6e42555c1::t_06405bea5e7676 129-130,143-146,150-153,159-160,173,177-180
+  s_ea0ce6e42555c1::t_d7b6c798b7e3c8 37-38,126-128,131-142,147-149,154-158,161-172,174-176,181-182,192,201-202
+.github/scripts/instrumentations.sh
+  s_12b1f84c62d564::t_074062dabdc3e9 256-257
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent-unit-tests/build.gradle.kts
+  s_ea0ce6e42555c1::t_851cc76e87b1cc 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7dc43b4ba5dfa7eb0c10a00811bc502327ef9473",
+  "prompts": {},
+  "sessions": {
+    "s_12b1f84c62d564": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c560-2d65-7d32-9c58-605ce06c697e",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_5c087a7c940b34": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a19a2e-e887-7471-a263-76e7edb94d79",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_ea0ce6e42555c1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c073-41f3-7e41-9636-125065b746f6",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
