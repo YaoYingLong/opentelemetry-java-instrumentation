@@ -1,0 +1,43 @@
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqReceiveSpanLinksExtractorTest.java
+  s_e6df005086f0a3::t_12f6583b3d51a0 232
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/rocketmq52Test/java/io/opentelemetry/instrumentation/rocketmqclient/v5_0/RocketMqLiteAndPriorityMessageTest.java
+  s_e6df005086f0a3::t_da1ea94ce66d9d 78-79,340-341,363-364,393-394,399-400
+.github/scripts/instrumentations.sh
+  s_e6df005086f0a3::t_6b912d9b08abe7 258-259
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/build.gradle.kts
+  s_e6df005086f0a3::t_6b912d9b08abe7 48-61,88-100
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqMessageAttributes.java
+  s_e6df005086f0a3::t_bf0925771b6303 8-9,13,20,68,81
+  s_e6df005086f0a3::t_12f6583b3d51a0 19
+instrumentation/rocketmq/rocketmq-client-5.0/metadata.yaml
+  s_e6df005086f0a3::t_6b912d9b08abe7 9-15
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqProducerAttributeExtractor.java
+  s_e6df005086f0a3::t_bf0925771b6303 38-43,55-58
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqReceiveBatchMessageAttributeExtractor.java
+  s_e6df005086f0a3::t_bf0925771b6303 32-37,41-44
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqSingletons.java
+  s_e6df005086f0a3::t_bf0925771b6303 11,35-38,40-41,44-47,50,53-56
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqReceiveSpanLinksExtractor.java
+  s_e6df005086f0a3::t_bf0925771b6303 39,42-43,45,71-79
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqConsumerProcessAttributeExtractor.java
+  s_e6df005086f0a3::t_bf0925771b6303 38-43,47-51
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/RocketMqInstrumenterFactory.java
+  s_e6df005086f0a3::t_bf0925771b6303 46-48,71-74,95-96,102-105
+  s_e6df005086f0a3::t_12f6583b3d51a0 62-63,91-92,119-120
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "7086734fe49fca6e015db272cca801d5c137646b",
+  "prompts": {},
+  "sessions": {
+    "s_e6df005086f0a3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ca1c-93cf-72f0-94fa-85d40fcff954",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
