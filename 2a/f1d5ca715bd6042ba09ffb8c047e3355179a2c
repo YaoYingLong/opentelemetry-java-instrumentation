@@ -1,0 +1,71 @@
+CHANGELOG.md
+  s_b772a6840cbaae::t_dd74cbd0dc306a 8-9
+instrumentation/rocketmq/rocketmq-client-4.8/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v4_8/RocketMqSingletons.java
+  s_b772a6840cbaae::t_d4345816beb75a 17,20,50-51,58-59
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqConsumerInstrumenter.java
+  s_b772a6840cbaae::t_4aa2f2dd21c013 8,35-36,41,51
+instrumentation/rocketmq/rocketmq-client-4.8/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v4_8/RocketMqConsumerInstrumentation.java
+  s_b772a6840cbaae::t_d4345816beb75a 36,41-42
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/TracingConsumeMessageHookImpl.java
+  s_b772a6840cbaae::t_4aa2f2dd21c013 8,22-25,27,46-47
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqServerAttributesHelper.java
+  s_b0837992248dbc::t_947a973daef8f1 1-77
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqMetricsTest.java
+  s_b0837992248dbc::t_947a973daef8f1 65-66,140-146
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqInstrumenterFactoryTest.java
+  s_b0837992248dbc::t_947a973daef8f1 207,226-229,265-268
+instrumentation/rocketmq/rocketmq-client-4.8/javaagent/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqBatchSendHelper.java
+  s_b772a6840cbaae::t_d4345816beb75a 25-26,59-60,62,66,108,153,161-164,167,173
+  s_b0837992248dbc::t_947a973daef8f1 109
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqConsumerRequest.java
+  s_b772a6840cbaae::t_4aa2f2dd21c013 10,25,56-61
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqProducerWrapper.java
+  s_b0837992248dbc::t_947a973daef8f1 54
+  s_b772a6840cbaae::t_4aa2f2dd21c013 72-73,104
+instrumentation/rocketmq/rocketmq-client-4.8/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v4_8/RocketMqProducerInstrumentation.java
+  s_b772a6840cbaae::t_d4345816beb75a 61,64-65
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqInstrumenterFactory.java
+  s_b0837992248dbc::t_947a973daef8f1 140-141
+  s_b772a6840cbaae::t_4aa2f2dd21c013 10-11,142,153,158,174-175,266-267,280,282-283,297-298
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/main/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqTelemetry.java
+  s_b772a6840cbaae::t_4aa2f2dd21c013 8-9,11,15,56-57,61-73
+  s_b0837992248dbc::t_947a973daef8f1 74
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqServerAttributesHelperTest.java
+  s_b0837992248dbc::t_947a973daef8f1 1-79
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqTelemetryTest.java
+  s_b772a6840cbaae::t_bf5bac0267832e 1-27,29,32-40,42-52,56-65,68-95,97-106,108-109,113-125,127,129-131,133-138,140-141,143-144,148-155,157-167,169-170
+  s_b772a6840cbaae::t_1d9a0a49825839 28,30,142,146-147
+  s_b0837992248dbc::t_d010530104a4f6 31,41,145
+  s_b0837992248dbc::t_7ee9c7e1c4ce40 66-67,126,128,139,156
+  s_b0837992248dbc::t_50c2554270560d 53-55,96,107,110-112,132,168
+instrumentation/rocketmq/rocketmq-client-4.8/library/README.md
+  s_b772a6840cbaae::t_dd74cbd0dc306a 49-50,54,57-59
+instrumentation/rocketmq/rocketmq-client-4.8/library/src/test/java/io/opentelemetry/instrumentation/rocketmqclient/v4_8/RocketMqProducerWrapperTest.java
+  s_b772a6840cbaae::t_107f6e47aaf482 475-477
+  s_b772a6840cbaae::t_bf5bac0267832e 11,256-268,288-300
+  s_b772a6840cbaae::t_a657b75b26cf73 12-13,528-531
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "2af1d5ca715bd6042ba09ffb8c047e3355179a2c",
+  "prompts": {},
+  "sessions": {
+    "s_b0837992248dbc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ca73-e554-7583-ba9a-92e8ddcd768d",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    },
+    "s_b772a6840cbaae": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1c0a3-5188-7160-80bd-b02e2c91f4c6",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
