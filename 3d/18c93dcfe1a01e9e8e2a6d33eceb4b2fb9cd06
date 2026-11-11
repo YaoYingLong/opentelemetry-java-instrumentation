@@ -1,0 +1,29 @@
+instrumentation/opensearch/opensearch-rest-1.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/v1_0/OpenSearchRestTest.java
+  s_537d97498e5638::t_907dcb64ece218 37-40
+instrumentation/elasticsearch/elasticsearch-rest-6.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/v6_4/ElasticsearchRest6Test.java
+  s_537d97498e5638::t_907dcb64ece218 13,20-21,129-130,204-205,275-276
+instrumentation/elasticsearch/elasticsearch-rest-7.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/v7_0/ElasticsearchRest7Test.java
+  s_537d97498e5638::t_907dcb64ece218 14,20-21,121-122,225-226
+instrumentation/elasticsearch/elasticsearch-rest-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/v5_0/ElasticsearchRest5Test.java
+  s_537d97498e5638::t_fba8c03e21d557 14,21-22,224-225,275-276,346-347
+instrumentation/elasticsearch/elasticsearch-api-client-7.16/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/api/client/v7_16/ElasticsearchClientTest.java
+  s_537d97498e5638::t_907dcb64ece218 14,21-22,132-133,176-177,217-218,286-287
+instrumentation/opensearch/opensearch-rest-common-1.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/AbstractOpenSearchRestTest.java
+  s_537d97498e5638::t_907dcb64ece218 13,20-21,72-75,211-224,299-312
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "3d18c93dcfe1a01e9e8e2a6d33eceb4b2fb9cd06",
+  "prompts": {},
+  "sessions": {
+    "s_537d97498e5638": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1ca46-1048-7192-889a-58171c93ac16",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
