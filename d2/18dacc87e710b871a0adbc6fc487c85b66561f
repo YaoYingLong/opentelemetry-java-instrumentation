@@ -1,0 +1,215 @@
+instrumentation/cassandra/cassandra-4.4/library/src/test/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraTelemetryTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 29,137
+instrumentation/geode-1.4/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeServerTargetBuilderTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,22,48,67,84,95,101
+instrumentation/cassandra/cassandra-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v3_0/CassandraSqlAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12,53,60
+instrumentation/couchbase/couchbase-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseClusterTargetInstrumentation.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 15,51
+instrumentation/cassandra/cassandra-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/TracingCqlSession.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 20,36,74,89,104,110
+instrumentation/couchbase/couchbase-common-2.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseConnectionStringsTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 14,23,33,43,54,65,76,85,99,113,127,141,153,156
+instrumentation/couchbase/couchbase-common-3.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/common/v3_1/CouchbaseServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11-12,77,102
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcAttributesGetterTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 23,157,199
+instrumentation/opensearch/opensearch-java-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/v3_0/OpenSearchConfiguredHost.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,20,25
+instrumentation/couchbase/couchbase-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,46,53
+instrumentation/cassandra/cassandra-4.4/library/src/main/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 16-17,30,37,59,63,71,73,84
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/v1_0/OpenSearchRestAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,84,91
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcServiceMappingTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 22,40,54,67
+instrumentation/cassandra/cassandra-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v3_0/CassandraServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9-10,25-26,46,53,58,65,70
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticTransportRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,16,25
+instrumentation/geode-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeDbAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 14,68,75
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/MysqlHostParser.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,104,116,206
+instrumentation/spymemcached-2.12/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/spymemcached/v2_12/SpymemcachedSingletons.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 16-17,42-43,74,111,115
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/net/internal/ServerEndpointUtil.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 1-142
+instrumentation/couchbase/couchbase-common-3.1/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/couchbase/common/v3_1/CouchbaseSpanNameTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,20,48,83
+instrumentation/cassandra/cassandra-3.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/cassandra/v3_0/CassandraServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12,22,31,40,50,62,76,78,93,104,118,127,131,169
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/common/v5_0/ElasticsearchDbAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,174,181
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 104,112
+instrumentation/r2dbc-1.0/library/src/main/java/io/opentelemetry/instrumentation/r2dbc/v1_0/internal/DbExecution.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11,60,66
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcConnectionPoolMetricsUtilTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 16,85,102,104,106,111,120,136,144,151,168,195,202,208,214,220,227,234
+instrumentation/cassandra/cassandra-4.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 28,56,127,129,219,237,261,277-278,297,316,334,355
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/dbinfo/DbInfo.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,37,57
+instrumentation/cassandra/cassandra-4.4/library/src/test/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraEndpointAttributesTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 32,235
+instrumentation/clickhouse/clickhouse-client-common-0.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/client/common/v0_5/ClickHouseDbRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,16,19-20,30,36,40,45
+instrumentation/cassandra/cassandra-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraSqlAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 17,59,66
+instrumentation/clickhouse/clickhouse-client-v1-0.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/clientv1/v0_5/ClickHouseClientV1Singletons.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13-15,29-30,48,57-58,70,77,87,90,98-99,109-110,114,128,142,144
+instrumentation/couchbase/couchbase-common-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/common/v2_0/CouchbaseRequestInfo.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,41,52,89
+instrumentation/couchbase/couchbase-common-2.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseAttributesGetterTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 25,125,140,153,189,233,253
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/common/v5_0/ElasticsearchServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 14,32,43,53,62,75,78
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/OracleUrlParser.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12,126,133-134,156
+instrumentation/opensearch/opensearch-java-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/v3_0/OpenSearchRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,16,26
+instrumentation/opensearch/opensearch-java-3.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/opensearch/v3_0/OpenSearchConfiguredHostTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,25,35,44,53,63,72,81,97,106,115
+instrumentation/spymemcached-2.12/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/spymemcached/v2_12/SpymemcachedSingletonsTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12,20,22
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticsearchTransportServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,27,37,47,58,69,72
+instrumentation/spymemcached-2.12/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/spymemcached/v2_12/SpymemcachedAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,99,106
+instrumentation/hbase/hbase-client-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/common/v1_0/HbaseMasterTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12-13,51-52,65
+instrumentation/geode-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,30
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/v1_0/OpenSearchRestRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,15,22
+instrumentation/couchbase/couchbase-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/VirtualFieldHelper.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,13-14
+instrumentation/clickhouse/clickhouse-client-v2-0.8/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/clientv2/v0_8/ClickHouseClientV2Singletons.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10-12,25-26,61,75-76,119,126,128,142,145,150,205,212,224,229,231
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/common/v5_0/ElasticsearchServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,18-19,22,29
+instrumentation/r2dbc-1.0/library/src/main/java/io/opentelemetry/instrumentation/r2dbc/v1_0/internal/R2dbcServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-10,16,19,37,52-53,72,82
+instrumentation/cassandra/cassandra-4.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraEndpointAttributesTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 32,210
+instrumentation/cassandra/cassandra-4.4/library/src/main/java/io/opentelemetry/instrumentation/cassandra/v4_4/TracingCqlSession.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 21,42,48,53,57,104,119,134,140,161,166
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticsearchTransportAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,60,67
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/net/internal/ServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 1-576
+instrumentation/cassandra/cassandra-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v3_0/TracingSession.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 24,31,37
+instrumentation/cassandra/cassandra-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 18,28,33,48,93,134
+instrumentation/geode-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,21-22,55,63
+instrumentation/r2dbc-1.0/library/src/main/java/io/opentelemetry/instrumentation/r2dbc/v1_0/internal/R2dbcConnectionInfo.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 15,47,78
+instrumentation/cassandra/cassandra-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v3_0/CassandraRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 18,31,37,42,58,109,187
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/parser/ParseContextTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,34,45,56,66,79,85,97,119
+instrumentation/opensearch/opensearch-java-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/v3_0/OpenSearchAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,63,70
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/common/v5_0/ElasticsearchServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-9,17,22
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/UrlParsingUtils.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11-12,322,366,387,397,404,408,432,447
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/v1_0/OpenSearchServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-9,16,21
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/v1_0/OpenSearchServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,17-18,22,29
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/opensearch/rest/common/v1_0/OpenSearchServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 14,32,43,53,63,76,82
+instrumentation/cassandra/cassandra-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,17-18,30,37,63,67,74
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-common-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/vertx/sqlclient/common/v4_0/VertxServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 14-15,23,29,31,35,44,55-56
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcConnectionPoolMetricsUtil.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 15,37,60,75
+instrumentation/mongo/mongo-3.1/library/src/main/java/io/opentelemetry/instrumentation/mongo/v3_1/internal/MongoServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9-10,37-38,52,60,78,100
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-common-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/vertx/sqlclient/common/v4_0/VertxSqlClientInfo.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,20,53,69
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/internal/RedisServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11-13,185,189,205,207,209,215,276,278,373,383,393,397
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/net/internal/ServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 1-13,18-80,83-86
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/dbinfo/DbInfoTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 10,17,37,42
+instrumentation/cassandra/cassandra-4.4/library/src/main/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraSqlAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 17,60,67
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/MysqlUrlParser.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12-13,110,124
+instrumentation/cassandra/cassandra-4.4/library/src/main/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 18,28,33,48,93,134
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/rest/common/v5_0/ElasticsearchRestRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9,37,53
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticsearchTransportServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,15-16,52,71-72
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticsearchTransportServerTargetsTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,29,50-51,68,97,129,146
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/GenericUrlParser.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 12,103
+instrumentation/opensearch/opensearch-java-3.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/opensearch/v3_0/OpenSearchServerTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,17-18,25,33
+instrumentation/couchbase/couchbase-common-3.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/common/v3_1/CouchbaseServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,17,21,36-37,41
+instrumentation/geode-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeServerTargetBuilder.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-9,17-18,46,56-57,60-61
+instrumentation/hbase/hbase-client-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/common/v1_0/HbaseZookeeperTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8
+instrumentation/hbase/hbase-client-common-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hbase/client/common/v1_0/HbaseServerEndpoint.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/parser/MysqlUrlParserTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 17-18,130,153,305,360,371,391,420,519,528
+instrumentation/couchbase/couchbase-3.2/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/v3_2/CouchbaseProtostellarTargets.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13-14,49
+instrumentation/clickhouse/clickhouse-client-v2-0.8/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/clientv2/v0_8/ClickHouseClientV2Instrumentation.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 18,70
+instrumentation/couchbase/couchbase-common-3.1/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/common/v3_1/CouchbaseConnectionStrings.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 9-10,49-50
+instrumentation/clickhouse/clickhouse-client-common-0.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/client/common/v0_5/ClickHouseScope.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11,76
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-common-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/vertx/sqlclient/common/v4_0/VertxSqlClientRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,40,46
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/net/internal/ServerEndpointUtilTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 1-112
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcConnectionUrlParserTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 24,105,144,154,164,171,182,190,197,238,250,259,280,322,335,346,606,1060,1073,1085,2055,2088,2114,2142,2155,2178,2216,2271,2279,2281,2299,2307,2326,2370
+instrumentation/spymemcached-2.12/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/spymemcached/v2_12/SpymemcachedRequest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11,51
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/elasticsearch/transport/common/v5_0/ElasticsearchTransportServerTarget.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-9,18,23
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-common-4.0/javaagent-unit-tests/src/test/java/io/opentelemetry/javaagent/instrumentation/vertx/sqlclient/common/v4_0/VertxServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 11,22,38,47,60,69,78,87,115,146,187
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/parser/ParseContext.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8,31,110,319,330
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/net/internal/ServerTargetBuilder.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 1-318
+instrumentation/couchbase/couchbase-2.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseConnectionStrings.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 8-9,65,75-76,128
+instrumentation/clickhouse/clickhouse-client-common-0.5/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/clickhouse/client/common/v0_5/ClickHouseAttributesGetter.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 13,76,83
+instrumentation/cassandra/cassandra-4.4/library/src/test/java/io/opentelemetry/instrumentation/cassandra/v4_4/CassandraServerTargetTest.java
+  s_d370250c2c5bf4::t_33aac448f7a6d7 28,58,138,140,155,300,317,335,353-354,373,387
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "d218dacc87e710b871a0adbc6fc487c85b66561f",
+  "prompts": {},
+  "sessions": {
+    "s_d370250c2c5bf4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1f699-032b-7a53-8295-d6175eecb150",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
