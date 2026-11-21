@@ -1,0 +1,19 @@
+instrumentation/rocketmq/rocketmq-client-5.0/README.md
+  s_7702c6927c123f::t_77101fb565c4e5 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "f491169fc70ab4b60f6c54fd39d04c8daf49d897",
+  "prompts": {},
+  "sessions": {
+    "s_7702c6927c123f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1fc2f-475b-7213-9eff-87b767f74958",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
