@@ -1,0 +1,279 @@
+instrumentation/spring/spring-webflux/spring-webflux-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webflux/v5_3/SpringWebfluxClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 94-96
+instrumentation/servlet/servlet-3.0/library/src/main/java/io/opentelemetry/instrumentation/servlet/v3_0/ServletTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 132-134
+instrumentation/clickhouse/clickhouse-client-v2-0.8/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/clickhouse/clientv2/v0_8/ClickHouseClientV2Test.java
+  s_c14e88bdebf778::t_7740d78e17f984 345-348
+.github/workflows/codeql.yml
+  s_c14e88bdebf778::t_7740d78e17f984 159
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/build.gradle.kts
+  ai_agent 28-38,48-53,55-56,101-102
+instrumentation/restlet/restlet-1.1/library/src/main/java/io/opentelemetry/instrumentation/restlet/v1_1/RestletTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 87-89
+instrumentation/mcp-java-sdk-0.14/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/mcpsdk/v0_14/McpClientSessionInstrumentationTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 126-134
+.github/workflows/auto-update-gh-aw-lockfiles.yml
+  s_c14e88bdebf778::t_7740d78e17f984 76
+instrumentation/log4j/log4j-appender-2.17/library/build.gradle.kts
+  s_c14e88bdebf778::t_7740d78e17f984 8-9
+instrumentation/spring/spring-web/spring-web-3.1/library/src/test/java/io/opentelemetry/instrumentation/spring/web/v3_1/SpringWebInstrumentationTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 30
+instrumentation/vertx/vertx-redis-client/vertx-redis-client-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/vertx/redisclient/v4_0/VertxRedisClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 303-304
+instrumentation/java-http-client/library/src/main/java/io/opentelemetry/instrumentation/javahttpclient/JavaHttpClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 90-92
+instrumentation/spring/spring-web/spring-web-6.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/spring/web/v6_0/SpringRestTemplateTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 29
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/MeterInstrumentation.java
+  s_c14e88bdebf778::t_7740d78e17f984 8,37
+.github/workflows/publish-smoke-test-spring-boot-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 30
+instrumentation-api/src/main/java/io/opentelemetry/instrumentation/api/semconv/http/HttpClientAttributesExtractorBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 203-205,226-228
+instrumentation/kubernetes-client-7.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/kubernetesclient/v7_0/KubernetesClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 112
+instrumentation/openai/openai-java-1.1/testing/src/main/java/io/opentelemetry/instrumentation/openai/v1_1/AbstractResponsesTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 120-133,135,140-150
+instrumentation/java-http-server/library/src/main/java/io/opentelemetry/instrumentation/javahttpserver/JavaHttpServerTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 104-106
+instrumentation/spring/spring-web/spring-web-3.1/library/src/main/java/io/opentelemetry/instrumentation/spring/web/v3_1/SpringWebTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 105-107
+instrumentation/clickhouse/clickhouse-client-v1-0.5/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/clickhouse/clientv1/v0_5/ClickHouseClientV1Test.java
+  s_c14e88bdebf778::t_7740d78e17f984 387-390,443-446
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/DropwizardMetricsRecorder.java
+  s_c14e88bdebf778::t_7740d78e17f984 1-94
+instrumentation/jmx-metrics/javaagent/src/unitTests/java/io/opentelemetry/javaagent/instrumentation/jmx/JmxMetricInsightInstallerTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 166-167
+.github/workflows/fossa.yml
+  s_c14e88bdebf778::t_7740d78e17f984 30
+instrumentation/helidon-4.3/library/src/main/java/io/opentelemetry/instrumentation/helidon/v4_3/HelidonTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 105-107
+instrumentation/ktor/ktor-3.0/testing/src/main/kotlin/io/opentelemetry/instrumentation/ktor/v3_0/AbstractKtorServerMetricsTest.kt
+  s_c14e88bdebf778::t_7740d78e17f984 105-111
+smoke-tests/src/test/java/io/opentelemetry/smoketest/LegacySpringBootLogCorrelationSmokeTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 31-33
+instrumentation/log4j/log4j-appender-2.17/library/src/test/java/io/opentelemetry/instrumentation/log4j/appender/v2_17/internal/LogEventMapperTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 18,282,296
+instrumentation/influxdb-2.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/influxdb/v2_4/InfluxDbLegacyQueryLifecycleTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 179-188
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/builder/internal/DefaultHttpServerInstrumenterBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 189-191
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/datasource/JdbcTelemetryTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 196-197
+instrumentation/armeria/armeria-1.3/library/src/main/java/io/opentelemetry/instrumentation/armeria/v1_3/ArmeriaServerTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 99-101
+.github/workflows/auto-update-otel-sdk.yml
+  s_c14e88bdebf778::t_7740d78e17f984 32
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/unitTests/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/SimpleConsumerReceiveOperationTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 1-206
+.github/workflows/publish-smoke-test-early-jdk8-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 60
+.github/workflows/auto-license-report.yml
+  s_c14e88bdebf778::t_7740d78e17f984 73
+instrumentation/jedis/jedis-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jedis/v3_0/ShardedJedis30ClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 157-161
+.github/workflows/flaky-test-remediation.yml
+  s_c14e88bdebf778::t_7740d78e17f984 164
+instrumentation/couchbase/couchbase-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/couchbase/v2_0/CouchbaseBaselineTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 169-171
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/builder/internal/DefaultHttpClientInstrumenterBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 188-190
+instrumentation/redisson/redisson-common-3.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/AbstractRedissonAsyncClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 205-207,328-338
+.github/workflows/update-latest-dep-versions.yml
+  s_c14e88bdebf778::t_7740d78e17f984 53,118
+.github/workflows/dependency-review.yml
+  s_c14e88bdebf778::t_7740d78e17f984 28
+.github/workflows/publish-petclinic-benchmark-image.yml
+  s_c14e88bdebf778::t_7740d78e17f984 50
+instrumentation/ratpack/ratpack-1.4/javaagent/src/version17Test/java/io/opentelemetry/javaagent/instrumentation/ratpack/v1_4/httpclient/client/RatpackHttpClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 71-77
+.github/workflows/publish-smoke-test-quarkus-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 34
+instrumentation/mongo/mongo-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/mongo/v4_0/MongoConfiguredTargetTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 96-97
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/TimerInstrumentation.java
+  s_c14e88bdebf778::t_7740d78e17f984 8,37
+instrumentation/jetty-httpclient/jetty-httpclient-9.2/library/src/main/java/io/opentelemetry/instrumentation/jetty/httpclient/v9_2/JettyClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 88-90
+instrumentation/kubernetes-client-7.0/javaagent/src/version20Test/java/io/opentelemetry/javaagent/instrumentation/kubernetesclient/v7_0/KubernetesClientVer20Test.java
+  s_c14e88bdebf778::t_7740d78e17f984 116
+.github/workflows/draft-release-notes.yml
+  s_c14e88bdebf778::t_7740d78e17f984 52
+smoke-tests/src/test/java/io/opentelemetry/smoketest/IbmHttpsUrlConnectionTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 62-64
+instrumentation/log4j/log4j-appender-2.17/library/src/main/java/io/opentelemetry/instrumentation/log4j/appender/v2_17/internal/MapMessageAccessor.java
+  s_c14e88bdebf778::t_7740d78e17f984 1-47
+.github/workflows/release-update-cloudfoundry-index.yml
+  s_c14e88bdebf778::t_7740d78e17f984 43,75
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/HistogramInstrumentation.java
+  s_c14e88bdebf778::t_7740d78e17f984 8,37
+.github/workflows/publish-smoke-test-fake-backend-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 103
+instrumentation/netty/netty-4.1/library/src/main/java/io/opentelemetry/instrumentation/netty/v4_1/NettyServerTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 102-104
+instrumentation/avaje-jex-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/avaje/jex/v3_0/JexTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 124-125
+instrumentation/rediscala-1.8/javaagent/src/test/scala/io/opentelemetry/javaagent/instrumentation/rediscala/v1_8/RediscalaClientTest.scala
+  s_c14e88bdebf778::t_7740d78e17f984 520-525,527
+instrumentation/cassandra/cassandra-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_0/CassandraTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 109-118
+instrumentation/oshi-5.0/testing/src/main/java/io/opentelemetry/instrumentation/oshi/v5_0/AbstractSystemMetricsTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 71-81
+instrumentation/spring/spring-rabbit-1.1/javaagent/build.gradle.kts
+  s_c14e88bdebf778::t_7740d78e17f984 32
+.github/workflows/reusable-lint-check.yml
+  s_c14e88bdebf778::t_7740d78e17f984 18
+instrumentation/gwt-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/gwt/v2_0/GwtTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 217-227
+instrumentation-docs/src/main/resources/shared-config-definitions.yaml
+  s_c14e88bdebf778::t_7740d78e17f984 21
+instrumentation/jedis/jedis-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jedis/v2_0/ShardedJedisClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 145-146
+instrumentation/vertx/vertx-redis-client/vertx-redis-client-4.0/javaagent/src/testShared/java/io/opentelemetry/javaagent/instrumentation/vertx/redisclient/v4_0/VertxRedisClientErrorTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 442-454
+instrumentation/openai/openai-java-1.1/library/src/test/java/io/opentelemetry/instrumentation/openai/v1_1/ServiceErrorTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 285-294
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/DropwizardMetricsTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 48,113,172
+instrumentation/failsafe-3.0/library/src/test/java/io/opentelemetry/instrumentation/failsafe/v3_0/FailsafeTelemetryTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 119-137
+instrumentation/cassandra/cassandra-4.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/cassandra/v4_4/CassandraTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 105-114
+instrumentation/redisson/redisson-common-3.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/AbstractRedissonClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 289-291,606-611,666-676,700-710
+.github/workflows/zizmor.yml
+  s_c14e88bdebf778::t_7740d78e17f984 26
+.github/workflows/reusable-native-tests.yml
+  s_c14e88bdebf778::t_7740d78e17f984 27
+instrumentation/spring/spring-webmvc/spring-webmvc-6.0/library/src/main/java/io/opentelemetry/instrumentation/spring/webmvc/v6_0/SpringWebMvcTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 104-106
+.github/workflows/prepare-patch-release.yml
+  s_c14e88bdebf778::t_7740d78e17f984 54
+instrumentation/influxdb-2.4/javaagent/src/test24/java/io/opentelemetry/javaagent/instrumentation/influxdb/v2_4/InfluxDbClient24Test.java
+  s_c14e88bdebf778::t_7740d78e17f984 204-207
+instrumentation/jmx-metrics/library/src/test/java/io/opentelemetry/instrumentation/jmx/rules/containers/CamelTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 36-37
+.github/workflows/publish-smoke-test-play-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 30
+.github/workflows/survey-on-merged-pr.yml
+  s_c14e88bdebf778::t_7740d78e17f984 14
+.github/workflows/ossf-scorecard.yml
+  s_c14e88bdebf778::t_7740d78e17f984 19,27
+instrumentation/iceberg-1.8/testing/src/main/java/io/opentelemetry/instrumentation/iceberg/v1_8/AbstractIcebergTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 119-126,137-157,168-190,201-223,234-302,314-320
+instrumentation/ratpack/ratpack-1.7/library/src/main/java/io/opentelemetry/instrumentation/ratpack/v1_7/RatpackServerTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 89-91
+instrumentation-api/src/main/java/io/opentelemetry/instrumentation/api/semconv/http/HttpServerAttributesExtractorBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 207-209,230-232
+instrumentation-api/src/main/java/io/opentelemetry/instrumentation/api/semconv/http/HttpServerRouteBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 37-39,58-60
+instrumentation/spring/spring-boot-autoconfigure/src/main/resources/META-INF/additional-spring-configuration-metadata.json
+  s_c14e88bdebf778::t_7740d78e17f984 318
+.github/workflows/sonatype-guide-dependency-audit-daily.yml
+  s_c14e88bdebf778::t_7740d78e17f984 54
+smoke-tests/src/test/java/io/opentelemetry/smoketest/ExtensionsSmokeTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 43-44
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/CounterInstrumentation.java
+  s_c14e88bdebf778::t_7740d78e17f984 8,39,48
+.github/workflows/backport.yml
+  s_c14e88bdebf778::t_7740d78e17f984 32
+instrumentation/netty/netty-4.1/library/src/main/java/io/opentelemetry/instrumentation/netty/v4_1/NettyClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 94-96
+instrumentation/ratpack/ratpack-1.7/library/src/main/java/io/opentelemetry/instrumentation/ratpack/v1_7/RatpackClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 85-87
+instrumentation-api/src/main/java/io/opentelemetry/instrumentation/api/semconv/http/HttpSpanNameExtractorBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 50-52,72-74
+instrumentation/dropwizard/dropwizard-metrics-4.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/dropwizardmetrics/v4_0/DropwizardMetricsAdapter.java
+  s_c14e88bdebf778::t_7740d78e17f984 152,160,174,182,195,203,217,225
+.github/workflows/metadata-update.yml
+  s_c14e88bdebf778::t_7740d78e17f984 82,165
+instrumentation-api/src/main/java/io/opentelemetry/instrumentation/api/internal/HttpConstants.java
+  s_c14e88bdebf778::t_7740d78e17f984 25-26
+instrumentation/spring/spring-webflux/spring-webflux-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webflux/v5_3/SpringWebfluxServerTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 93-95
+.github/workflows/issue-management-stale-action.yml
+  s_c14e88bdebf778::t_7740d78e17f984 79
+instrumentation/spring/spring-webmvc/spring-webmvc-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webmvc/v5_3/SpringWebMvcTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 104-106
+.github/config/latest-dep-versions.json
+  s_c14e88bdebf778::t_7740d78e17f984 4,67,177-178,199,201,203,205,389-390,457,459,463,494-496,520,522,525-527,529,531,536-538,541,544,546-548,550,552-556,558,560,565,568,573,575,579-580,585,592,594-596,598,602-605,607,609-610,612,615,617-618,627-641
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/rocketmqclient/v5_0/SimpleConsumerReceiveOperation.java
+  s_c14e88bdebf778::t_7740d78e17f984 19,52,87-125
+instrumentation/log4j/log4j-appender-2.17/library/src/main/java/io/opentelemetry/instrumentation/log4j/appender/v2_17/internal/LogEventMapper.java
+  s_c14e88bdebf778::t_7740d78e17f984 205-207
+.github/workflows/publish-smoke-test-grpc-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 30
+instrumentation/rmi/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/rmi/RmiTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 237-246
+smoke-tests/images/fake-backend/build.gradle.kts
+  s_c14e88bdebf778::t_7740d78e17f984 32
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/vertx/sqlclient/v5_0/VertxSqlClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 1288-1292
+instrumentation/influxdb-2.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/influxdb/v2_4/InfluxDbEscapingResponseExceptionTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 104-113
+instrumentation/camel-2.20/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/camel/v2_20/CamelMessagingMetricsAssertions.java
+  s_c14e88bdebf778::t_7740d78e17f984 183-218,239-255
+instrumentation-docs/readme.md
+  s_c14e88bdebf778::t_7740d78e17f984 281
+instrumentation/openai/openai-java-1.1/testing/src/main/java/io/opentelemetry/instrumentation/openai/v1_1/AbstractChatTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 228-241,243,248-258,444-456,458,463-473,538-550,552,557-567,662-674,676,681-691,802-814,816,821-831,966-973,1027-1034,1208-1220,1222,1227-1237,1319-1326,1466-1473,1590-1597,1733-1740
+benchmark-overhead/Dockerfile.petclinic
+  s_c14e88bdebf778::t_7740d78e17f984 16
+.github/workflows/publish-smoke-test-security-manager-images.yml
+  s_c14e88bdebf778::t_7740d78e17f984 30
+.github/workflows/reusable-update-otel-sdk.yml
+  s_c14e88bdebf778::t_7740d78e17f984 107
+instrumentation/apache-httpclient/apache-httpclient-5.2/library/src/main/java/io/opentelemetry/instrumentation/apachehttpclient/v5_2/ApacheHttpClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 90-92
+instrumentation/lettuce/lettuce-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v5_0/LettuceAsyncClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 724-728
+.github/workflows/release.yml
+  s_c14e88bdebf778::t_7740d78e17f984 294
+instrumentation/jedis/jedis-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jedis/v4_0/Jedis40ClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 1521-1525
+instrumentation/restlet/restlet-2.0/library/src/main/java/io/opentelemetry/instrumentation/restlet/v2_0/RestletTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 87-89
+.github/workflows/prepare-release-branch.yml
+  s_c14e88bdebf778::t_7740d78e17f984 56,107
+instrumentation/okhttp/okhttp-3.0/library/src/main/java/io/opentelemetry/instrumentation/okhttp/v3_0/OkHttpTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 89-91
+instrumentation/lettuce/lettuce-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v4_0/LettuceAsyncClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 740-744
+instrumentation/servlet/servlet-5.0/library/src/main/java/io/opentelemetry/instrumentation/servlet/v5_0/ServletTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 132-134
+.github/workflows/overhead-benchmark-daily.yml
+  s_c14e88bdebf778::t_7740d78e17f984 79
+instrumentation/openai/openai-java-1.1/library/src/test/java/io/opentelemetry/instrumentation/openai/v1_1/ChatTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 133-145,147,152-162,226-238,240,245-255,348-360,362,367-377,462-474,476,481-491,602-609,691-698,786-793,881-888
+instrumentation/apache-httpclient/apache-httpclient-4.3/library/src/main/java/io/opentelemetry/instrumentation/apachehttpclient/v4_3/ApacheHttpClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 91-93
+instrumentation/openai/openai-java-1.1/testing/src/main/java/io/opentelemetry/instrumentation/openai/v1_1/AbstractEmbeddingsTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 131-138,143-151,242-249,253-261,318-325
+instrumentation/jetty-httpclient/jetty-httpclient-12.0/library/src/main/java/io/opentelemetry/instrumentation/jetty/httpclient/v12_0/JettyClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 87-89
+instrumentation/lettuce/lettuce-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/lettuce/v5_0/LettuceReactiveClientTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 416
+instrumentation/javalin/testing/src/main/java/io/opentelemetry/instrumentation/javalin/AbstractJavalinTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 156-157
+instrumentation/jmx-metrics/library/src/test/java/io/opentelemetry/instrumentation/jmx/internal/engine/MetricAggregationTest.java
+  s_c14e88bdebf778::t_7740d78e17f984 220,222
+instrumentation/armeria/armeria-1.3/library/src/main/java/io/opentelemetry/instrumentation/armeria/v1_3/ArmeriaClientTelemetryBuilder.java
+  s_c14e88bdebf778::t_7740d78e17f984 98-100
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "0b30b480f9817c61f3146b44a94cc4b51951c1e7",
+  "prompts": {},
+  "sessions": {
+    "s_c14e88bdebf778": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1fc2a-bc64-7770-a6be-6a354ce958fa",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
