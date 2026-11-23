@@ -1,0 +1,197 @@
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlDialectTest.java
+  ai_agent 6,12,17,19-25,29-30,33,35,38,40-55
+instrumentation/aws-sdk/aws-sdk-2.2/library/src/test/java/io/opentelemetry/instrumentation/awssdk/v2_2/internal/SqsProcessMetricsIsolationTest.java
+  ai_agent 12,97,105,150,158,166
+instrumentation/mongo/mongo-3.1/javaagent/build.gradle.kts
+  ai_agent 1-2,51-57
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-common-4.0/javaagent/build.gradle.kts
+  ai_agent 1-2,8
+instrumentation/camel-2.20/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/camel/v2_20/SjmsCamelTest.java
+  ai_agent 8,84-85
+instrumentation/jedis/jedis-3.0/javaagent/build.gradle.kts
+  ai_agent 1-2,33
+benchmark-overhead/src/test/java/io/opentelemetry/startup/AgentStartupReport.java
+  ai_agent 72,98-100
+docs/contributing/writing-instrumentation.md
+  ai_agent 472-475,491-494
+instrumentation/jdbc/library/src/test/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcAttributesGetterTest.java
+  ai_agent 21,39,57,59,61-65,71,73-86,88-93
+instrumentation/reactor/reactor-netty/reactor-netty-1.0/javaagent/build.gradle.kts
+  ai_agent 3,50-55
+benchmark-overhead/src/startupHelper/java/io/opentelemetry/startup/PetclinicStartupUptimeResponseAdvice.java
+  ai_agent 6,8-17,19-24,26-30,32-47,49
+instrumentation/spring/spring-boot-resources/javaagent/build.gradle.kts
+  ai_agent 16-18
+conventions/src/main/kotlin/io/opentelemetry/instrumentation/gradle/TestSuiteExecutions.kt
+  ai_agent 38,41-46,48-57,95-97
+instrumentation/redisson/redisson-3.17/javaagent/build.gradle.kts
+  ai_agent 2,29-35,67-69,79-81,87-94
+instrumentation/servlet/servlet-3.0/javaagent/build.gradle.kts
+  ai_agent 1-2,33
+testing/testing-common/src/main/java/io/opentelemetry/instrumentation/testing/junit/MessagingMetricsAssertions.java
+  ai_agent 8,53-54
+instrumentation/hibernate/hibernate-common-3.3/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hibernate/common/v3_3/OperationNameUtil.java
+  ai_agent 10,28
+instrumentation/camel-2.20/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/camel/v2_20/SjmsRegisteredListenerTest.java
+  ai_agent 8,113-114
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/DbClientMetricsTest.java
+  ai_agent 214-215,217-223,225-230,232-237,239-243
+instrumentation/jaxws/jaxws-2.0-cxf-3.0/javaagent/build.gradle.kts
+  ai_agent 1-2,7-12
+benchmark-overhead/build.gradle.kts
+  ai_agent 6-9,35-37,43-46,55-61,63-64,70-78,91-105
+instrumentation/r2dbc-1.0/library/src/test/java/io/opentelemetry/instrumentation/r2dbc/v1_0/R2dbcSqlAttributesGetterTest.java
+  ai_agent 11,134-135,138,144-148,153-159
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/DbClientSpanNameExtractorTest.java
+  ai_agent 35
+instrumentation/vertx/vertx-redis-client/vertx-redis-client-4.0/javaagent/build.gradle.kts
+  ai_agent 1-2,40,46-48
+.github/instructions/instrumentation-gradle.instructions.md
+  ai_agent 192-195,200-201
+benchmark-overhead/src/test/java/io/opentelemetry/startup/AgentStartupReportTest.java
+  ai_agent 14,17,53-133,149-195
+benchmark-overhead/README.md
+  ai_agent 120,122,144-160,172-182,203-207
+instrumentation/aws-sdk/aws-sdk-2.2/library/src/main/java/io/opentelemetry/instrumentation/awssdk/v2_2/internal/RdsDataSqlAttributesGetter.java
+  ai_agent 26
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlDialect.java
+  ai_agent 9-10,16-24,29,31,37-39,41,43-90,92-96,100-101,108,110,114-120,122
+instrumentation/couchbase/couchbase-common-3.1/javaagent/build.gradle.kts
+  ai_agent 1-2,11-25
+instrumentation/kafka/kafka-clients/kafka-clients-0.11/javaagent/build.gradle.kts
+  ai_agent 3,34-46
+instrumentation/vibur-dbcp-11.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburInstrumentationTest.java
+  ai_agent 41-54
+instrumentation/spymemcached-2.12/javaagent/build.gradle.kts
+  ai_agent 3,29
+benchmark-overhead/src/test/java/io/opentelemetry/startup/AgentStartupBenchmark.java
+  ai_agent 52-67,77,86-104,114-116,127-128,132-134,156-157,166-176,192-193,202,206-208,213-218,224,226-227,273-274,280-281,290,293-295,311-314,322-342,359-362,371-381,385-387,453
+instrumentation/vibur-dbcp-11.0/testing/src/main/java/io/opentelemetry/instrumentation/viburdbcp/AbstractViburInstrumentationTest.java
+  ai_agent 8-9,14,17,27,64,78-85
+.github/workflows/agent-startup-benchmark.yml
+  ai_agent 6-13,46,50,89-90,92,113,143,160-162
+instrumentation/hbase/hbase-client-common-1.0/javaagent/build.gradle.kts
+  ai_agent 1-2,13-53
+benchmark-overhead/Dockerfile.petclinic
+  ai_agent 1,7,9,11,15
+instrumentation/jms/jms-common-1.1/javaagent/src/unitTests/java/io/opentelemetry/javaagent/instrumentation/jms/common/v1_1/JmsInstrumenterFactoryTest.java
+  ai_agent 11,102-103,118-119
+instrumentation/jedis/jedis-4.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jedis/v4_0/Jedis40ClientTest.java
+  ai_agent 10,1050-1052,1126-1130,1161-1165,1371-1375
+instrumentation-api-incubator/src/main/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlClientAttributesGetter.java
+  ai_agent 86-94
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlClientAttributesExtractorTest.java
+  ai_agent 27,37,40-41,130-150
+instrumentation/redisson/redisson-3.0/javaagent/build.gradle.kts
+  ai_agent 1-2,32-37
+instrumentation/geode-1.4/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/GeodeDbAttributesGetter.java
+  ai_agent 11,19-23,48-49
+instrumentation/elasticsearch/elasticsearch-transport-common-5.0/javaagent/build.gradle.kts
+  ai_agent 1-2,13-21
+instrumentation/jedis/jedis-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jedis/v3_0/Jedis30ClientTest.java
+  ai_agent 11,492-495
+benchmark-overhead/src/test/java/io/opentelemetry/startup/PetclinicStartupFixture.java
+  ai_agent 6-37,40-88,91-104,107-108,111-129,132-138
+benchmark-overhead/src/startupHelper/resources/META-INF/spring.factories
+  ai_agent 1
+instrumentation/rocketmq/rocketmq-client-5.0/javaagent/build.gradle.kts
+  s_15815a401acc22::t_3b830f7573e235 3,29,39-43
+CHANGELOG.md
+  ai_agent 515-517
+instrumentation/spring/spring-jms/spring-jms-6.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/spring/jms/v6_0/SpringJmsMessageListenerTest.java
+  ai_agent 10,110-112
+instrumentation/cassandra/cassandra-4.4/javaagent/build.gradle.kts
+  ai_agent 2,63-70
+instrumentation/spring/spring-jms/spring-jms-2.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/spring/jms/v2_0/SpringJmsMessageListenerTest.java
+  ai_agent 10,110-112
+instrumentation/aws-sdk/aws-sdk-2.2/library/src/test/java/io/opentelemetry/instrumentation/awssdk/v2_2/internal/DynamoDbErrorsTest.java
+  ai_agent 9,168-179
+instrumentation/spring/spring-boot-resources/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/spring/boot/resources/ResourceProviderRegistrationTest.java
+  ai_agent 18,20-21,25-44
+instrumentation/vibur-dbcp-11.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/viburdbcp/v11_0/ViburDbcpDataSourceInstrumentation.java
+  ai_agent 35,60
+instrumentation/jdbc/library/src/main/java/io/opentelemetry/instrumentation/jdbc/internal/JdbcAttributesGetter.java
+  ai_agent 25-26,40-46
+benchmark-overhead/src/test/java/io/opentelemetry/containers/PostgresContainer.java
+  ai_agent 23,26-29,31,35
+conventions/src/test/kotlin/io/opentelemetry/instrumentation/gradle/TestSuiteExecutionsTest.kt
+  ai_agent 14,32-120,123,150,167-184,187,234
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlQuerySummaryEdgeCasesTest.java
+  ai_agent 25
+instrumentation/geode-1.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/geode/v1_4/PutGetTest.java
+  ai_agent 92-95
+instrumentation/pulsar/pulsar-2.8/javaagent/build.gradle.kts
+  ai_agent 3,38-49,69-73,88-92
+instrumentation/jedis/jedis-4.0/javaagent/build.gradle.kts
+  ai_agent 1-3,31,50-59,61,63-64
+instrumentation/camel-2.20/javaagent/build.gradle.kts
+  ai_agent 3,108-129,132-134
+instrumentation/jms/jms-1.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jms/v1_1/JmsMessageListenerTest.java
+  ai_agent 10,108-110
+instrumentation/servlet/servlet-5.0/javaagent/build.gradle.kts
+  ai_agent 1-2,28
+instrumentation/kubernetes-client-7.0/javaagent/build.gradle.kts
+  ai_agent 3,29-34
+instrumentation/couchbase/couchbase-common-2.0/javaagent/build.gradle.kts
+  ai_agent 1-2,14,16-18
+instrumentation/opensearch/opensearch-rest-common-1.0/javaagent/build.gradle.kts
+  ai_agent 1-2,14-17
+instrumentation/redisson/redisson-common-3.0/testing/src/main/java/io/opentelemetry/javaagent/instrumentation/redisson/AbstractRedissonClientTest.java
+  ai_agent 422-439
+instrumentation/cassandra/cassandra-4.0/javaagent/build.gradle.kts
+  ai_agent 2,50-57
+instrumentation/jmx-metrics/library/src/test/java/io/opentelemetry/instrumentation/jmx/JmxTelemetryTest.java
+  ai_agent 10,264-266
+instrumentation/spring/spring-rabbit-1.1/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/spring/rabbit/v1_1/SpringRabbitMetricsAssertions.java
+  ai_agent 46-55,92-101
+instrumentation/vertx/vertx-sql-client/vertx-sql-client-4.0/javaagent/build.gradle.kts
+  ai_agent 1-2,40-46
+instrumentation/geode-1.4/javaagent/build.gradle.kts
+  ai_agent 1-2,7-8
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlQueryAnalyzerTest.java
+  ai_agent 23-26,29,39,51,58,65-66,72-75,86,92,99,107,126,137,146,435,557,585,599,610,620,653,665,675,677,686,688,702,722,1467
+instrumentation-api-incubator/src/test/java/io/opentelemetry/instrumentation/api/incubator/semconv/db/SqlQueryAnalyzerUtilCacheTest.java
+  ai_agent 25-26,51,63-64,81-83,86
+instrumentation/elasticsearch/elasticsearch-api-client-7.16/javaagent/build.gradle.kts
+  ai_agent 1-2,52-57
+instrumentation/lettuce/lettuce-4.0/javaagent/build.gradle.kts
+  ai_agent 3,28-35
+instrumentation/elasticsearch/elasticsearch-rest-common-5.0/javaagent/build.gradle.kts
+  ai_agent 1-2,9,11-12
+instrumentation/influxdb-2.4/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/influxdb/v2_4/InfluxDbQueryLifecycleTest.java
+  ai_agent 1101-1110
+instrumentation/jedis/jedis-2.0/javaagent/src/version23Test/java/io/opentelemetry/javaagent/instrumentation/jedis/v2_0/Jedis23ReplyIsolationTest.java
+  ai_agent 8-9,319-322
+instrumentation/jms/jms-3.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/jms/v3_0/JmsMessageListenerTest.java
+  ai_agent 10,108-110
+benchmark-overhead/src/test/java/io/opentelemetry/startup/PetclinicStartupUptimeResponseAdviceTest.java
+  ai_agent 6,10-11,13-16,18-20,23-52,56-93
+instrumentation/opensearch/opensearch-java-3.0/javaagent/build.gradle.kts
+  ai_agent 3,51,53
+instrumentation/rabbitmq-2.7/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/rabbitmq/v2_7/RabbitMqMetricsAssertions.java
+  ai_agent 83-92,127-137,155-164
+instrumentation/rediscala-1.8/javaagent/build.gradle.kts
+  ai_agent 1-3,10-23
+instrumentation/camel-2.20/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/camel/v2_20/decorators/DbSpanDecorator.java
+  ai_agent 34,145
+instrumentation/cassandra/cassandra-3.0/javaagent/build.gradle.kts
+  ai_agent 1-2,46-52,54,56-59
+instrumentation/mongo/mongo-4.0/javaagent/build.gradle.kts
+  ai_agent 1-2,35-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "466607cfd7153a129ccb57c67d22d4cbd944b0b8",
+  "prompts": {},
+  "sessions": {
+    "s_15815a401acc22": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2063f-76ce-7712-9dfd-af2104ce2320",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
