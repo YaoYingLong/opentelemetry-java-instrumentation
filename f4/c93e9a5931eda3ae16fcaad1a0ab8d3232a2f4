@@ -1,0 +1,19 @@
+.github/config/lychee.toml
+  s_1e29db1b069ae5::t_e3f785e5c6b879 13-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "f4c93e9a5931eda3ae16fcaad1a0ab8d3232a2f4",
+  "prompts": {},
+  "sessions": {
+    "s_1e29db1b069ae5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20b71-12f4-73d1-b5a0-7b770959cda0",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
