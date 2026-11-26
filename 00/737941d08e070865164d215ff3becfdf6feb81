@@ -1,0 +1,313 @@
+instrumentation/logback/logback-appender-1.0/javaagent/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-17
+instrumentation/jboss-logmanager/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-8
+smoke-tests-otel-starter/spring-boot-reactive-common/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 14
+instrumentation/apache-httpclient/apache-httpclient-5.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/apachehttpclient/v5_0/ApacheHttpAsyncClientInstrumentation.java
+  s_453590f8b87851::t_90a63943e0582d 180-183,185,187-189,198,209
+instrumentation/resources/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-44
+.fossa.yml
+  s_453590f8b87851::t_90a63943e0582d 1183-1185,1189-1191
+instrumentation/servlet/servlet-2.2/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 20-22,34-35
+instrumentation/runtime-telemetry/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-10
+.github/instructions/configuration.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 30-31,43-50,54-81,85-110
+CHANGELOG.md
+  s_453590f8b87851::t_90a63943e0582d 13,16,18,21,25,27,30,33,39,42,44,48,53,56,59,62,66,68,70,73,78,81,85,88,91,98,101,104,108,112,128,134,192,199,206,213,217,219,225,227,229,232,236,244,249,252,264,266,274,277,300,307,318,330,335,346,352,362,368,370,376,381,384,396,400,409,437,444
+instrumentation/aws-sdk/aws-sdk-2.2/library/src/main/java/io/opentelemetry/instrumentation/awssdk/v2_2/internal/BedrockRuntimeImpl.java
+  s_453590f8b87851::t_90a63943e0582d 31,1183-1195
+testing/shaded-dependencies/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 7
+smoke-tests/images/spring-boot/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 11
+.github/instructions/instrumentation.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 11-14
+instrumentation/runtime-telemetry/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 99,218-223
+instrumentation/spring/spring-boot-autoconfigure/src/main/java/io/opentelemetry/instrumentation/spring/autoconfigure/internal/instrumentation/webflux/SpringWebfluxInstrumentationAutoConfiguration.java
+  s_453590f8b87851::t_90a63943e0582d 10,12-14,48-54
+examples/distro/gradle/wrapper/gradle-wrapper.properties
+  s_453590f8b87851::t_90a63943e0582d 3-4
+settings.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 657,661
+instrumentation/runtime-telemetry/library/src/testNativeImage/java/io/opentelemetry/instrumentation/runtimetelemetry/NativeImageGcTest.java
+  s_453590f8b87851::t_90a63943e0582d 1-77
+instrumentation/rocketmq/rocketmq-client-4.8/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 14-15
+instrumentation/spring/spring-boot-autoconfigure/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports
+  s_453590f8b87851::t_90a63943e0582d 15
+.github/workflows/reusable-lint-check.yml
+  s_453590f8b87851::t_90a63943e0582d 5-8,25-29,36,39
+.github/instructions/java-tests.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 96-106,113-116,118-120,124-128,130-135,139-141,143-146,155,161-169,175,180,186,188-193,195-197,224-243
+examples/extension/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 16,116
+instrumentation/runtime-telemetry/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 24-26,34-37
+instrumentation/guava-10.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/guava/v10_0/InstrumentationHelper.java
+  s_453590f8b87851::t_90a63943e0582d 22-24
+.github/instructions/java-reflection.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 7,9-10,12,14-37,41-42,44-51,53-54,58-62,64-69,71-73,77-79,81-83,87-89,91-93
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-3.0/library/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 2-3,7,9-39
+instrumentation/runtime-telemetry/library/src/main/java/io/opentelemetry/instrumentation/runtimetelemetry/internal/Experimental.java
+  s_453590f8b87851::t_90a63943e0582d 77-80
+.github/instructions/instruction-authoring.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 1-19
+.github/instructions/instrumentation-library.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 13-29
+docs/declarative-configuration-example.yaml
+  s_453590f8b87851::t_90a63943e0582d 138-140,146-148,165-167,172-174,265-268,273-274,286-289,294-295,331-332,336-339,362,368-370,374-375,419-421,425-428,452-454,459-460,462,467-468,472-475,546-547,551-553,575-577,583-584
+examples/distro/buildSrc/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 11
+docs/contributing/writing-instrumentation-module.md
+  s_453590f8b87851::t_90a63943e0582d 372-374,381-390,392-396,427
+conventions/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 4,57
+instrumentation/guava-10.0/javaagent/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 2,33-39
+instrumentation/grpc-1.6/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 28-29,39-42,52-53,63-66
+instrumentation/guava-10.0/javaagent/src/unitTests/java/io/opentelemetry/javaagent/instrumentation/guava/v10_0/GuavaAsyncOperationEndStrategyTest.java
+  s_453590f8b87851::t_90a63943e0582d 6,35,84,98,101
+smoke-tests-otel-starter/spring-boot-reactive-3/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 20-24
+smoke-tests-otel-starter/spring-boot-reactive-common/src/main/java/io/opentelemetry/spring/smoketest/AbstractOtelReactiveSpringStarterSmokeTest.java
+  s_453590f8b87851::t_90a63943e0582d 11,13,16,77-108
+examples/distro/smoke-tests/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 14
+instrumentation/apache-dubbo-2.7/library-autoconfigure/src/main/java/io/opentelemetry/instrumentation/apachedubbo/v2_7/internal/RegistryCapturingInvoker.java
+  s_453590f8b87851::t_90a63943e0582d 15,95-96,101-108
+instrumentation/servlet/servlet-5.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 20-22,34-35
+docs/supported-libraries.md
+  s_453590f8b87851::t_90a63943e0582d 70,84,152
+instrumentation/log4j/log4j-appender-1.2/javaagent/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-9
+dependencyManagement/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 39,114
+instrumentation/runtime-telemetry/library/src/main/java17/io/opentelemetry/instrumentation/runtimetelemetry/internal/HandlerRegistry.java
+  s_453590f8b87851::t_90a63943e0582d 16,67-70,76-77,86-87,97,146-154
+instrumentation/runtime-telemetry/library/src/main/java/io/opentelemetry/instrumentation/runtimetelemetry/RuntimeTelemetry.java
+  s_453590f8b87851::t_90a63943e0582d 34
+instrumentation/spring/README.md
+  s_453590f8b87851::t_90a63943e0582d 21-22
+.github/workflows/module-cleanup.md
+  s_453590f8b87851::t_90a63943e0582d 220,225
+docs/instrumentation-list.yaml
+  s_453590f8b87851::t_90a63943e0582d 186-187,196-197,299,306,474,483,507,516,621,630,798,802,808,812,818,822,826,828,832,836,905,915,925,935,1108,1127,1136,1175,1179,1184,1188,1193,1197,1203,1207,1330,1339,1348,13704-13705,13740-13741,13765-13766,16793-16794,16856-16857,16992-16993,17373-17383,18392-18393,18493-18494
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-3.0/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1-52
+instrumentation/jmx-metrics/README.md
+  s_453590f8b87851::t_90a63943e0582d 21,62-64
+smoke-tests-otel-starter/spring-boot-common/src/main/java/io/opentelemetry/spring/smoketest/AbstractOtelSpringStarterSmokeTest.java
+  s_453590f8b87851::t_90a63943e0582d 91,245-254
+smoke-tests-otel-starter/spring-boot-reactive-common/src/main/java/io/opentelemetry/spring/smoketest/OtelReactiveSpringStarterSmokeTestApplication.java
+  s_453590f8b87851::t_90a63943e0582d 8-9,12-15,25-44
+instrumentation/log4j/log4j-appender-2.17/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 14-15,24-26,64-67,78-79
+.github/instructions/java-performance.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 11-14,16,18-23,25-26,30-31,35,37,39-41,45-46,50-53
+instrumentation/servlet/servlet-3.0/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 80
+gradle-plugins/gradle/wrapper/gradle-wrapper.properties
+  s_453590f8b87851::t_90a63943e0582d 3-4
+instrumentation/servlet/servlet-3.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 20-22,34-35
+instrumentation/tomcat/tomcat-10.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 23-25,36-37
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/library/src/main/java/io/opentelemetry/instrumentation/spring/cloud/gateway/common/internal/GatewayRouteIdConverger.java
+  s_453590f8b87851::t_90a63943e0582d 1-43
+.github/scripts/copilot-cli/package-lock.json
+  ai_agent 8,12-14,23-30,34-36,50-52,66-68,85-87,104-106,123-125,142-144,158-160
+.github/instructions/instrumentation-metadata.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 9-33,37,39-42,44-46,50-81,85-86,88-92,94-95,97-100,102-103,105,107-108,110,112-114,116-118
+benchmark-overhead/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 3
+docs/contributing/documenting-instrumentation.md
+  s_453590f8b87851::t_90a63943e0582d 241-243
+instrumentation/log4j/log4j-appender-1.2/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 18-21,32-33
+instrumentation/runtime-telemetry/library/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 5,93-104,154-197
+instrumentation/servlet/servlet-5.0/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 80
+.github/copilot-instructions.md
+  s_453590f8b87851::t_90a63943e0582d 4-8,31-44,53-59,66-74
+instrumentation/spring/spring-webflux/spring-webflux-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webflux/v5_3/TelemetryProducingWebFilter.java
+  s_453590f8b87851::t_90a63943e0582d 12,29,31-33,35,43,57,63-64,69,81-82,92,98-99,104,161-164
+smoke-tests-otel-starter/spring-boot-common/src/main/java/io/opentelemetry/spring/smoketest/AbstractKafkaSpringStarterSmokeTest.java
+  s_453590f8b87851::t_90a63943e0582d 28,104
+examples/extension/gradle/wrapper/gradle-wrapper.properties
+  s_453590f8b87851::t_90a63943e0582d 3-4
+.github/skills/fix-ci/SKILL.md
+  s_453590f8b87851::t_90a63943e0582d 20,28,36,45
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-3.0/library/src/main/java/io/opentelemetry/instrumentation/spring/cloud/gateway/v3_0/SpringCloudGatewayRouteGetter.java
+  s_453590f8b87851::t_90a63943e0582d 1-32
+examples/distro/buildSrc/src/main/kotlin/otel.nullaway-conventions.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 11
+smoke-tests-otel-starter/spring-boot-4/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 28
+instrumentation/hibernate/hibernate-reactive-1.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/hibernate/reactive/v1_0/stage/StageSessionImplInstrumentation.java
+  s_453590f8b87851::t_90a63943e0582d 28-31
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/TracingClientInterceptor.java
+  s_453590f8b87851::t_90a63943e0582d 172-177
+instrumentation/apache-dubbo-2.7/library-autoconfigure/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 32-40
+benchmark-overhead-jmh/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 15
+.github/instructions/context-propagation.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 11-21,25-29,31-34,36-39,41-42,46-47,49-51,53-56,60-64
+.github/config/latest-dep-versions.json
+  s_453590f8b87851::t_90a63943e0582d 67,151-155,160,162,164-165,168,208,357,359-360,362,408,460,499-500,580,623,627-642
+.github/instructions/emitted-telemetry.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 12-16,18-20,22-24,28,30-36,38-40,44-57,61-62,64-69,71-73,77-80,82-85,89-92,94,96,98-102,106-113,117-119,121-124
+instrumentation/runtime-telemetry/library/src/testJava17/java/io/opentelemetry/instrumentation/runtimetelemetry/internal/HandlerRegistryTest.java
+  s_453590f8b87851::t_90a63943e0582d 14-18,20-21,30-31,35-89
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-3.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 1-7
+instrumentation/servlet/servlet-5.0/library/src/main/java/io/opentelemetry/instrumentation/servlet/v5_0/internal/Experimental.java
+  s_453590f8b87851::t_90a63943e0582d 80-82
+instrumentation/apache-dubbo-2.7/library-autoconfigure/src/testDubbo277/java/io/opentelemetry/instrumentation/apachedubbo/v2_7/internal/ZoneAwareClusterInvokerTest.java
+  s_453590f8b87851::t_90a63943e0582d 1-92
+instrumentation/servlet/README.md
+  s_453590f8b87851::t_90a63943e0582d 12-13
+instrumentation/spring/spring-boot-autoconfigure/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 63-67,109
+.github/workflows/reusable-pr-build.yml
+  s_453590f8b87851::t_90a63943e0582d 55-61,81
+.github/instructions/instrumentation-state.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 13-31,35-36,38-40,42-45,47-51,53-58,60-63,67-75,78,82-86,88-94,96-98,100-105,107-113,117-143,145,147-149,151,153-154,156-158,160-162,164-168,170-172,174-196,198-200,202-204,206-209,211-213,217-242
+.github/workflows/module-cleanup.lock.yml
+  ai_agent 1
+.github/instructions/instrumentation-gradle.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 10-19,33-34,36-37,42-43,45-46,77-97,101-105,107-109,115-143,146-152,156-159,161-162,164-165,169-176,178-181,183-185,189-195,197-198,200-211,214,217,222-226,228-229,231,233-237,239-242
+instrumentation/grpc-1.6/library/src/test/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcTest.java
+  s_453590f8b87851::t_90a63943e0582d 25-26,41,44-45,53-54,107-182
+instrumentation/apache-dubbo-2.7/library-autoconfigure/src/main/java/io/opentelemetry/instrumentation/apachedubbo/v2_7/internal/RegistryCapturingClusterWrapper.java
+  s_453590f8b87851::t_90a63943e0582d 12,14,18,106-119
+instrumentation/log4j/log4j-appender-2.17/javaagent/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-14,18
+smoke-tests-otel-starter/spring-boot-reactive-2/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 14
+benchmark-overhead/gradle/wrapper/gradle-wrapper.properties
+  s_453590f8b87851::t_90a63943e0582d 3-4
+instrumentation/spring/spring-security-config-6.0/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1,3-4,12-38,71
+.github/instructions/java-style.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 24-25,34-35,61-63,73-76,78-79,81-82,84-88,92-96,98-104,106-120
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/library/src/test/java/io/opentelemetry/instrumentation/spring/cloud/gateway/common/internal/GatewayRouteIdConvergerTest.java
+  s_453590f8b87851::t_90a63943e0582d 6,8,10-13,15-19,21-22,25-43
+examples/extension/README.md
+  s_453590f8b87851::t_90a63943e0582d 18
+docs/contributing/using-instrumenter-api.md
+  s_453590f8b87851::t_90a63943e0582d 128
+gradle/wrapper/gradle-wrapper.properties
+  s_453590f8b87851::t_90a63943e0582d 3-4
+instrumentation/aws-sdk/aws-sdk-2.2/library/src/testBedrockRuntime/java/io/opentelemetry/instrumentation/awssdk/v2_2/internal/Aws2BedrockRuntimeTest.java
+  s_453590f8b87851::t_90a63943e0582d 9-16,20,22,24-25,31,35-36,41,53,58-59,130-232
+instrumentation-docs/src/main/java/io/opentelemetry/instrumentation/docs/utils/DeclarativeConfigYamlGenerator.java
+  s_453590f8b87851::t_90a63943e0582d 520
+instrumentation/grpc-1.6/README.md
+  s_453590f8b87851::t_90a63943e0582d 3-10
+instrumentation/runtime-telemetry/library/src/testJava17/java/io/opentelemetry/instrumentation/runtimetelemetry/internal/garbagecollection/GarbageCollectionHandlerTest.java
+  s_453590f8b87851::t_90a63943e0582d 1-57
+.github/instructions/messaging.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 9-12,16-39,43-56,60-65,67-69,71-72,74-76
+.github/workflows/build-pull-request.yml
+  s_453590f8b87851::t_90a63943e0582d 65
+instrumentation/spring/spring-boot-autoconfigure/src/test/java/io/opentelemetry/instrumentation/spring/autoconfigure/internal/instrumentation/springcloudgateway/SpringCloudGatewayInstrumentationAutoConfigurationTest.java
+  s_453590f8b87851::t_90a63943e0582d 1-57
+mise.toml
+  s_453590f8b87851::t_90a63943e0582d 6
+.github/instructions/testing-modes.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 8-10,14-51,55,57-61,63-66,70-88,91,93-94,96-102,104-107,111-112,114-118,120-121,123-127,129-130,132-136,140-143,145-146,148-151,153-154,156-159,161-164
+instrumentation/apache-httpclient/apache-httpclient-5.0/javaagent/src/test/java/io/opentelemetry/javaagent/instrumentation/apachehttpclient/v5_0/ApacheHttpAsyncClientTest.java
+  s_453590f8b87851::t_90a63943e0582d 8,10,12-14,22,36,63-81
+instrumentation/jboss-logmanager/jboss-logmanager-appender-1.1/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 30-33,44-45
+instrumentation/spring/spring-webflux/spring-webflux-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webflux/v5_3/SpringWebfluxServerTelemetry.java
+  s_453590f8b87851::t_90a63943e0582d 10,12,21,34-35,37,42
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1-7
+.github/instructions/javaagent.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 9,13-15,17-18,22-23,56-57,119-120,126-129,131-132,134-135,137-142,144,146-152,154-156,158-163,165,167-171,173,177-179
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/spring/cloud/gateway/common/GatewayRouteHelper.java
+  s_453590f8b87851::t_90a63943e0582d 11,62
+.github/instructions/javaagent-advice.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 7,32-35,37,39-44,46-47,49-52,56,58-62,64-66,68-75,78-82,84,86-87,89-91,93-95,99-102,106-122,125-129,131-134,136,138-140,144-146,148-149
+.github/scripts/copilot-cli/package.json
+  s_453590f8b87851::t_90a63943e0582d 4
+instrumentation/spring/spring-boot-autoconfigure/src/main/java/io/opentelemetry/instrumentation/spring/autoconfigure/internal/instrumentation/springcloudgateway/SpringCloudGatewayInstrumentationAutoConfiguration.java
+  s_453590f8b87851::t_90a63943e0582d 1-30
+instrumentation/spring/spring-boot-autoconfigure/src/main/resources/META-INF/spring.factories
+  s_453590f8b87851::t_90a63943e0582d 14
+smoke-tests-otel-starter/spring-boot-reactive-3/src/test/resources/META-INF/native-image/hibernate-validator/reachability-metadata.json
+  s_453590f8b87851::t_90a63943e0582d 1-32
+.github/instructions/spring-boot-starter.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 21-22,26-28,30-32
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-3.0/library/src/test/java/io/opentelemetry/instrumentation/spring/cloud/gateway/v3_0/SpringCloudGatewayRouteIntegrationTest.java
+  s_453590f8b87851::t_90a63943e0582d 1-138
+instrumentation/jmx-metrics/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 24-25,35-37,47-48
+.github/instructions/java-version.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 7-8
+instrumentation/logback/logback-appender-1.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 14-15,24-26,53-56,67-69,105-108,119-120
+instrumentation/aws-sdk/aws-sdk-1.11/library-autoconfigure/README.md
+  s_453590f8b87851::t_90a63943e0582d 1-38
+.github/instructions/instrumentation-list.instructions.md
+  s_453590f8b87851::t_90a63943e0582d 7-8
+instrumentation/sofa-rpc-5.4/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1-47
+instrumentation/guava-10.0/javaagent/src/main/java/io/opentelemetry/javaagent/instrumentation/guava/v10_0/GuavaAsyncOperationEndStrategy.java
+  s_453590f8b87851::t_90a63943e0582d 6,18-19
+instrumentation/runtime-telemetry/library/src/main/java17/io/opentelemetry/instrumentation/runtimetelemetry/internal/garbagecollection/GarbageCollectionHandler.java
+  s_453590f8b87851::t_90a63943e0582d 1-68
+smoke-tests-otel-starter/spring-boot-reactive-3/src/test/resources/META-INF/native-image/spring-webflux/reachability-metadata.json
+  s_453590f8b87851::t_90a63943e0582d 1-21
+instrumentation/liberty/liberty-20.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 23-25,36-37
+instrumentation/servlet/servlet-3.0/library/src/main/java/io/opentelemetry/instrumentation/servlet/v3_0/internal/Experimental.java
+  s_453590f8b87851::t_90a63943e0582d 80-82
+instrumentation/spring/spring-webflux/spring-webflux-5.3/library/src/main/java/io/opentelemetry/instrumentation/spring/webflux/v5_3/SpringWebfluxServerTelemetryBuilder.java
+  s_453590f8b87851::t_90a63943e0582d 8-9,17,22,30,121-131,134
+instrumentation/grpc-1.6/library/src/main/java/io/opentelemetry/instrumentation/grpc/v1_6/GrpcTelemetryBuilder.java
+  s_453590f8b87851::t_90a63943e0582d 154-156,169-171
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/library/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 3
+instrumentation/aws-lambda/aws-lambda-events-3.11/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1,3-4,6-39,55,85,121-127
+instrumentation/spring/spring-cloud-gateway/spring-cloud-gateway-common/javaagent/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 5-10
+instrumentation/tomcat/tomcat-7.0/metadata.yaml
+  s_453590f8b87851::t_90a63943e0582d 23-25,36-37
+instrumentation/sofa-rpc-5.4/library-autoconfigure/README.md
+  s_453590f8b87851::t_90a63943e0582d 1-37
+instrumentation/aws-lambda/aws-lambda-core-1.0/library/README.md
+  s_453590f8b87851::t_90a63943e0582d 1,3,5-38,51,81,83,85-86,88-89,91,98,103,105-107,109-110,112-113
+smoke-tests/images/fake-backend/build.gradle.kts
+  s_453590f8b87851::t_90a63943e0582d 15
+instrumentation-docs/src/main/resources/shared-config-definitions.yaml
+  s_453590f8b87851::t_90a63943e0582d 130,137
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "00737941d08e070865164d215ff3becfdf6feb81",
+  "prompts": {},
+  "sessions": {
+    "s_453590f8b87851": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a217e0-f207-78f1-b7c4-271865d7c6a6",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "yaoyinglong <906271196@qq.com>"
+    }
+  }
+}
